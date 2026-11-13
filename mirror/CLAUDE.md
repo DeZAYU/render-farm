@@ -22,7 +22,7 @@ Purpose: build the editing style guides (**Farrell**, **Nocturn**, **Abyssal**) 
 - For that work, read `docs/workflow/WORKFLOW.md` first (steps, case threads, editing rules). Then only the files the step needs.
 
 ## Always
-- **Renders are split** (owner rule 2026-11-13): all segments on max 18 GitHub machines (private repo only), laptop = backup only, joined locally. See `tools/cloud-render/README.md`.
+- **Renders are split** (owner rule 2026-11-13): every task (renders and any script) split equally over up to 500 GitHub machines (DeZAYU Enterprise, PUBLIC repo `DeZAYU/render-farm`, account kumai007), laptop = backup only, joined locally. The repo auto-syncs this folder every 15 min (no keys, no media). See `tools/cloud-render/README.md`.
 - **Stay inside this folder** (plus the main knowledge folder above). Do not read, learn from or search `../PROJECT` or anything else outside it until the owner says so in chat.
 - **No Premiere Pro, no After Effects** here (denied in `.claude/settings.json`). Do not use Premiere-based skills.
 - **Ref board: OFF** (owner, 2026-11-11). Do not run or edit it. If a task needs it, tell the owner and wait. Its notes: `CLAUDE.archive.md`.

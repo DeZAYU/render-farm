@@ -35,7 +35,7 @@ Copied from PROJECT on 2026-11-10. No Premiere Pro, no After Effects. Render = f
 8. QC the render against every rule-book line.
 
 ## Render phase: split (owner rule 2026-11-13)
-- Render all segments on GitHub machines, max 18 (owner 2026-11-13: never all 20; private repo `AYUAH-KUMAI/video-render`). The laptop is backup only: it renders parts the cloud did not deliver. The laptop joins them (pic + final).
+- Render all segments on GitHub machines, up to 500 (owner 2026-11-13 latest: public repo `DeZAYU/render-farm`, Enterprise; old private `AYUAH-KUMAI/video-render` = 18). The laptop is backup only: it renders parts the cloud did not deliver. The laptop joins them (pic + final).
 - Tool: `tools/cloud-render/` (README). Steps: `trace.py` once per builder change, `cloud_render.py ... --dry`, then the real run.
 - Before the render: scan every played source span, tails included, for source cuts (no leaked frames).
 
