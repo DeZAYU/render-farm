@@ -1,7 +1,7 @@
 {
  "version": 1,
- "rev": 39,
- "saved": "2026-11-13T21:29:38",
+ "rev": 40,
+ "saved": "2026-11-14T03:51:54",
  "categories": [
   {
    "id": "overall-aesthetic",
@@ -1143,7 +1143,7 @@
   },
   {
    "id": "b-0ba601b6",
-   "text": "No website, article or headline screenshot motion graphics anywhere. Show the story with real footage, photos and the ref card set instead. (owner 2026-11-12, v4)",
+   "text": "No website, article or headline screenshot motion graphics, except where the owner allows them for a video. Show the story with real footage, photos and the ref card set first. (owner 2026-11-12, v4; exception owner 2026-11-14 for abyssal-01)",
    "since": "2026-11-12",
    "from": "owner",
    "title": "No web or headline graphics"
@@ -1364,6 +1364,13 @@
    "since": "2026-11-13",
    "from": "owner",
    "title": "Intro = refs (colour, pace, motion, SFX)"
+  },
+  {
+   "id": "b-8baaf468",
+   "text": "Owner 2026-11-14 (abyssal-01): use article graphics and a 3D man. Each case may get one real news-article screenshot shown as a 3D perspective card (slow eased turn, soft shadow, dark blurred b-roll behind), a left-to-right highlight wipe on the key sentence, a slow eased push-in and an outlet credit. Article must be a real report of that incident; blur victim photos and faces. Plus a 3D man element: a dark low-poly 3D human figure used for scale/position beats (where a person fell, stood or was hit), slow eased camera turn, no gore.",
+   "since": "2026-11-14",
+   "from": "owner",
+   "title": "Article graphics + 3D man"
   }
  ],
  "graphics": [
@@ -2778,6 +2785,15 @@
    "update": "",
    "note": "Owner answer 2026-11-13 in chat.",
    "text": "Mix 100/80/60 means track sliders: each track keeps its normal level (drone about 14 dB under the voice), then music x0.8 (-1.9 dB) and SFX x0.6 (-4.4 dB). Not a percent of voice loudness."
+  },
+  {
+   "id": "l-f470762d",
+   "date": "2026-11-14",
+   "status": "open",
+   "target": "",
+   "update": "",
+   "note": "Owner answer 2026-11-14 in chat.",
+   "text": "Owner said 'use articles graphics and 3d man'. This overrides 'No web or headline graphics' for abyssal-01. Add one real article card per case (3D perspective, highlight wipe) and a 3D man figure for scale beats."
   }
  ],
  "updates": [

@@ -1,7 +1,7 @@
 <!-- GENERATED from styleguide/abyssal/abyssal.json by styleguide/model.py. Do not edit by hand: edit at http://localhost:8769 -->
 # Abyssal Detective Style Guide
 
-Iceberg found-footage documentary style, learned from 14 Abyssal Detective videos (4 given, 5 latest, 5 most viewed). Rev 39, saved 2026-11-13T21:29:38.
+Iceberg found-footage documentary style, learned from 14 Abyssal Detective videos (4 given, 5 latest, 5 most viewed). Rev 40, saved 2026-11-14T03:51:54.
 Follow it top to bottom on every Abyssal edit. The rule book comes first and is never skipped. Study notes: productions/_abyssal-ref/ABYSSAL_STYLE_NOTES.md.
 
 Numbers come from ffmpeg on the 14 refs unless marked (est.), which means read from contact sheets or captions. No board clips (ref board is off).
@@ -36,7 +36,7 @@ Numbers come from ffmpeg on the 14 refs unless marked (est.), which means read f
 26. **Case title card like the refs**: Each case gets ONE title card: iceberg plate with a very slow gentle camera shake and a small eased zoom-in, textured text 'CASE 01' with the case name below it. No second card, no ice close-up swap. Music plays under the title card. Then the case footage starts (hard cut or dip to black, no crossfade); the date is small text on the first footage shot. (owner 2026-11-12, v5)
 27. **Storyboard approval first**: Before any render, build the storyboard as a private web page, show it to the owner and get approval. No render without an approved storyboard. (owner 2026-11-12, v3)
 28. **Every clip at least 3 s**: Every clip is on screen at least 3 s (90 f at 30 fps), the warning card excepted (2-3 s). No montage, teaser, shock-burst or CCTV/dashcam exception. (owner 2026-11-12, v4)
-29. **No web or headline graphics**: No website, article or headline screenshot motion graphics anywhere. Show the story with real footage, photos and the ref card set instead. (owner 2026-11-12, v4)
+29. **No web or headline graphics**: No website, article or headline screenshot motion graphics, except where the owner allows them for a video. Show the story with real footage, photos and the ref card set first. (owner 2026-11-12, v4; exception owner 2026-11-14 for abyssal-01)
 30. **Raw clips in the intro**: Fill the intro with real raw footage with intense movement (news, phone, CCTV, archive of the actual cases), not graphics. Graphics in the intro are only the warning card and the iceberg list. No inverted, mirrored or posterised colour looks on clips at all, intro included; clips keep only the normal Abyssal grade. (owner 2026-11-12, storyboard v6)
 31. **Free clips only**: Use free footage only. News and raw case footage is OK with an on-screen source credit. Never licensed, paid or watermarked stock. Fill gaps with Pexels or Pixabay clips. More motion graphics are welcome (maps, red circles, typed text). (owner 2026-11-12, v5)
 32. **Animated maps for places**: Show places with proper animated maps built to productions/_abyssal-ref/MAP_SPEC.md (dark map, eased country-to-town push, glowing pin, typed label, drawn route line), or write the place name centred on screen, or use a drone/establishing shot with the name. (owner 2026-11-12, v5)
@@ -72,6 +72,7 @@ Numbers come from ffmpeg on the 14 refs unless marked (est.), which means read f
 62. Red-border card montage: every card clip must stay inside one source shot for its whole span (slide-in, hold, slide-out); a source cut inside a card is a frame leak. Check every card with the leak scan.
 63. Renders: all segments on GitHub machines (max 18), laptop is backup only.
 64. **Intro = refs (colour, pace, motion, SFX)**: Owner 2026-11-13 (v10): The intro must match the reference intros in colour grade, pacing, animations, transitions and above all SFX. Measure the ref intros (cuts, colour, SFX map) and our intro the same way before building. Show the owner still frames of the new intro before rendering it. Aim to beat the refs; never repeat an old mistake.
+65. **Article graphics + 3D man**: Owner 2026-11-14 (abyssal-01): use article graphics and a 3D man. Each case may get one real news-article screenshot shown as a 3D perspective card (slow eased turn, soft shadow, dark blurred b-roll behind), a left-to-right highlight wipe on the key sentence, a slow eased push-in and an outlet credit. Article must be a real report of that incident; blur victim photos and faces. Plus a 3D man element: a dark low-poly 3D human figure used for scale/position beats (where a person fell, stood or was hit), slow eased camera turn, no gore.
 
 ## 1. Overall aesthetic
 
@@ -362,3 +363,4 @@ Find what the narration is doing. Pick the first graphic that fits. "no" = does 
 - 2026-11-13: Storyboard v1 rejected: raw ungraded stills, too few motion graphics. Next builds: real styled frames, ref grade, many varied MG, side-by-side ref check before showing the owner.
 - 2026-11-13: v2 notes: shot 35 was a black hold (remove black shots), shot 28 face not fully blurred (cover the whole face), grade needs more finish, MG need good easing, mix narration 100 / music 80 / SFX 60.
 - 2026-11-13: Mix 100/80/60 means track sliders: each track keeps its normal level (drone about 14 dB under the voice), then music x0.8 (-1.9 dB) and SFX x0.6 (-4.4 dB). Not a percent of voice loudness.
+- 2026-11-14: Owner said 'use articles graphics and 3d man'. This overrides 'No web or headline graphics' for abyssal-01. Add one real article card per case (3D perspective, highlight wipe) and a 3D man figure for scale beats.
