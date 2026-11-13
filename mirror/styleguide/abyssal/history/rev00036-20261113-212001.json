@@ -1,7 +1,7 @@
 {
  "version": 1,
- "rev": 17,
- "saved": "2026-11-12T15:20:43",
+ "rev": 36,
+ "saved": "2026-11-13T20:56:21",
  "categories": [
   {
    "id": "overall-aesthetic",
@@ -31,7 +31,7 @@
     },
     {
      "id": "r-6dca4418",
-     "text": "Put a heavy vignette, grain and light VHS/CRT texture over the whole video. Cards and titles get it too.",
+     "text": "Put a heavy vignette, grain and light still CRT texture over footage, never so dark that details are lost. No moving static/noise overlay except on the warning card. (owner 2026-11-12, v5)",
      "source": "refs",
      "evidence": [],
      "title": "VHS/CRT texture"
@@ -45,7 +45,7 @@
     },
     {
      "id": "r-9603e4f9",
-     "text": "Use the same card set in every video: warning card, N-cases headline montage or iceberg list, case/Level card, typed date, name tag, source credit. No Presents sting. Do not invent new card designs.",
+     "text": "Use the same card set in every video: warning card, animated iceberg list, ONE case title card (slow gentle shake + eased zoom + textured reveal), typed date, name tag, source credit, animated maps. No Presents sting, no headline/web graphics. (owner 2026-11-12, v5)",
      "source": "refs",
      "evidence": [],
      "title": "Same kit every video"
@@ -94,7 +94,7 @@
     },
     {
      "id": "r-5967b83b",
-     "text": "Use short glitch, static and RGB-split bursts when something feels wrong or a level changes.",
+     "text": "Use rare 2-3 frame glitch/RGB-split cuts when something feels wrong or a level changes; no static-noise overlay on footage. (owner 2026-11-12, v5)",
      "source": "refs",
      "evidence": [],
      "title": "Uncanny glitches"
@@ -150,10 +150,10 @@
     },
     {
      "id": "r-fd548929",
-     "text": "Turn sensitive or stock footage into hard B&W threshold or red/yellow/blue posterise.",
+     "text": "Sensitive or stock footage keeps the normal dark Abyssal grade; cover faces with mosaic/blur. No inverted, mirrored or posterised colour looks on clips at all, intro included; clips keep only the normal Abyssal grade. (owner 2026-11-12, storyboard v6)",
      "source": "refs",
      "evidence": [],
-     "title": "Threshold for sensitive clips"
+     "title": "Normal grade on sensitive clips"
     },
     {
      "id": "r-4f0141be",
@@ -182,6 +182,20 @@
      "source": "refs",
      "evidence": [],
      "title": "Orange or red name box"
+    },
+    {
+     "id": "r-0a0d0cce",
+     "text": "Grade: do not darken clips. No 0.92 dim, light vignette only (about 15 %). NO grain or noise layer on clips or cards: a fixed grain over a moving/pushing picture reads as moving static lines. Keep the v6 colour balance (owner 2026-11-13: 'rest colorgrade was good').",
+     "source": "user",
+     "evidence": [],
+     "title": "Bright grade, no grain"
+    },
+    {
+     "id": "r-a1c28ded",
+     "text": "Body grade: crushed blacks (p5 about 4), footage luma about 63, p95 about 190, saturation about 29%. Two thirds of footage is untinted; tints are red 15%, sepia 7%, teal 5%, B&W 5%. Red or sepia go mainly on photos.",
+     "source": "refs",
+     "evidence": [],
+     "title": "Body grade numbers"
     }
    ]
   },
@@ -248,7 +262,7 @@
     },
     {
      "id": "r-fcbf0873",
-     "text": "Show article and web screenshots full frame, not small in a corner.",
+     "text": "Do not build article, web or headline screenshot graphics. (owner 2026-11-12, v4)",
      "source": "refs",
      "evidence": [],
      "title": "Stills full frame"
@@ -262,7 +276,7 @@
    "rules": [
     {
      "id": "r-a83fb09d",
-     "text": "Hold photos and screenshots still (no push-in, pan or Ken Burns seen in 18 of 18 sampled stills). Make them move with a highlighter wipe, typed text, a colour change or a 3-5 degree tilt. Only the Level card pushes in. Exception: an article or web page may drift slowly up (about 10-20% of frame height in 1-2 s, then ease to a hold) to reveal the key line.",
+     "text": "Hold photos still (no Ken Burns). Make them move with typed text, a highlight wipe, a red circle, a colour change or a 3-5 degree tilt. Only the iceberg list (slow eased zoom-in), the case title card (very slow gentle shake + small zoom) and maps move the camera. (owner 2026-11-12, v5)",
      "source": "refs",
      "evidence": [],
      "title": "Still stills",
@@ -307,7 +321,7 @@
     },
     {
      "id": "r-def3a766",
-     "text": "Do not add camera shake. The found footage has enough.",
+     "text": "Never add camera shake to footage clips. The only added shake is the very slow gentle shake on the case title card. (owner 2026-11-12, v5)",
      "source": "refs",
      "evidence": [],
      "title": "No fake shake"
@@ -398,7 +412,7 @@
     },
     {
      "id": "r-9fc3a74f",
-     "text": "Hold most shots about 3-8 s (est.); never under 3 s except the marked exceptions (intro shock bursts, CCTV/dashcam incident runs). Hold the first case of a video longer.",
+     "text": "Hold most shots about 3-8 s; never under 3 s, no exceptions. Hold the first case of a video longer. (owner 2026-11-12, v4)",
      "source": "refs",
      "evidence": [],
      "title": "Real shot length"
@@ -419,21 +433,21 @@
     },
     {
      "id": "r-97bf6ad5",
-     "text": "Build the teaser from 1-2 s shock clips just before Level 1 (exception to generic >= 3 s: intro shock bursts the refs prove).",
+     "text": "Build the teaser just before the first case from real raw case clips, each >= 3 s (no 1-2 s shock clips). (owner 2026-11-12, v4)",
      "source": "refs",
      "evidence": [],
      "title": "Teaser montage"
     },
     {
      "id": "r-c32643ae",
-     "text": "Exception to generic >= 3 s: cut CCTV and dashcam sequences fast (about 2 s) around the incident only, as the refs show (SZctYisBz_8 'CCTV Incidents' body median 2.1 s; C8TvBGgVV9k montage ~2 s). Everywhere else keep shots >= 3 s.",
+     "text": "CCTV and dashcam incident runs also keep every shot >= 3 s (no fast-cut exception). (owner 2026-11-12, v4)",
      "source": "refs",
      "evidence": [],
      "title": "Fast CCTV"
     },
     {
      "id": "r-2f9ba567",
-     "text": "Hold article screenshots long enough to read the highlighted line (about 3-6 s).",
+     "text": "No article-screenshot holds (no web/headline graphics); show real footage instead. (owner 2026-11-12, v4)",
      "source": "refs",
      "evidence": [],
      "title": "Hold screenshots"
@@ -472,6 +486,20 @@
      "source": "refs",
      "evidence": [],
      "title": "Glitch count"
+    },
+    {
+     "id": "r-3aca49b8",
+     "text": "Case body pace: refs cut about every 3 s (median per-ref ASL 3.6 s, pooled 2.6 s). Owner rule wins: every clip at least 3 s, so aim for 3-4 s clips with 6-7 s holds only on slow reveals.",
+     "source": "refs",
+     "evidence": [],
+     "title": "Case body pace"
+    },
+    {
+     "id": "r-4a5075e3",
+     "text": "Case body mix: about 73% footage, 11% designed graphics, 7% photos, the rest host. About 4 graphic events per minute (normal range 2-10). The last shot of a case is footage (11 of 14).",
+     "source": "refs",
+     "evidence": [],
+     "title": "Case body mix"
     }
    ]
   },
@@ -515,7 +543,7 @@
     },
     {
      "id": "r-12a82fc4",
-     "text": "Use a 0.3-1 s glitch/static burst only for shock cuts (no Presents sting).",
+     "text": "Use a 2-3 frame glitch cut only for shock cuts; no static-noise bursts over footage (static lives on the warning card only). (owner 2026-11-12, v5)",
      "source": "refs",
      "evidence": [],
      "title": "Glitch sting"
@@ -541,17 +569,17 @@
     },
     {
      "id": "r-99d75403",
-     "text": "Use a soft dissolve only between calm stills or state/place cards (KTKZ).",
+     "text": "Between calm stills or state/place cards use a dip to black, never a dissolve. (owner 2026-11-12, v4)",
      "source": "refs",
      "evidence": [],
      "title": "Soft dissolve rarely"
     },
     {
      "id": "r-90af7874",
-     "text": "Flash a red/yellow/blue posterised frame for 1-3 frames on shock moments.",
+     "text": "Shock moments use a dip, a red circle or a short dark glitch cut, never a posterised/inverted flash. No inverted, mirrored or posterised colour looks on clips at all, intro included; clips keep only the normal Abyssal grade. (owner 2026-11-12, storyboard v6)",
      "source": "refs",
      "evidence": [],
-     "title": "Posterise flash"
+     "title": "No posterise flash"
     },
     {
      "id": "r-65208203",
@@ -559,6 +587,13 @@
      "source": "refs",
      "evidence": [],
      "title": "Only two wipes"
+    },
+    {
+     "id": "r-d07802c7",
+     "text": "Case body transitions in the refs: dissolve about 50%, glitch tear about 25%, hard cut about 20%, dips almost never. With the owner rules: 0.5 s (15 f) dissolves are the main soft join, glitch tears 2-3 f, hard cuts on raws and reveals.",
+     "source": "refs",
+     "evidence": [],
+     "title": "Body transition mix"
     }
    ]
   },
@@ -648,6 +683,27 @@
      "source": "refs",
      "evidence": [],
      "title": "Typing speed"
+    },
+    {
+     "id": "r-46eb1f97",
+     "text": "Iceberg (case list) card: no highlight on any case name (all the same white). Static CRT look on it: fixed scanlines, soft glow, small red/blue edge, curved screen with dark rounded corners. No noise, rolling bar or flicker. Slow eased zoom, no shake.",
+     "source": "user",
+     "evidence": [],
+     "title": "Iceberg: no highlight, CRT"
+    },
+    {
+     "id": "r-05aaf690",
+     "text": "The iceberg card gets a strong smooth vignette on top of the CRT look. The centre stays clean. The edges go about 55 % darker.",
+     "source": "user",
+     "evidence": [],
+     "title": "Iceberg: CRT plus vignette"
+    },
+    {
+     "id": "r-43376781",
+     "text": "Fonts (best installed match, by eye): date card Consolas Bold +5% tracking white with 1-2 px dark edge; name tag Lucida Console caps +8% tracking; case title Bahnschrift SemiBold caps +15-35% tracking with a 6-10 px cyan glow #4FD8EE; captions Courier New Bold white with 1-2 px black edge. A pixel face (VT323) is the closer match for dates and the warning but is not installed.",
+     "source": "refs",
+     "evidence": [],
+     "title": "Font matches"
     }
    ]
   },
@@ -730,6 +786,20 @@
      "source": "refs",
      "evidence": [],
      "title": "Narration on top"
+    },
+    {
+     "id": "r-f22d87d3",
+     "text": "Case body bed: a tonal low drone about 14 dB under the voice (range 12-19 dB; -37 to -45 dBFS), heard mainly in the pauses. Never in the intro (owner v13).",
+     "source": "refs",
+     "evidence": [],
+     "title": "Body drone level"
+    },
+    {
+     "id": "r-e5e02ce3",
+     "text": "Hits: the case title card and the date card each get one short low boom about 10-13 dB over the voice level. Raw clip sound 1-2 times per case, about 3-10 dB over the voice, entered and left by a dissolve or glitch.",
+     "source": "refs",
+     "evidence": [],
+     "title": "Card hits and raws"
     }
    ]
   },
@@ -740,7 +810,7 @@
    "rules": [
     {
      "id": "r-0226980b",
-     "text": "Open with: warning card (4-5 s), raw-audio hook with captions, N-cases headline montage (or iceberg list), teaser montage, then the first case card. No Presents sting.",
+     "text": "Open with: warning card (2-3 s), raw-audio hook with captions over raw footage, animated iceberg/list graphic for the N-cases line (4-5 s), teaser of raw clips (>= 3 s each), then the first case title card. No Presents sting. (owner 2026-11-12, v4)",
      "source": "refs",
      "evidence": [],
      "title": "Open"
@@ -828,6 +898,13 @@
      "source": "refs",
      "evidence": [],
      "title": "Shot mix"
+    },
+    {
+     "id": "r-b188b872",
+     "text": "Case opening order: title card about 3 s, the date types on 3-5 s after the title starts, then footage; the name tag sits on the first photo or interview shot of the person, 0.2-1.5 s in, held 2-3 s.",
+     "source": "refs",
+     "evidence": [],
+     "title": "Case opening order"
     }
    ]
   }
@@ -842,7 +919,7 @@
   },
   {
    "id": "b-9103046e",
-   "text": "Open in this order: warning card (4-5 s), raw-audio hook with mono captions, the 'N cases' headline montage (or iceberg list), teaser montage, first case by about 45 s. No Presents sting (owner 2026-11-12, v3).",
+   "text": "Open in this order: warning card (2-3 s), raw-audio hook with mono captions over real raw footage, the 'N cases' animated iceberg list (7 s), teaser of intense-movement raw clips (each >= 3 s), first case by about 45 s. The intro is mostly real raw clips, not graphics. No Presents sting. (owner 2026-11-12, v5)",
    "since": "2026-11-12",
    "from": "refs",
    "title": "Fixed opening"
@@ -863,14 +940,14 @@
   },
   {
    "id": "b-e1326886",
-   "text": "Footage stays dark and low-saturation with vignette, grain and VHS texture. Colour only in tints, red alerts, yellow highlights and cyan ice.",
+   "text": "Keep the dark, low-saturation look (vignette, grain, light tape texture) but never too dark: details inside the image must stay clearly visible; lift shadows rather than crush them. Colour only in tints, red alerts and circles, yellow highlights and cyan ice. (owner 2026-11-12, v5)",
    "since": "2026-11-12",
    "from": "refs",
-   "title": "Dark and muted"
+   "title": "Dark but readable"
   },
   {
    "id": "b-380eb4b8",
-   "text": "Mosaic faces, bodies and plates; black-box names; bleep swears; red asterisk words; add 'VISUALS ALTERED FOR VISUAL SAFETY'.",
+   "text": "Mosaic faces, bodies and plates; black-box names; bleep swears; red asterisk words; blur every TV channel / media-group logo in footage; add 'VISUALS ALTERED FOR VISUAL SAFETY'. (owner 2026-11-12, v5)",
    "since": "2026-11-12",
    "from": "refs",
    "title": "Censor everything sensitive"
@@ -884,14 +961,14 @@
   },
   {
    "id": "b-101aa627",
-   "text": "Owner 2026-11-12: use crossfades and black dips by default; hard cuts only inside fast montages; glitch bursts only for the intro and shocks.",
+   "text": "Transitions: hard cuts by default, dips to black between beats, a few short crossfades allowed (see crossfade rule). Glitch cuts (2-3 frames, no overlap) only rarely: intro and shock moments. (owner 2026-11-13, v6 render; replaces v4 hard-cuts-only)",
    "since": "2026-11-12",
    "from": "refs",
-   "title": "Soft transitions"
+   "title": "Hard cuts and dips only"
   },
   {
    "id": "b-9d37a3bf",
-   "text": "Master about -21 to -25 LUFS, intro 2-5 LU louder, drone bed under the voice, raw audio on key clips.",
+   "text": "Master about -21 to -25 LUFS, intro 2-5 LU louder. A dark horror ambience bed runs under the voice, with good SFX on events, both from Epidemic Sound; raw audio on key clips. (owner 2026-11-12, v5)",
    "since": "2026-11-12",
    "from": "refs",
    "title": "Quiet mix"
@@ -905,14 +982,14 @@
   },
   {
    "id": "b-efe13d68",
-   "text": "Graphics move only by typing, left-to-right highlight wipes, 2-3 frame glitch cuts and fades through black. Stills hold still. Sound sits on those events.",
+   "text": "Graphics move only by typing, left-to-right highlight wipes, red circles drawing on, rare 2-3 frame glitch cuts, dips through black, animated maps (MAP_SPEC) and two ref camera moves: the iceberg list (slow eased zoom-in, no shake) and the case title card (very slow gentle shake + small eased zoom-in). Never camera shake on footage clips. Sound sits on those events. (owner 2026-11-12, v5)",
    "since": "2026-11-12",
    "from": "refs",
-   "title": "Four kinds of motion"
+   "title": "Few kinds of motion"
   },
   {
    "id": "b-fa95cd39",
-   "text": "Trim every raw clip and narration file exactly to the wanted words: no stray syllables, reporter tails, clicks or source music at either edge. Fade 15-30 ms in/out (longer where a bed runs). Check every cut with word timestamps and a waveform/spectrogram look.",
+   "text": "Narration: whole sentences, always. Cut AI fillers (yeah/ya/ia) out between words at the quietest point, never mute them into a silent hole. Pauses only at sentence ends (~0.4 s) and commas (~0.2 s), never mid-sentence. Every pause >= 0.15 s is true silence (80 ms word tail, 50 ms ramp in): AI voices leave low noise/garble there that reads as a leak. Never cut into the first word of a take: check where it really starts. Preview with a fixed gain, not loudnorm (it lifts the leaks). Verify: Whisper hears all script words, no fillers. Tool: productions/abyssal-01-theme-park-disasters/build/vo_v7.py. (owner 2026-11-13)",
    "since": "2026-11-12",
    "from": "owner",
    "title": "Clean audio cuts"
@@ -947,17 +1024,17 @@
   },
   {
    "id": "b-fc1af56c",
-   "text": "Put a tape look over the whole video: chroma bleed, scanlines, slight jitter, noise bands and tracking lines, like the refs.",
+   "text": "Moving static/noise lives only on the warning card. No constant moving static, noise bands, tracking lines or VHS-noise overlay on footage; footage keeps only a light, still tape look (soft chroma bleed, faint scanlines, grain). Overrides the old 'VHS over everything'. (owner 2026-11-12, v5)",
    "since": "2026-11-12",
    "from": "owner",
-   "title": "VHS over everything"
+   "title": "Static only on the warning card"
   },
   {
    "id": "b-15db4ec5",
-   "text": "Transitions are mostly crossfades and dips to black. Glitch transitions only rarely (intro, shock moments). Never cut to a new shot while a crossfade is still running.",
+   "text": "Crossfades (6-12 f) are allowed in a few places: between calm shots inside a story beat or out of a map/graphic. Hard cuts stay the default; dips to black between beats. Never on the exact word cut, never with a glitch. (owner 2026-11-13, v6 render; overrides the v4 no-crossfade rule)",
    "since": "2026-11-12",
    "from": "owner",
-   "title": "Crossfades and dips"
+   "title": "No overlapping frames"
   },
   {
    "id": "b-06c3f801",
@@ -982,14 +1059,14 @@
   },
   {
    "id": "b-b748a006",
-   "text": "Picture matches the narration word by word: at every moment the shot shows exactly what the narrator is saying (the park, the ride, the person, the headline, the date). No generic filler under a specific line. Plan it per phrase in the storyboard. (owner 2026-11-12, v3)",
+   "text": "Picture matches the narration word by word: one clip per sentence, the sentence covers its clip (cut on the sentence/clause start, the clip ends with the sentence), so the place, ride, person or thing appears when it is said. Every clip >= 3 s: merge short sentences rather than make short clips. Real footage; no generic filler; no website/headline graphics. Plan it per sentence in the storyboard from the final narration timings. (owner 2026-11-12 v5, 2026-11-13 v6 render)",
    "since": "2026-11-12",
    "from": "update",
    "title": "Picture follows narration"
   },
   {
    "id": "b-3724b460",
-   "text": "The warning card holds 4-5 s in total (120-150 f at 30 fps), then cuts to the hook. This overrides the 208 f (6.9 s) ref measurement. (owner 2026-11-12, v3)",
+   "text": "The warning card holds 2-3 s in total (60-90 f at 30 fps), then hard-cuts or dips to black into the hook. Overrides the old 4-5 s rule and the 208 f ref measurement. (owner 2026-11-12, v4)",
    "since": "2026-11-12",
    "from": "update",
    "title": "Short warning card"
@@ -1003,17 +1080,17 @@
   },
   {
    "id": "b-f0b46bae",
-   "text": "The 'N cases/disasters' line is a sharp, readable montage of real news headlines and park/place names, each with a slow push-in (about 3-5% over the shot) and crossfades between them. Never a blurry or static still. (owner 2026-11-12, v3)",
+   "text": "The 'N cases/disasters' line gets the animated iceberg list held 7 s: every case name sharp and readable (no blur or pixelation on deeper entries), a clear slow eased zoom-in running the whole time the names show (no shake), light grain texture. No headline or website screenshots. Spec: productions/_abyssal-ref/INTRO_SPEC3.md. (owner 2026-11-12 v5, zoom stressed 2026-11-13)",
    "since": "2026-11-12",
    "from": "update",
-   "title": "Headline montage for the N-cases line"
+   "title": "Iceberg graphic for the N-cases line"
   },
   {
    "id": "b-0fb0b4b4",
-   "text": "Each case gets ONE title card: 'CASE 01' plus the case name on the same card, smooth ease-in/ease-out (no hard pop). The date is small text on the first footage shot after it. Never two title cards back to back. (owner 2026-11-12, v3)",
+   "text": "Each case gets ONE title card: iceberg plate with a very slow gentle camera shake and a small eased zoom-in, textured text 'CASE 01' with the case name below it. No second card, no ice close-up swap. Music plays under the title card. Then the case footage starts (hard cut or dip to black, no crossfade); the date is small text on the first footage shot. (owner 2026-11-12, v5)",
    "since": "2026-11-12",
    "from": "update",
-   "title": "One case title card"
+   "title": "Case title card like the refs"
   },
   {
    "id": "b-cb1fddb9",
@@ -1021,6 +1098,237 @@
    "since": "2026-11-12",
    "from": "update",
    "title": "Storyboard approval first"
+  },
+  {
+   "id": "b-ace81e94",
+   "text": "Every clip is on screen at least 3 s (90 f at 30 fps), the warning card excepted (2-3 s). No montage, teaser, shock-burst or CCTV/dashcam exception. (owner 2026-11-12, v4)",
+   "since": "2026-11-12",
+   "from": "owner",
+   "title": "Every clip at least 3 s"
+  },
+  {
+   "id": "b-0ba601b6",
+   "text": "No website, article or headline screenshot motion graphics anywhere. Show the story with real footage, photos and the ref card set instead. (owner 2026-11-12, v4)",
+   "since": "2026-11-12",
+   "from": "owner",
+   "title": "No web or headline graphics"
+  },
+  {
+   "id": "b-0c2444ba",
+   "text": "Fill the intro with real raw footage with intense movement (news, phone, CCTV, archive of the actual cases), not graphics. Graphics in the intro are only the warning card and the iceberg list. No inverted, mirrored or posterised colour looks on clips at all, intro included; clips keep only the normal Abyssal grade. (owner 2026-11-12, storyboard v6)",
+   "since": "2026-11-12",
+   "from": "owner",
+   "title": "Raw clips in the intro"
+  },
+  {
+   "id": "b-34fa5d4d",
+   "text": "Use free footage only. News and raw case footage is OK with an on-screen source credit. Never licensed, paid or watermarked stock. Fill gaps with Pexels or Pixabay clips. More motion graphics are welcome (maps, red circles, typed text). (owner 2026-11-12, v5)",
+   "since": "2026-11-12",
+   "from": "owner",
+   "title": "Free clips only"
+  },
+  {
+   "id": "b-6e7310e8",
+   "text": "Show places with proper animated maps built to productions/_abyssal-ref/MAP_SPEC.md (dark map, eased country-to-town push, glowing pin, typed label, drawn route line), or write the place name centred on screen, or use a drone/establishing shot with the name. (owner 2026-11-12, v5)",
+   "since": "2026-11-12",
+   "from": "update",
+   "title": "Animated maps for places"
+  },
+  {
+   "id": "b-aca7d621",
+   "text": "Mark things with a red circle or strong red highlight drawn on. Never white X marks. (owner 2026-11-12, v5)",
+   "since": "2026-11-12",
+   "from": "update",
+   "title": "Red circles, not X marks"
+  },
+  {
+   "id": "b-5e5972d1",
+   "text": "No 1-3 frame flash of another shot at any cut (check every cut frame by frame). Every graphic (documents, text cards, maps) is centred on the frame, never right of centre. (owner 2026-11-12, v5)",
+   "since": "2026-11-12",
+   "from": "update",
+   "title": "No frame leaks, centred graphics"
+  },
+  {
+   "id": "b-6bc42d8d",
+   "text": "Vary the motion graphics inside one video: name tags, date stamps, place names, highlights/red circles and document callouts must not all use the same design and animation every time. Repeating a design across different videos is fine; within one video it must not feel repetitive. Study the refs for more MG types and when to use each. (owner 2026-11-12, storyboard v6)",
+   "since": "2026-11-12",
+   "from": "owner",
+   "title": "Vary the motion graphics"
+  },
+  {
+   "id": "b-9656b0c2",
+   "text": "New source span: before use, look at its first, middle and last frames. No news headline, caption, logo swirl or dissolve may show. If one shows, move the source in point past it (v7 r31 and r39).",
+   "since": "2026-11-13",
+   "from": "user"
+  },
+  {
+   "id": "b-6bde5574",
+   "text": "Red circle on a moving person: check the tracked circle in a frame strip. If it slides off the person, place it by hand from keyframes read off the frames (v7 r31: tracker locked onto the slide pattern).",
+   "since": "2026-11-13",
+   "from": "user"
+  },
+  {
+   "id": "b-3397500f",
+   "text": "SFX level: never place SFX relative to the voice. Follow GENERIC C20-22: music ~13 dB under the VO, SFX under the music, SFX inside narration peak ~-30 dBFS and 6-8 dB under the VO. Booms/risers only on transitions or gaps (v7 SFX were too loud, owner 2026-11-13).",
+   "since": "2026-11-13",
+   "from": "user"
+  },
+  {
+   "id": "b-c0ceb996",
+   "text": "Intro: warning card leaves with a short glitch transition (6-8 f) plus a quiet low-passed glitch SFX.",
+   "since": "2026-11-13",
+   "from": "user"
+  },
+  {
+   "id": "b-11d83cab",
+   "text": "Intro: on the case count line ('twenty-five of them') zoom-in transition to the iceberg, zoomed in so every case name reads, list slides up 3-4 s, then dip to black.",
+   "since": "2026-11-13",
+   "from": "user"
+  },
+  {
+   "id": "b-b3d7a02f",
+   "text": "Intro: the narration is fast. Change the clip with each topic (one clip per idea), even inside a long sentence.",
+   "since": "2026-11-13",
+   "from": "user"
+  },
+  {
+   "id": "b-5a6b4169",
+   "text": "Intro: raw crowd screams under the ride clips, like the clip's own audio, quiet (about 18 dB under the VO).",
+   "since": "2026-11-13",
+   "from": "user"
+  },
+  {
+   "id": "b-cc5338ea",
+   "text": "Intro montage for list lines (gate / ticket office / ride check): dark grey panel; each card slides up to centre and fades in; the old card slides up and fades out.",
+   "since": "2026-11-13",
+   "from": "user"
+  },
+  {
+   "id": "b-45d37b08",
+   "text": "Intro end: iceberg again, scroll to the top with a dip to black, highlight case 01 on its name, dip to black into the title card.",
+   "since": "2026-11-13",
+   "from": "user"
+  },
+  {
+   "id": "b-bb8eb895",
+   "text": "Card-slide montage: each clip has a red border; keep a clear gap between the leaving card and the arriving card. Background is black with a grey radial gradient (soft white highlight in the centre) and a vignette, for a horror feel; not a flat grey panel.",
+   "since": "2026-11-13",
+   "from": "user"
+  },
+  {
+   "id": "b-4c04b343",
+   "text": "Audio: every audio cut is a crossfade (raw clip audio, music bed joins, SFX tails). Nothing starts or stops abruptly.",
+   "since": "2026-11-13",
+   "from": "user"
+  },
+  {
+   "id": "b-8bb02380",
+   "text": "Music plays under the whole video, from the first frame to the last, with no gaps; beds join by crossfades.",
+   "since": "2026-11-13",
+   "from": "user"
+  },
+  {
+   "id": "b-f6b266fb",
+   "text": "Level ladder (owner 2026-11-13): narration 100 %, music 80 %, SFX 60 %. Narration is always on top, music under it, SFX under the music.",
+   "since": "2026-11-13",
+   "from": "user"
+  },
+  {
+   "id": "b-e280ac83",
+   "text": "Card montage exit: the last red-border card morphs out: its border spreads to the frame edges while the clip zooms to full screen, then it crossfades into the next shot (iceberg zoomed onto case 01 with the highlight).",
+   "since": "2026-11-13",
+   "from": "user"
+  },
+  {
+   "id": "b-baba2609",
+   "text": "Mix level ladder, owner pick A: voice on top; music ~10 dB under the voice; SFX ~14 dB under the voice (replaces the 13 dB music rule for Abyssal).",
+   "since": "2026-11-13",
+   "from": "user"
+  },
+  {
+   "id": "b-5bea8820",
+   "text": "Map animations play their full real length, retimed evenly to the clip slot. Never read a map past its real end (no padded last frame, no freeze).",
+   "since": "2026-11-13",
+   "from": "owner 2026-11-13"
+  },
+  {
+   "id": "b-41e52d73",
+   "text": "Motion graphics move slowly with strong easing (smootherstep or ease-in-out quint). Entrances, exits, slides, zooms, morphs and wipes last at least 0.6-1.0 s (18-30 f). Typing at about 0.5-0.7 characters per frame. Nothing reads as fast forward.",
+   "since": "2026-11-13",
+   "from": "owner 2026-11-13"
+  },
+  {
+   "id": "b-2f562485",
+   "text": "Start of the video: the whole mix fades in over 1.5 s. Never start the audio at full level.",
+   "since": "2026-11-13",
+   "from": "owner 2026-11-13 v9 review"
+  },
+  {
+   "id": "b-560591ef",
+   "text": "Every transition is 0.5 s (15 f). Crossfades 15 f, eased. Dip to black 15 f in all (8 f down, 7 f up, eased). Never 3-frame dips.",
+   "since": "2026-11-13",
+   "from": "owner 2026-11-13 v9 review"
+  },
+  {
+   "id": "b-16cde9cf",
+   "text": "No leaked frames: a clip (and its crossfade tail) must end before any cut in its source. Scan every played source span, tail included, before the render; after the render run a leak scan.",
+   "since": "2026-11-13",
+   "from": "owner 2026-11-13 v9 review"
+  },
+  {
+   "id": "b-c8307894",
+   "text": "Narration never gets a fade-in. Fade-ins go on raw clips only. Level the narration so quiet words do not sound like a fade-in.",
+   "since": "2026-11-13",
+   "from": "owner 2026-11-13 v9 review"
+  },
+  {
+   "id": "b-fbb90a06",
+   "text": "Use a few more crossfades between shots (where the next shot has no graphic in its first 15 f).",
+   "since": "2026-11-13",
+   "from": "owner 2026-11-13 v9 review"
+  },
+  {
+   "id": "b-c76b2b83",
+   "text": "Title and chapter music starts on the black frame of the dip to black, with a 2 s fade-in.",
+   "since": "2026-11-13",
+   "from": "owner 2026-11-13 v9 review"
+  },
+  {
+   "id": "b-cf19e4b4",
+   "text": "Every highlight graphic (red ring, document band or underline, iceberg highlight) gets a smooth eased push-in zoom on the highlighted part, so the viewer can read it.",
+   "since": "2026-11-13",
+   "from": "owner 2026-11-13 v9 review"
+  },
+  {
+   "id": "b-47b49a37",
+   "text": "More easing on every move (MGs, zooms, card slides, crossfades): smootherstep or slower; nothing starts or stops hard.",
+   "since": "2026-11-13",
+   "from": "Owner 2026-11-13 (v10)"
+  },
+  {
+   "id": "b-11f777b5",
+   "text": "Music after a title card: start it when the title card itself shows (CASE ONE text on screen), with a 2 s fade-in; not on the black frame before it.",
+   "since": "2026-11-13",
+   "from": "Owner 2026-11-13 (v10)"
+  },
+  {
+   "id": "b-a74a300c",
+   "text": "Red-border card montage: every card clip must stay inside one source shot for its whole span (slide-in, hold, slide-out); a source cut inside a card is a frame leak. Check every card with the leak scan.",
+   "since": "2026-11-13",
+   "from": "Owner 2026-11-13 (v10)"
+  },
+  {
+   "id": "b-c3c0fa2d",
+   "text": "Renders: all segments on GitHub machines (max 18), laptop is backup only.",
+   "since": "2026-11-13",
+   "from": "Owner 2026-11-13 (v10)"
+  },
+  {
+   "id": "b-f4420425",
+   "text": "Owner 2026-11-13 (v10): The intro must match the reference intros in colour grade, pacing, animations, transitions and above all SFX. Measure the ref intros (cuts, colour, SFX map) and our intro the same way before building. Show the owner still frames of the new intro before rendering it. Aim to beat the refs; never repeat an old mistake.",
+   "since": "2026-11-13",
+   "from": "owner",
+   "title": "Intro = refs (colour, pace, motion, SFX)"
   }
  ],
  "graphics": [
@@ -1061,11 +1369,11 @@
   {
    "id": "g-399454ee",
    "title": "Iceberg entry list",
-   "text": "Full-frame iceberg (sky above, dark water below), light teal fog, white waterline at about 28% down. Small white Courier rows about 3-4% of frame tall and 12-25% wide, in two loose columns (left column centred near x 40%, right near x 65%), stepping down the iceberg in about 12 rows. Top rows are sharp white; deeper rows are blurred or pixelated, like locked entries. One variant adds thick white bars (about 1% tall) between 6 bands of rows while the iceberg is still dark. In: hard cut. Hold 3.4-3.6 s, static (no scroll seen in 6 strips), slight text shimmer. Out: 2-3 frame RGB/scanline tear, then hard cut. Sound: no fixed rule (hit 2, drop 1, none 3 of 6).",
+   "text": "Full-frame iceberg (sky above, dark water below), light teal fog, white waterline at about 28% down. Small white Courier rows about 3-4% of frame tall and 12-25% wide, in two loose columns (left column centred near x 40%, right near x 65%), stepping down the iceberg in about 12 rows. Owner v5: every row sharp white and readable (no blur/pixelation on deeper rows); slow eased zoom-in, no shake, hold 7 s. One variant adds thick white bars (about 1% tall) between 6 bands of rows while the iceberg is still dark. In: hard cut. Hold 3.4-3.6 s, static (no scroll seen in 6 strips), slight text shimmer. Out: 2-3 frame RGB/scanline tear, then hard cut. Sound: no fixed rule (hit 2, drop 1, none 3 of 6).",
    "source": "refs",
    "evidence": [],
    "use": "Before Level 1, to show what is coming.",
-   "avoid": "Do not make it readable for long; it is a tease. Do not show every row sharp; blur the deep ones.",
+   "avoid": "Do not blur or pixelate deep rows; do not shake it.",
    "kind": "layout",
    "situation": "Compare or show many things",
    "media": [
@@ -1112,7 +1420,7 @@
    "source": "refs",
    "evidence": [],
    "use": "Start of each entry.",
-   "avoid": "Do not use other colours or fonts.",
+   "avoid": "Do not use other colours or fonts. Owner v4: no crossfades or dissolves; enter by hard cut or dip to black.",
    "kind": "title-card",
    "situation": "Open a section or chapter",
    "media": [
@@ -1136,7 +1444,7 @@
    "source": "refs",
    "evidence": [],
    "use": "Place-based icebergs.",
-   "avoid": "Do not use maps instead.",
+   "avoid": "Do not use maps instead. Owner v4: no crossfades or dissolves; enter by hard cut or dip to black.",
    "kind": "title-card",
    "situation": "Name a place or move to a new place",
    "media": [
@@ -1333,7 +1641,7 @@
    "source": "refs",
    "evidence": [],
    "use": "Proving a fact or outcome.",
-   "avoid": "Do not show it small or without a highlight. Do not freeze it fully still.",
+   "avoid": "Do not show it small or without a highlight. Do not freeze it fully still. Owner v4: do not use in Abyssal edits (no website/headline graphics).",
    "kind": "page-3d",
    "situation": "Show the real page, post or document",
    "media": [
@@ -1357,7 +1665,7 @@
    "source": "refs",
    "evidence": [],
    "use": "Internet cases.",
-   "avoid": "Do not show real usernames of private people.",
+   "avoid": "Do not show real usernames of private people. Owner v4: do not use in Abyssal edits (no website/headline graphics).",
    "kind": "comments",
    "situation": "Show the real page, post or document",
    "media": [
@@ -1458,7 +1766,7 @@
   {
    "id": "g-bc94f399",
    "title": "Photo ID card",
-   "text": "One still at a time, centred: card ~36-38% of frame width x ~73-78% tall, thin white border (~1%), a hard black shadow on the right edge (~2%), over a giant blurred copy of the same image (or a posterised version of the footage). The name sits under it in tiny white pixel caps (~3.5% tall, ~32% wide) or in an orange tag as wide as the card. Static hold ~1-3 s, then a hard cut to the next person's card. For two or more people, show their cards one after another, not side by side.",
+   "text": "One still at a time, centred: card ~36-38% of frame width x ~73-78% tall, thin white border (~1%), a hard black shadow on the right edge (~2%), over a giant blurred copy of the same image. The name sits under it in tiny white pixel caps (~3.5% tall, ~32% wide) or in an orange tag as wide as the card. Static hold ~1-3 s, then a hard cut to the next person's card. For two or more people, show their cards one after another, not side by side.",
    "source": "refs",
    "evidence": [],
    "use": "Two or more people in one case.",
@@ -1480,7 +1788,7 @@
    "source": "refs",
    "evidence": [],
    "use": "Single photo of a person or object.",
-   "avoid": "Do not leave black bars.",
+   "avoid": "Do not leave black bars. Owner v4: no crossfades or dissolves; enter by hard cut or dip to black.",
    "kind": "image",
    "situation": "Introduce a person or account",
    "media": [
@@ -1504,7 +1812,7 @@
    "source": "refs",
    "evidence": [],
    "use": "Phone, TikTok and livestream clips.",
-   "avoid": "Do not stretch to fill.",
+   "avoid": "Do not stretch to fill. Owner v4: no crossfades or dissolves; enter by hard cut or dip to black.",
    "kind": "raw-footage",
    "situation": "Show a video in its context (platform, CCTV, phone, file)",
    "media": [
@@ -1559,11 +1867,11 @@
   {
    "id": "g-b49e40af",
    "title": "Posterise glitch frame",
-   "text": "Full-frame quantise to 3-6 flat colours (black, white, cyan, royal blue with a little green; or red/yellow/black/white/cyan), soft blobby edges, no grain, footage keeps moving. A slice/tile glitch leads in over 2-4 frames. It can hold 2+ s to the shot end, also as a backdrop behind a photo card, or flash as a 2-frame threshold glitch. Sound: high riser +17 to +30 dB when it starts on the cut.",
+   "text": "Full-frame quantise to 3-6 flat colours (black, white, cyan, royal blue with a little green; or red/yellow/black/white/cyan), soft blobby edges, no grain, footage keeps moving. A slice/tile glitch leads in over 2-4 frames. It can hold 2+ s to the shot end, also as a backdrop behind a photo card, or flash as a 2-frame threshold glitch. Sound: high riser +17 to +30 dB when it starts on the cut. Owner 2026-11-12: do NOT use on clips (no inverted/mirrored/posterised looks anywhere); ref note only.",
    "source": "refs",
    "evidence": [],
    "use": "Shock moments and uncanny beats.",
-   "avoid": "Do not run it on ordinary shots. Keep it to shock beats.",
+   "avoid": "Never on clips, intro included.",
    "kind": "glitch",
    "situation": "Something breaks, goes wrong or feels uncanny",
    "media": [
@@ -2066,6 +2374,348 @@
    "update": "",
    "text": "v3 notes: picture must follow narration word by word; warning card 4-5 s; no PRESENTS text; the 'N cases' line is a sharp headline montage with push-ins and crossfades, never a blurry still; one CASE 01 + name card with ease in/out, date small on the first footage shot; storyboard page approved before any render.",
    "note": "owner on v3 2026-11-12; rule book b-b748a006, b-3724b460, b-52c16a9d, b-f0b46bae, b-0fb0b4b4, b-cb1fddb9"
+  },
+  {
+   "id": "l-c09d5614",
+   "date": "2026-11-12",
+   "text": "Warning length in 5 more refs: 2.4-7.0 s (newer logo open 2.4 s; two-card 4.0 s; old W card 7.0 s). Owner's 4-5 s matches the two-card 3PY5 open; out = hard cut, optional 1-frame white flash.",
+   "status": "open",
+   "target": "",
+   "note": "refs src2 (1BGL, B_hr, 3PY5, Q393, efCA) - productions/_abyssal-ref/INTRO_SPEC2.md",
+   "update": ""
+  },
+  {
+   "id": "l-df788e9b",
+   "date": "2026-11-12",
+   "text": "Refs show the 'N cases, 7 levels' line over a static iceberg-list still: cut in on the number word (+0.1 s), 4.5 s hold, zero motion, hard cut out. Owner wants a headline montage instead: keep the cut-in on the number, add 1-1.5 s headlines with 3-5% linear push-ins and 12-15 f crossfades.",
+   "status": "open",
+   "target": "",
+   "note": "refs src2 (1BGL, B_hr, 3PY5, Q393, efCA) - productions/_abyssal-ref/INTRO_SPEC2.md",
+   "update": ""
+  },
+  {
+   "id": "l-fa3f9912",
+   "date": "2026-11-12",
+   "text": "First case card in refs: black dip 1.1-2.2 s, fade-in 0.5-1.0 s (linear, soft ease-out landing), hold 0.5-1.0 s, ease-out zoom-through 0.6-0.7 s to a title held ~3 s, then footage on the first spoken place (+-0.1 s). Q393 types 'Chapter 1: <name>' on ONE card (3.6 s) = model for 'CASE 01 + name'. B_hr types the date ON the footage. Card text appears <=0.3 s before it is spoken.",
+   "status": "open",
+   "target": "",
+   "note": "refs src2 (1BGL, B_hr, 3PY5, Q393, efCA) - productions/_abyssal-ref/INTRO_SPEC2.md",
+   "update": ""
+  },
+  {
+   "id": "l-a083c112",
+   "date": "2026-11-12",
+   "text": "Picture follows narration in refs: every concrete noun (place, person, object, date, document line) gets its own shot or label, cut within -0.4..+0.5 s of the word (median 0.0, worst +2 s). Names = tag on photo, places = tag on location shot, documents = article crop with the spoken line highlighted, dates typed in sync with the words.",
+   "status": "open",
+   "target": "",
+   "note": "refs src2 (1BGL, B_hr, 3PY5, Q393, efCA) - productions/_abyssal-ref/INTRO_SPEC2.md",
+   "update": ""
+  },
+  {
+   "id": "l-5ae20b6e",
+   "date": "2026-11-12",
+   "status": "rulebook",
+   "target": "",
+   "update": "",
+   "note": "owner notes on render v4; rule book + rules edited same day",
+   "text": "v4 feedback: warning card only 2-3 s; every other clip >= 3 s (no montage/shock exceptions); no website/headline motion graphics, the N-cases line is a 4-5 s animated iceberg/list (push + slight shake + texture); more real raw clips in the intro; free clips only (news/raw with credit, Pexels/Pixabay for gaps, never paid/watermarked stock); hard cuts and dips to black only, no crossfades or overlapping frames; case title card exactly like the refs (shake, zoom-in, textured reveal, then footage). Specs: productions/_abyssal-ref/INTRO_SPEC3.md."
+  },
+  {
+   "id": "l-36643dd8",
+   "date": "2026-11-12",
+   "status": "rulebook",
+   "target": "",
+   "update": "",
+   "note": "owner notes on render v5; rule book + rules edited same day",
+   "text": "v5 feedback: static/noise only on the warning card (no moving VHS noise on footage); grade dark but details visible; no camera shake on footage; iceberg list all names sharp, slow eased zoom only, 7 s; ONE title card (iceberg, slow gentle shake + small zoom, 'CASE 01' + name, textured, music under, no ice swap); cut on the exact word; intense raw clips in the intro, inverted look intro-only; VO line by line, clean trims, horror ambience + Epidemic SFX; animated maps (MAP_SPEC.md) or centred place names / drone shots; red circles not white X; no frame leaks, all graphics centred; blur channel logos; more motion graphics, free stock only."
+  },
+  {
+   "id": "l-a74ae1cc",
+   "date": "2026-11-12",
+   "status": "rulebook",
+   "target": "",
+   "update": "",
+   "note": "owner note on storyboard v6 row 8 (ambulance at night)",
+   "text": "Storyboard v6: 'make it normal, don't add this inverted CC on clips' -> no inverted/mirrored/posterised colour looks on any clip, intro included; clips get only the normal Abyssal grade. Also: vary MG designs/animations within one video (name tags, dates, places, highlights, doc callouts), repeats across videos fine. Maps: real dark-satellite maps from free data, smooth monotone push, solid red route."
+  },
+  {
+   "id": "l-48ec572a",
+   "date": "2026-11-13",
+   "status": "rulebook",
+   "target": "",
+   "update": "",
+   "note": "owner notes on v6 render + v7 narration preview",
+   "text": "v6 render: 'audio has been cut, I can't hear the full sentence' -> fillers had been muted as silent holes, 3 missed, gaps mid-sentence. v7 preview: 'Chinácota half cut' (trim cut into the first word) and 'audio leaks after a sentence' (AI noise in pauses) -> fixed by cutting fillers at quiet points, starting at the real first word, gating pauses to silence. Picture: one clip per sentence, >=3 s, crossfades in some places, iceberg slow zoom."
+  },
+  {
+   "id": "l-0c987d5c",
+   "date": "2026-11-13",
+   "status": "rulebook",
+   "target": "",
+   "update": "",
+   "note": "owner note on v6 render grade",
+   "text": "v6: 'don't darken it too much' and 'static moving lines'. Cause: clip grade x0.92 + 28 % vignette, and a fixed GRAIN layer (sigma 3) on every clip and card. Fix v7: no grain, no dim, vignette 15 %, same colours."
+  },
+  {
+   "id": "l-ae60c412",
+   "date": "2026-11-13",
+   "status": "rulebook",
+   "target": "",
+   "update": "",
+   "note": "owner note on storyboard v7 row 3",
+   "text": "'dont have that highlight on the in #3' + 'add ctr effect on it' -> removed the yellow wipe on CASE 01; added a static CRT look (read 'ctr' as CRT)."
+  },
+  {
+   "id": "l-36067434",
+   "date": "2026-11-13",
+   "status": "rulebook",
+   "target": "",
+   "update": "",
+   "note": "owner: add a vignette to the #3 iceberg",
+   "text": "Iceberg card: add a strong vignette (edges ~55 % darker) with the CRT look."
+  },
+  {
+   "id": "l-b3533440",
+   "date": "2026-11-13",
+   "status": "rulebook",
+   "target": "",
+   "update": "",
+   "note": "owner v7 review: sound design bad; intro redesign",
+   "text": "SFX level: never place SFX relative to the voice. Follow GENERIC C20-22: music ~13 dB under the VO, SFX under the music, SFX inside narration peak ~-30 dBFS and 6-8 dB under the VO. Booms/risers only on transitions or gaps (v7 SFX were too loud, owner 2026-11-13)."
+  },
+  {
+   "id": "l-c04f8dfc",
+   "date": "2026-11-13",
+   "status": "rulebook",
+   "target": "",
+   "update": "",
+   "note": "owner v7 review: sound design bad; intro redesign",
+   "text": "Intro: warning card leaves with a short glitch transition (6-8 f) plus a quiet low-passed glitch SFX."
+  },
+  {
+   "id": "l-f9bb6c8e",
+   "date": "2026-11-13",
+   "status": "rulebook",
+   "target": "",
+   "update": "",
+   "note": "owner v7 review: sound design bad; intro redesign",
+   "text": "Intro: on the case count line ('twenty-five of them') zoom-in transition to the iceberg, zoomed in so every case name reads, list slides up 3-4 s, then dip to black."
+  },
+  {
+   "id": "l-201cbcf2",
+   "date": "2026-11-13",
+   "status": "rulebook",
+   "target": "",
+   "update": "",
+   "note": "owner v7 review: sound design bad; intro redesign",
+   "text": "Intro: the narration is fast. Change the clip with each topic (one clip per idea), even inside a long sentence."
+  },
+  {
+   "id": "l-c39a9f4e",
+   "date": "2026-11-13",
+   "status": "rulebook",
+   "target": "",
+   "update": "",
+   "note": "owner v7 review: sound design bad; intro redesign",
+   "text": "Intro: raw crowd screams under the ride clips, like the clip's own audio, quiet (about 18 dB under the VO)."
+  },
+  {
+   "id": "l-4a0f9fe0",
+   "date": "2026-11-13",
+   "status": "rulebook",
+   "target": "",
+   "update": "",
+   "note": "owner v7 review: sound design bad; intro redesign",
+   "text": "Intro montage for list lines (gate / ticket office / ride check): dark grey panel; each card slides up to centre and fades in; the old card slides up and fades out."
+  },
+  {
+   "id": "l-2f089863",
+   "date": "2026-11-13",
+   "status": "rulebook",
+   "target": "",
+   "update": "",
+   "note": "owner v7 review: sound design bad; intro redesign",
+   "text": "Intro end: iceberg again, scroll to the top with a dip to black, highlight case 01 on its name, dip to black into the title card."
+  },
+  {
+   "id": "l-686d86b5",
+   "date": "2026-11-13",
+   "status": "rulebook",
+   "target": "",
+   "update": "",
+   "note": "owner on intro v8 plan",
+   "text": "Card-slide montage: each clip has a red border; keep a clear gap between the leaving card and the arriving card. Background is black with a grey radial gradient (soft white highlight in the centre) and a vignette, for a horror feel; not a flat grey panel."
+  },
+  {
+   "id": "l-d055c4f2",
+   "date": "2026-11-13",
+   "status": "rulebook",
+   "target": "",
+   "update": "",
+   "note": "owner on intro v8 plan",
+   "text": "Audio: every audio cut is a crossfade (raw clip audio, music bed joins, SFX tails). Nothing starts or stops abruptly."
+  },
+  {
+   "id": "l-b3b74a68",
+   "date": "2026-11-13",
+   "status": "rulebook",
+   "target": "",
+   "update": "",
+   "note": "owner on intro v8 plan",
+   "text": "Music plays under the whole video, from the first frame to the last, with no gaps; beds join by crossfades."
+  },
+  {
+   "id": "l-b8539a06",
+   "date": "2026-11-13",
+   "status": "rulebook",
+   "target": "",
+   "update": "",
+   "note": "owner on intro v8 plan",
+   "text": "Level ladder (owner 2026-11-13): narration 100 %, music 80 %, SFX 60 %. Narration is always on top, music under it, SFX under the music."
+  },
+  {
+   "id": "l-4a5d2dea",
+   "date": "2026-11-13",
+   "status": "rulebook",
+   "target": "",
+   "update": "",
+   "note": "owner on intro v8 plan v2",
+   "text": "Card montage exit: the last red-border card morphs out: its border spreads to the frame edges while the clip zooms to full screen, then it crossfades into the next shot (iceberg zoomed onto case 01 with the highlight)."
+  },
+  {
+   "id": "l-79fa0cb0",
+   "date": "2026-11-13",
+   "status": "rulebook",
+   "target": "",
+   "update": "",
+   "note": "owner on intro v8 plan v2",
+   "text": "Mix level ladder, owner pick A: voice on top; music ~10 dB under the voice; SFX ~14 dB under the voice (replaces the 13 dB music rule for Abyssal)."
+  },
+  {
+   "id": "l-c097dd65",
+   "date": "2026-11-13",
+   "text": "Owner 2026-11-13 (v8): the map animation got stuck (it played fast then froze).",
+   "status": "rulebook",
+   "target": "b-5bea8820",
+   "note": "owner chat 2026-11-13 v8 review",
+   "update": ""
+  },
+  {
+   "id": "l-a5670611",
+   "date": "2026-11-13",
+   "text": "Owner 2026-11-13 (v8): add a lot more easing to all motion graphics; they are way too fast forward.",
+   "status": "rulebook",
+   "target": "b-41e52d73",
+   "note": "owner chat 2026-11-13 v8 review",
+   "update": ""
+  },
+  {
+   "id": "l-d7ac485c",
+   "date": "2026-11-13",
+   "text": "Owner 2026-11-13 (v9): Audio starts suddenly; add a 1.5 s fade-in.",
+   "status": "rulebook",
+   "target": "b-2f562485",
+   "note": "owner chat 2026-11-13 v9 review",
+   "update": ""
+  },
+  {
+   "id": "l-96622885",
+   "date": "2026-11-13",
+   "text": "Owner 2026-11-13 (v9): Transitions must be 0.5 s, not too short.",
+   "status": "rulebook",
+   "target": "b-560591ef",
+   "note": "owner chat 2026-11-13 v9 review",
+   "update": ""
+  },
+  {
+   "id": "l-b9a65d25",
+   "date": "2026-11-13",
+   "text": "Owner 2026-11-13 (v9): Leak/overlap frames at 27 s and 57 s: the next shot pops in during the transition.",
+   "status": "rulebook",
+   "target": "b-16cde9cf",
+   "note": "owner chat 2026-11-13 v9 review",
+   "update": ""
+  },
+  {
+   "id": "l-07208d4b",
+   "date": "2026-11-13",
+   "text": "Owner 2026-11-13 (v9): At 1:43 the narration sounds like it fades in.",
+   "status": "rulebook",
+   "target": "b-c8307894",
+   "note": "owner chat 2026-11-13 v9 review",
+   "update": ""
+  },
+  {
+   "id": "l-78a935b8",
+   "date": "2026-11-13",
+   "text": "Owner 2026-11-13 (v9): Add a little more crossfades.",
+   "status": "rulebook",
+   "target": "b-fbb90a06",
+   "note": "owner chat 2026-11-13 v9 review",
+   "update": ""
+  },
+  {
+   "id": "l-deee422c",
+   "date": "2026-11-13",
+   "text": "Owner 2026-11-13 (v9): Case and title music must start on the dip black, 2 s fade-in.",
+   "status": "rulebook",
+   "target": "b-c76b2b83",
+   "note": "owner chat 2026-11-13 v9 review",
+   "update": ""
+  },
+  {
+   "id": "l-4f44b149",
+   "date": "2026-11-13",
+   "text": "Owner 2026-11-13 (v9): At 3:15 zoom more on the highlight; zoom in with ease on every highlight MG.",
+   "status": "rulebook",
+   "target": "b-cf19e4b4",
+   "note": "owner chat 2026-11-13 v9 review",
+   "update": ""
+  },
+  {
+   "id": "l-5529afb6",
+   "date": "2026-11-13",
+   "text": "Owner 2026-11-13 (v10 intro): 'the intro is nothing like the references'. Fix colour, pacing, animations, transitions and mainly SFX to match the refs; show frame images first.",
+   "status": "rulebook",
+   "target": "b-f4420425",
+   "note": "owner chat 2026-11-13",
+   "update": ""
+  },
+  {
+   "id": "l-v13own0",
+   "date": "2026-11-13",
+   "text": "Owner 2026-11-13 (v13 intro): NO stock footage (Pexels or any free stock). Use only real event / place footage from the case sources.",
+   "status": "open",
+   "target": "",
+   "note": "owner chat 2026-11-13",
+   "update": ""
+  },
+  {
+   "id": "l-v13own1",
+   "date": "2026-11-13",
+   "text": "Owner 2026-11-13 (v13 intro): this video (theme park disasters) is NOT an iceberg video. Do not use iceberg pictures or an iceberg list here.",
+   "status": "open",
+   "target": "",
+   "note": "owner chat 2026-11-13",
+   "update": ""
+  },
+  {
+   "id": "l-v13own2",
+   "date": "2026-11-13",
+   "text": "Owner 2026-11-13 (v13 intro): no raw footage sound in the intro, and no background music or drone bed under it. Narration plus one SFX per cut only.",
+   "status": "open",
+   "target": "",
+   "note": "owner chat 2026-11-13",
+   "update": ""
+  },
+  {
+   "id": "l-d1c8fbe3",
+   "date": "2026-11-13",
+   "status": "open",
+   "target": "",
+   "update": "",
+   "note": "productions/_abyssal-ref/gapfill/GAPFILL.md (14 refs, 441 body shots, 2026-11-13)",
+   "text": "Gap-fill study (case body, audio, grade, fonts) measured on all 14 refs. Where refs and owner notes clash (clips under 3 s, bed in the intro, stock footage, iceberg devices), the owner notes win."
   }
  ],
  "updates": [

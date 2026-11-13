@@ -1,7 +1,7 @@
 <!-- GENERATED from styleguide/abyssal/abyssal.json by styleguide/model.py. Do not edit by hand: edit at http://localhost:8769 -->
 # Abyssal Detective Style Guide
 
-Iceberg found-footage documentary style, learned from 14 Abyssal Detective videos (4 given, 5 latest, 5 most viewed). Rev 36, saved 2026-11-13T20:56:21.
+Iceberg found-footage documentary style, learned from 14 Abyssal Detective videos (4 given, 5 latest, 5 most viewed). Rev 39, saved 2026-11-13T21:29:38.
 Follow it top to bottom on every Abyssal edit. The rule book comes first and is never skipped. Study notes: productions/_abyssal-ref/ABYSSAL_STYLE_NOTES.md.
 
 Numbers come from ffmpeg on the 14 refs unless marked (est.), which means read from contact sheets or captions. No board clips (ref board is off).
@@ -85,6 +85,7 @@ Dark found-footage iceberg documentary. Seven levels, calm narrator, VHS/CRT tex
 - **Same kit every video**: Use the same card set in every video: warning card, animated iceberg list, ONE case title card (slow gentle shake + eased zoom + textured reveal), typed date, name tag, source credit, animated maps. No Presents sting, no headline/web graphics. (owner 2026-11-12, v5)
 - **Respect and safety**: Censor gore, bodies, faces of victims and minors. Add the small 'VISUALS ALTERED FOR VISUAL SAFETY' note on altered shots.
 - **No on-screen sponsor**: No sponsor reads. The only plugs are subscribe (mid) and Patreon 'level eight' (end).
+- **Styled storyboard frames, MG on most shots**: Every storyboard still is a real styled frame from the render engine (grade, MG, censor, push), never a raw source grab. Aim for one MG or highlight device on most body shots (ring, arrow, spotlight, red band, name tag, location label, red word, quote, date, map), varied, never the same device twice in a row. *(set by you)*
 
 ## 2. Mood and emotion
 
@@ -112,6 +113,8 @@ Near-monochrome dark footage. Accents: cyan ice, red alerts, yellow highlight, o
 - **Orange or red name box**: Use an orange (or red) box with dark mono text for name tags in case videos.
 - **Bright grade, no grain**: Grade: do not darken clips. No 0.92 dim, light vignette only (about 15 %). NO grain or noise layer on clips or cards: a fixed grain over a moving/pushing picture reads as moving static lines. Keep the v6 colour balance (owner 2026-11-13: 'rest colorgrade was good'). *(set by you)*
 - **Body grade numbers**: Body grade: crushed blacks (p5 about 4), footage luma about 63, p95 about 190, saturation about 29%. Two thirds of footage is untinted; tints are red 15%, sepia 7%, teal 5%, B&W 5%. Red or sepia go mainly on photos.
+- **Abyssal grade on every shot**: Every shot gets the Abyssal grade: black pin, low saturation (about 0.40), S-curve, heavy vignette (corners 0.12-0.31 of centre), tint per shot (none 66%, red 15%, sepia 7%, teal 5%, B&W 5%). Keep details visible. *(set by you)*
+- **Grade finish**: Grade finish: local contrast for detail, cool shadows and slightly warm highlights, soft warm halation on bright areas, fine film grain. No black holds as shots; use a 0.5 s dip through black. *(set by you)*
 
 ## 4. Lighting
 
@@ -186,6 +189,7 @@ Hard cuts by default. Black dips at seams. Glitch bursts for shocks.
 - **No posterise flash**: Shock moments use a dip, a red circle or a short dark glitch cut, never a posterised/inverted flash. No inverted, mirrored or posterised colour looks on clips at all, intro included; clips keep only the normal Abyssal grade. (owner 2026-11-12, storyboard v6)
 - **Only two wipes**: Use no spins or light leaks. Allowed exceptions: the 3-frame zoom-through from the Level card into the first ice title, and the raven/silhouette wipe onto the Patreon card.
 - **Body transition mix**: Case body transitions in the refs: dissolve about 50%, glitch tear about 25%, hard cut about 20%, dips almost never. With the owner rules: 0.5 s (15 f) dissolves are the main soft join, glitch tears 2-3 f, hard cuts on raws and reveals.
+- **Eased MG motion**: Every MG moves with easing, never linear: push-in easeInOutSine over the clip; circles draw on 0.45 s easeOutCubic; arrows slide in 0.35 s easeOutBack; labels fade + slide 0.38 s easeOutCubic; red words scale 1.08 to 1 in 0.30 s easeOutExpo; all MG exit 0.25 s easeInCubic. *(set by you)*
 
 ## 10. Typography
 
@@ -220,6 +224,7 @@ Quiet master, low drone bed, raw clip audio on key moments, true silence at seam
 - **Narration on top**: Keep the narrator clear and steady above the bed at all times.
 - **Body drone level**: Case body bed: a tonal low drone about 14 dB under the voice (range 12-19 dB; -37 to -45 dBFS), heard mainly in the pauses. Never in the intro (owner v13).
 - **Card hits and raws**: Hits: the case title card and the date card each get one short low boom about 10-13 dB over the voice level. Raw clip sound 1-2 times per case, about 3-10 dB over the voice, entered and left by a dissolve or glitch.
+- **Owner mix levels**: Owner mix 2026-11-13: narration 100%, music 80%, SFX 60%. SFX low but audible. Narration always on top. *(set by you)*
 
 ## 12. Storytelling
 
@@ -354,3 +359,6 @@ Find what the narration is doing. Pick the first graphic that fits. "no" = does 
 - 2026-11-13: Owner 2026-11-13 (v13 intro): this video (theme park disasters) is NOT an iceberg video. Do not use iceberg pictures or an iceberg list here.
 - 2026-11-13: Owner 2026-11-13 (v13 intro): no raw footage sound in the intro, and no background music or drone bed under it. Narration plus one SFX per cut only.
 - 2026-11-13: Gap-fill study (case body, audio, grade, fonts) measured on all 14 refs. Where refs and owner notes clash (clips under 3 s, bed in the intro, stock footage, iceberg devices), the owner notes win.
+- 2026-11-13: Storyboard v1 rejected: raw ungraded stills, too few motion graphics. Next builds: real styled frames, ref grade, many varied MG, side-by-side ref check before showing the owner.
+- 2026-11-13: v2 notes: shot 35 was a black hold (remove black shots), shot 28 face not fully blurred (cover the whole face), grade needs more finish, MG need good easing, mix narration 100 / music 80 / SFX 60.
+- 2026-11-13: Mix 100/80/60 means track sliders: each track keeps its normal level (drone about 14 dB under the voice), then music x0.8 (-1.9 dB) and SFX x0.6 (-4.4 dB). Not a percent of voice loudness.

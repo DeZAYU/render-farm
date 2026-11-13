@@ -1,7 +1,7 @@
 {
  "version": 1,
- "rev": 36,
- "saved": "2026-11-13T20:56:21",
+ "rev": 39,
+ "saved": "2026-11-13T21:29:38",
  "categories": [
   {
    "id": "overall-aesthetic",
@@ -63,6 +63,13 @@
      "source": "refs",
      "evidence": [],
      "title": "No on-screen sponsor"
+    },
+    {
+     "id": "r-d21d0a5d",
+     "text": "Every storyboard still is a real styled frame from the render engine (grade, MG, censor, push), never a raw source grab. Aim for one MG or highlight device on most body shots (ring, arrow, spotlight, red band, name tag, location label, red word, quote, date, map), varied, never the same device twice in a row.",
+     "source": "user",
+     "evidence": [],
+     "title": "Styled storyboard frames, MG on most shots"
     }
    ]
   },
@@ -196,6 +203,20 @@
      "source": "refs",
      "evidence": [],
      "title": "Body grade numbers"
+    },
+    {
+     "id": "r-54cd3339",
+     "text": "Every shot gets the Abyssal grade: black pin, low saturation (about 0.40), S-curve, heavy vignette (corners 0.12-0.31 of centre), tint per shot (none 66%, red 15%, sepia 7%, teal 5%, B&W 5%). Keep details visible.",
+     "source": "user",
+     "evidence": [],
+     "title": "Abyssal grade on every shot"
+    },
+    {
+     "id": "r-cff57cae",
+     "text": "Grade finish: local contrast for detail, cool shadows and slightly warm highlights, soft warm halation on bright areas, fine film grain. No black holds as shots; use a 0.5 s dip through black.",
+     "source": "user",
+     "evidence": [],
+     "title": "Grade finish"
     }
    ]
   },
@@ -594,6 +615,13 @@
      "source": "refs",
      "evidence": [],
      "title": "Body transition mix"
+    },
+    {
+     "id": "r-bb3fe06b",
+     "text": "Every MG moves with easing, never linear: push-in easeInOutSine over the clip; circles draw on 0.45 s easeOutCubic; arrows slide in 0.35 s easeOutBack; labels fade + slide 0.38 s easeOutCubic; red words scale 1.08 to 1 in 0.30 s easeOutExpo; all MG exit 0.25 s easeInCubic.",
+     "source": "user",
+     "evidence": [],
+     "title": "Eased MG motion"
     }
    ]
   },
@@ -800,6 +828,13 @@
      "source": "refs",
      "evidence": [],
      "title": "Card hits and raws"
+    },
+    {
+     "id": "r-18644e3c",
+     "text": "Owner mix 2026-11-13: narration 100%, music 80%, SFX 60%. SFX low but audible. Narration always on top.",
+     "source": "user",
+     "evidence": [],
+     "title": "Owner mix levels"
     }
    ]
   },
@@ -2716,6 +2751,33 @@
    "update": "",
    "note": "productions/_abyssal-ref/gapfill/GAPFILL.md (14 refs, 441 body shots, 2026-11-13)",
    "text": "Gap-fill study (case body, audio, grade, fonts) measured on all 14 refs. Where refs and owner notes clash (clips under 3 s, bed in the intro, stock footage, iceberg devices), the owner notes win."
+  },
+  {
+   "id": "l-48fa94bf",
+   "date": "2026-11-13",
+   "status": "open",
+   "target": "",
+   "update": "",
+   "note": "Owner 2026-11-13 on storyboard v1: way too bad, not matching refs. Fix = productions/abyssal-01-theme-park-disasters/build/look.py + sb/mg_plan.py, storyboard v2.",
+   "text": "Storyboard v1 rejected: raw ungraded stills, too few motion graphics. Next builds: real styled frames, ref grade, many varied MG, side-by-side ref check before showing the owner."
+  },
+  {
+   "id": "l-78786ae6",
+   "date": "2026-11-13",
+   "status": "open",
+   "target": "",
+   "update": "",
+   "note": "Owner 2026-11-13 on storyboard v2. Fix = build/look.py grade + EASE + MIX, storyboard v3.",
+   "text": "v2 notes: shot 35 was a black hold (remove black shots), shot 28 face not fully blurred (cover the whole face), grade needs more finish, MG need good easing, mix narration 100 / music 80 / SFX 60."
+  },
+  {
+   "id": "l-5af7c576",
+   "date": "2026-11-13",
+   "status": "open",
+   "target": "",
+   "update": "",
+   "note": "Owner answer 2026-11-13 in chat.",
+   "text": "Mix 100/80/60 means track sliders: each track keeps its normal level (drone about 14 dB under the voice), then music x0.8 (-1.9 dB) and SFX x0.6 (-4.4 dB). Not a percent of voice loudness."
   }
  ],
  "updates": [
