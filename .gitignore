@@ -1,0 +1,5 @@
+dl/
+work/
+out/
+__pycache__/
+*.bin

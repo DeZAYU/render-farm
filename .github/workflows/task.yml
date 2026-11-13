@@ -1,0 +1,73 @@
+name: task
+run-name: task ${{ inputs.run_id }}
+# 500 machines (DeZAYU Enterprise). A matrix holds max 256 jobs, so the work runs as two halves: a (0-249) + b (250-499).
+on:
+  workflow_dispatch:
+    inputs:
+      run_id: {description: 'run id (manifest asset run-<id>.json in release "store")', required: true}
+      os: {description: 'machine type', required: false, default: 'ubuntu-latest', type: choice, options: [ubuntu-latest, windows-latest]}
+permissions:
+  contents: read
+concurrency: {group: 'task-${{ inputs.run_id }}', cancel-in-progress: false}
+jobs:
+  fetch:                             # one machine downloads the inputs once; the others get them as an artifact
+    runs-on: ubuntu-latest
+    outputs: {idxa: '${{ steps.m.outputs.idxa }}', idxb: '${{ steps.m.outputs.idxb }}', nb: '${{ steps.m.outputs.nb }}'}
+    env: {GH_TOKEN: '${{ github.token }}'}
+    steps:
+      - uses: actions/checkout@v4
+      - id: m
+        run: python3 -I -X utf8 runner/fetch.py "${{ inputs.run_id }}" >> "$GITHUB_OUTPUT"
+      - uses: actions/upload-artifact@v4
+        with: {name: inputs, path: 'dl/', retention-days: 1, compression-level: 0}
+  task_a:
+    needs: fetch
+    runs-on: ${{ inputs.os }}
+    timeout-minutes: 120
+    strategy:
+      fail-fast: false
+      max-parallel: 250              # 250 + 250 = 500 machines at once
+      matrix: {i: '${{ fromJSON(needs.fetch.outputs.idxa) }}'}
+    env: {GH_TOKEN: '${{ github.token }}', PYTHONUTF8: '1'}
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with: {python-version: '3.12'}
+      - uses: FedericoCarboni/setup-ffmpeg@v3
+        continue-on-error: true
+      - uses: actions/download-artifact@v4
+        with: {name: inputs, path: dl}
+      - name: run tasks
+        shell: bash
+        run: |
+          python -I -X utf8 runner/task_shard.py "${{ inputs.run_id }}" ${{ matrix.i }} --place-only || true
+          if [ -f work/requirements.txt ]; then pip install -q -r work/requirements.txt; fi
+          python -I -X utf8 runner/task_shard.py "${{ inputs.run_id }}" ${{ matrix.i }}
+      - uses: actions/upload-artifact@v4
+        with: {name: 'out-${{ matrix.i }}', path: 'out/', if-no-files-found: ignore, retention-days: 3, compression-level: 0}
+  task_b:
+    needs: fetch
+    if: needs.fetch.outputs.nb != '0'
+    runs-on: ${{ inputs.os }}
+    timeout-minutes: 120
+    strategy:
+      fail-fast: false
+      max-parallel: 250              # 250 + 250 = 500 machines at once
+      matrix: {i: '${{ fromJSON(needs.fetch.outputs.idxb) }}'}
+    env: {GH_TOKEN: '${{ github.token }}', PYTHONUTF8: '1'}
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with: {python-version: '3.12'}
+      - uses: FedericoCarboni/setup-ffmpeg@v3
+        continue-on-error: true
+      - uses: actions/download-artifact@v4
+        with: {name: inputs, path: dl}
+      - name: run tasks
+        shell: bash
+        run: |
+          python -I -X utf8 runner/task_shard.py "${{ inputs.run_id }}" ${{ matrix.i }} --place-only || true
+          if [ -f work/requirements.txt ]; then pip install -q -r work/requirements.txt; fi
+          python -I -X utf8 runner/task_shard.py "${{ inputs.run_id }}" ${{ matrix.i }}
+      - uses: actions/upload-artifact@v4
+        with: {name: 'out-${{ matrix.i }}', path: 'out/', if-no-files-found: ignore, retention-days: 3, compression-level: 0}
