@@ -1,7 +1,7 @@
 <!-- GENERATED from styleguide/abyssal/abyssal.json by styleguide/model.py. Do not edit by hand: edit at http://localhost:8769 -->
 # Abyssal Detective Style Guide
 
-Iceberg found-footage documentary style, learned from 14 Abyssal Detective videos (4 given, 5 latest, 5 most viewed). Rev 40, saved 2026-11-14T03:51:54.
+Iceberg found-footage documentary style, learned from 14 Abyssal Detective videos (4 given, 5 latest, 5 most viewed). Rev 41, saved 2026-11-14T04:15:27.
 Follow it top to bottom on every Abyssal edit. The rule book comes first and is never skipped. Study notes: productions/_abyssal-ref/ABYSSAL_STYLE_NOTES.md.
 
 Numbers come from ffmpeg on the 14 refs unless marked (est.), which means read from contact sheets or captions. No board clips (ref board is off).
@@ -72,7 +72,7 @@ Numbers come from ffmpeg on the 14 refs unless marked (est.), which means read f
 62. Red-border card montage: every card clip must stay inside one source shot for its whole span (slide-in, hold, slide-out); a source cut inside a card is a frame leak. Check every card with the leak scan.
 63. Renders: all segments on GitHub machines (max 18), laptop is backup only.
 64. **Intro = refs (colour, pace, motion, SFX)**: Owner 2026-11-13 (v10): The intro must match the reference intros in colour grade, pacing, animations, transitions and above all SFX. Measure the ref intros (cuts, colour, SFX map) and our intro the same way before building. Show the owner still frames of the new intro before rendering it. Aim to beat the refs; never repeat an old mistake.
-65. **Article graphics + 3D man**: Owner 2026-11-14 (abyssal-01): use article graphics and a 3D man. Each case may get one real news-article screenshot shown as a 3D perspective card (slow eased turn, soft shadow, dark blurred b-roll behind), a left-to-right highlight wipe on the key sentence, a slow eased push-in and an outlet credit. Article must be a real report of that incident; blur victim photos and faces. Plus a 3D man element: a dark low-poly 3D human figure used for scale/position beats (where a person fell, stood or was hit), slow eased camera turn, no gore.
+65. **Article graphics + 3D man**: Owner 2026-11-14 (abyssal-01): use article graphics and a 3D man. Article pages must look like the ref ARTICLE clips (2TAT 13:07, 7UjU 3:22), owner 2026-11-14: one real report of the incident per case, flat page full frame (key text ~62% wide, optional 3 deg tilt), lands by hard cut with no sound, drifts up ~14% of frame height in 1.5 s and eases to a hold, slow push-in 1.00->1.06 on the key line; orange marker band (rounded ends, darker rim, thin dark underline) wipes LEFT TO RIGHT behind each line (~0.75 s per full line) from 1.6 s and stays; no dimming of the page; riser into the highlight, low boom on it. Out: 5-frame crossfade into the footage with a small ACTUAL FOOTAGE label. Blur every face on page photos. Small SOURCE credit top-left; English line as subtitle for foreign pages. No floating 3D card. 3D man: dark low-poly figures for count and height beats, slow eased camera turn, no gore.
 
 ## 1. Overall aesthetic
 

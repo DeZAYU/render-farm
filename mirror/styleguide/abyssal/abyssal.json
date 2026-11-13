@@ -1,7 +1,7 @@
 {
  "version": 1,
- "rev": 40,
- "saved": "2026-11-14T03:51:54",
+ "rev": 41,
+ "saved": "2026-11-14T04:15:27",
  "categories": [
   {
    "id": "overall-aesthetic",
@@ -1367,7 +1367,7 @@
   },
   {
    "id": "b-8baaf468",
-   "text": "Owner 2026-11-14 (abyssal-01): use article graphics and a 3D man. Each case may get one real news-article screenshot shown as a 3D perspective card (slow eased turn, soft shadow, dark blurred b-roll behind), a left-to-right highlight wipe on the key sentence, a slow eased push-in and an outlet credit. Article must be a real report of that incident; blur victim photos and faces. Plus a 3D man element: a dark low-poly 3D human figure used for scale/position beats (where a person fell, stood or was hit), slow eased camera turn, no gore.",
+   "text": "Owner 2026-11-14 (abyssal-01): use article graphics and a 3D man. Article pages must look like the ref ARTICLE clips (2TAT 13:07, 7UjU 3:22), owner 2026-11-14: one real report of the incident per case, flat page full frame (key text ~62% wide, optional 3 deg tilt), lands by hard cut with no sound, drifts up ~14% of frame height in 1.5 s and eases to a hold, slow push-in 1.00->1.06 on the key line; orange marker band (rounded ends, darker rim, thin dark underline) wipes LEFT TO RIGHT behind each line (~0.75 s per full line) from 1.6 s and stays; no dimming of the page; riser into the highlight, low boom on it. Out: 5-frame crossfade into the footage with a small ACTUAL FOOTAGE label. Blur every face on page photos. Small SOURCE credit top-left; English line as subtitle for foreign pages. No floating 3D card. 3D man: dark low-poly figures for count and height beats, slow eased camera turn, no gore.",
    "since": "2026-11-14",
    "from": "owner",
    "title": "Article graphics + 3D man"
@@ -2794,6 +2794,15 @@
    "update": "",
    "note": "Owner answer 2026-11-14 in chat.",
    "text": "Owner said 'use articles graphics and 3d man'. This overrides 'No web or headline graphics' for abyssal-01. Add one real article card per case (3D perspective, highlight wipe) and a 3D man figure for scale beats."
+  },
+  {
+   "id": "l-cd12da43",
+   "date": "2026-11-14",
+   "status": "rulebook",
+   "target": "",
+   "update": "",
+   "note": "Owner note 2026-11-14 in chat; applied to rule book b-8baaf468.",
+   "text": "Owner: article highlight and article animation must match the Abyssal refs. The floating 3D card (yellow multiply, page dimming) is replaced by a flat full-frame page with drift-up, push-in and an orange marker wipe."
   }
  ],
  "updates": [
