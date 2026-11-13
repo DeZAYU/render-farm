@@ -1,7 +1,7 @@
 {
  "version": 1,
- "rev": 41,
- "saved": "2026-11-14T04:15:27",
+ "rev": 42,
+ "saved": "2026-11-14T04:31:46",
  "categories": [
   {
    "id": "overall-aesthetic",
@@ -1367,7 +1367,7 @@
   },
   {
    "id": "b-8baaf468",
-   "text": "Owner 2026-11-14 (abyssal-01): use article graphics and a 3D man. Article pages must look like the ref ARTICLE clips (2TAT 13:07, 7UjU 3:22), owner 2026-11-14: one real report of the incident per case, flat page full frame (key text ~62% wide, optional 3 deg tilt), lands by hard cut with no sound, drifts up ~14% of frame height in 1.5 s and eases to a hold, slow push-in 1.00->1.06 on the key line; orange marker band (rounded ends, darker rim, thin dark underline) wipes LEFT TO RIGHT behind each line (~0.75 s per full line) from 1.6 s and stays; no dimming of the page; riser into the highlight, low boom on it. Out: 5-frame crossfade into the footage with a small ACTUAL FOOTAGE label. Blur every face on page photos. Small SOURCE credit top-left; English line as subtitle for foreign pages. No floating 3D card. 3D man: dark low-poly figures for count and height beats, slow eased camera turn, no gore.",
+   "text": "Owner 2026-11-14 (abyssal-01): use article graphics and a 3D man. Article pages must look like the ref ARTICLE clips (2TAT 13:07, 7UjU 3:22), owner 2026-11-14: one real report of the incident per case, flat page full frame (key text ~62% wide, optional 3 deg tilt), lands by hard cut with no sound, drifts up ~14% of frame height in 1.5 s and eases to a hold, slow push-in 1.00->1.06 on the key line; amber marker band like ref 2d2735 (flat band hugging the line, ~2 px corners, slightly rough ink top/bottom, black ink shadow offset down-right that is thick at the moving pen edge; never pill/rounded ends) wipes LEFT TO RIGHT as one smooth pen stroke (sine ease over all lines, ~0.75 s per full line) from 1.6 s and stays; highlight at most 2 key lines (no drop caps, no headline), never a whole paragraph; no dimming of the page; riser into the highlight, low boom on it. Out: 5-frame crossfade into the footage with a small ACTUAL FOOTAGE label. Blur every face on page photos. Small SOURCE credit top-left; English line as subtitle for foreign pages. No floating 3D card. 3D man: dark low-poly figures for count and height beats, slow eased camera turn, no gore.",
    "since": "2026-11-14",
    "from": "owner",
    "title": "Article graphics + 3D man"
@@ -2803,6 +2803,15 @@
    "update": "",
    "note": "Owner note 2026-11-14 in chat; applied to rule book b-8baaf468.",
    "text": "Owner: article highlight and article animation must match the Abyssal refs. The floating 3D card (yellow multiply, page dimming) is replaced by a flat full-frame page with drift-up, push-in and an orange marker wipe."
+  },
+  {
+   "id": "l-a4952b90",
+   "date": "2026-11-14",
+   "status": "rulebook",
+   "target": "b-8baaf468",
+   "update": "marker shape + 2-line cap",
+   "note": "Fix = build/look3d.py _band/_marker/_key_boxes/_hl_progress (abyssal-01).",
+   "text": "Owner 2026-11-14: yellow/amber colour is good, but round pill ends do not look smooth or Abyssal; highlights must be smooth and not cluttered. Ref marker: flat band, tiny corners, black ink shadow edge, one phrase."
   }
  ],
  "updates": [
