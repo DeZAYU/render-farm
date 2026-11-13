@@ -48,7 +48,7 @@ outside = sorted({p for s in seg.values() for p in s['reads'] + TR['boot']
 if outside: log('WARNING: inputs outside the video folder (not shipped):', *outside[:10])
 inseg = [p for s in seg.values() for p in s['reads'] if N(p).startswith(N(SEGD) + os.sep)]
 if inseg: log('WARNING: segments read other segment files:', *inseg[:5])
-code = glob.glob(os.path.join(BD, '*.py')) + glob.glob(os.path.join(BD, '*', '*.py'))   # + helper modules in subfolders (imports are not traced)
+code = sorted(set(glob.glob(os.path.join(BD, '*.py')) + glob.glob(os.path.join(BD, '*', '*.py')) + glob.glob(os.path.join(V, '*', '*.py'))))   # + helper modules in subfolders (imports are not traced)
 small = [p for s in seg.values() for p in s['reads'] if under(p) and os.path.isfile(p) and not N(p).startswith(N(SEGD) + os.sep)
          and os.path.getsize(p) < 2_000_000]                                 # the trace may credit a cached small file (json, font) to one segment only
 always = sorted({rel(p) for p in code + small + [x for x in TR['boot'] if under(x)]})
