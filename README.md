@@ -25,6 +25,15 @@ Any script:
 
 Results come back to `<folder>/farm_out/<run id>/`.
 
+## Load guards (so GitHub does not throttle or fail the run)
+
+- Inputs: one `fetch` machine downloads them once (~60 API calls). The other machines get them as one artifact, not from the API.
+- ffmpeg: downloaded once by `fetch`, shipped in that artifact (not 500 downloads from github.com).
+- Checkout: only `runner/` (sparse), not the big `mirror/`.
+- Each machine waits 0-30 s at random before its download, so 500 machines do not hit GitHub in the same second.
+- All downloads retry (API rate limits are waited out; pip and curl retry).
+- The laptop checks the run once per 30 s, and renders any part the cloud did not deliver (backup).
+
 ## Speed note
 
 Each machine needs about 2-3 min to start. A job with fewer items than 500 uses one machine per item.

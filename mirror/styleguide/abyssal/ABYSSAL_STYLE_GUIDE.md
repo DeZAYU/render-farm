@@ -1,7 +1,7 @@
 <!-- GENERATED from styleguide/abyssal/abyssal.json by styleguide/model.py. Do not edit by hand: edit at http://localhost:8769 -->
 # Abyssal Detective Style Guide
 
-Iceberg found-footage documentary style, learned from 14 Abyssal Detective videos (4 given, 5 latest, 5 most viewed). Rev 34, saved 2026-11-13T17:53:26.
+Iceberg found-footage documentary style, learned from 14 Abyssal Detective videos (4 given, 5 latest, 5 most viewed). Rev 36, saved 2026-11-13T20:56:21.
 Follow it top to bottom on every Abyssal edit. The rule book comes first and is never skipped. Study notes: productions/_abyssal-ref/ABYSSAL_STYLE_NOTES.md.
 
 Numbers come from ffmpeg on the 14 refs unless marked (est.), which means read from contact sheets or captions. No board clips (ref board is off).
@@ -111,6 +111,7 @@ Near-monochrome dark footage. Accents: cyan ice, red alerts, yellow highlight, o
 - **Yellow for the key line**: Use yellow highlighter on the key phrase in an article. Use yellow for the second speaker in captions.
 - **Orange or red name box**: Use an orange (or red) box with dark mono text for name tags in case videos.
 - **Bright grade, no grain**: Grade: do not darken clips. No 0.92 dim, light vignette only (about 15 %). NO grain or noise layer on clips or cards: a fixed grain over a moving/pushing picture reads as moving static lines. Keep the v6 colour balance (owner 2026-11-13: 'rest colorgrade was good'). *(set by you)*
+- **Body grade numbers**: Body grade: crushed blacks (p5 about 4), footage luma about 63, p95 about 190, saturation about 29%. Two thirds of footage is untinted; tints are red 15%, sepia 7%, teal 5%, B&W 5%. Red or sepia go mainly on photos.
 
 ## 4. Lighting
 
@@ -169,6 +170,8 @@ Hard cuts, about 6-7 per min in the body; the intro is much faster.
 - **Entry length**: Make each entry about 2 min: median 126 s (middle half 102-152 s, n=335), about 21 shots per entry. Deeper levels run longer: Level 1 ~109 s, Levels 6-7 ~135 s.
 - **Entry count**: Use 16-32 entries per video (median ~22; one 87-min ref has 50). Videos run 43-67 min with 374-693 shots.
 - **Glitch count**: Use glitch cuts often but short: 3-89 per video (median ~42), each 0.2-0.3 s, about 0.7% of screen time.
+- **Case body pace**: Case body pace: refs cut about every 3 s (median per-ref ASL 3.6 s, pooled 2.6 s). Owner rule wins: every clip at least 3 s, so aim for 3-4 s clips with 6-7 s holds only on slow reveals.
+- **Case body mix**: Case body mix: about 73% footage, 11% designed graphics, 7% photos, the rest host. About 4 graphic events per minute (normal range 2-10). The last shot of a case is footage (11 of 14).
 
 ## 9. Transitions
 
@@ -182,6 +185,7 @@ Hard cuts by default. Black dips at seams. Glitch bursts for shocks.
 - **Soft dissolve rarely**: Between calm stills or state/place cards use a dip to black, never a dissolve. (owner 2026-11-12, v4)
 - **No posterise flash**: Shock moments use a dip, a red circle or a short dark glitch cut, never a posterised/inverted flash. No inverted, mirrored or posterised colour looks on clips at all, intro included; clips keep only the normal Abyssal grade. (owner 2026-11-12, storyboard v6)
 - **Only two wipes**: Use no spins or light leaks. Allowed exceptions: the 3-frame zoom-through from the Level card into the first ice title, and the raven/silhouette wipe onto the Patreon card.
+- **Body transition mix**: Case body transitions in the refs: dissolve about 50%, glitch tear about 25%, hard cut about 20%, dips almost never. With the owner rules: 0.5 s (15 f) dissolves are the main soft join, glitch tears 2-3 f, hard cuts on raws and reveals.
 
 ## 10. Typography
 
@@ -199,6 +203,7 @@ Tiny monospace typewriter type everywhere; big white slab for 'Level N'; glowing
 - **Typing speed**: Type dates, credits and quotes at 1-1.5 characters per frame at 10 fps. Swap caption lines hard, about 1.8 s each.
 - **Iceberg: no highlight, CRT**: Iceberg (case list) card: no highlight on any case name (all the same white). Static CRT look on it: fixed scanlines, soft glow, small red/blue edge, curved screen with dark rounded corners. No noise, rolling bar or flicker. Slow eased zoom, no shake. *(set by you)*
 - **Iceberg: CRT plus vignette**: The iceberg card gets a strong smooth vignette on top of the CRT look. The centre stays clean. The edges go about 55 % darker. *(set by you)*
+- **Font matches**: Fonts (best installed match, by eye): date card Consolas Bold +5% tracking white with 1-2 px dark edge; name tag Lucida Console caps +8% tracking; case title Bahnschrift SemiBold caps +15-35% tracking with a 6-10 px cyan glow #4FD8EE; captions Courier New Bold white with 1-2 px black edge. A pixel face (VT323) is the closer match for dates and the warning but is not installed.
 
 ## 11. Music and sound
 
@@ -213,6 +218,8 @@ Quiet master, low drone bed, raw clip audio on key moments, true silence at seam
 - **Sound on events**: Put a high-band static tick (+24 to +35 dB above the bed, measured) on every glitch cut. Put a low boom (+17 to +24 dB) on full date cards, red numbers and the Patreon wipe. Put a high riser (+17 to +30 dB) into highlight wipes, arrows and spotlights. Leave captions, credits, safety notes, circles, splits and black boxes silent. — examples: [GLITCH · 2TAT 0:10 (2.5 s)](media/5a7c5491a2a0481a.mp4), [GLITCH · 7UjU 0:22 (2.5 s)](media/24fe06eaece64a84.mp4)
 - **Low LRA**: Keep the loudness range moderate (refs 3.5-9.3 LU). No loud jump scares.
 - **Narration on top**: Keep the narrator clear and steady above the bed at all times.
+- **Body drone level**: Case body bed: a tonal low drone about 14 dB under the voice (range 12-19 dB; -37 to -45 dBFS), heard mainly in the pauses. Never in the intro (owner v13).
+- **Card hits and raws**: Hits: the case title card and the date card each get one short low boom about 10-13 dB over the voice level. Raw clip sound 1-2 times per case, about 3-10 dB over the voice, entered and left by a dissolve or glitch.
 
 ## 12. Storytelling
 
@@ -231,6 +238,7 @@ Fixed iceberg script: hook, 7 levels, calm date-first case stories, Patreon leve
 - **Or stop cold**: For dark mystery topics you may stop on the last unresolved fact with no recap (3 of 14 refs).
 - **Entry opener**: Open each entry on its ice title card (210 of 335 entries). Otherwise open on stock, archive footage or a photo, with the title said in voice-over.
 - **Shot mix**: Fill screen time mostly with real footage: archive/documentary ~29%, stock ~18%, photos ~10%, host ~7% (0-14%; 5 of 14 refs have no host), CCTV ~5%, dashcam ~4%, phone ~3%. Cards and titles are under 5% in total.
+- **Case opening order**: Case opening order: title card about 3 s, the date types on 3-5 s after the title starts, then footage; the name tag sits on the first photo or interview shot of the person, 0.2-1.5 s in, held 2-3 s.
 
 ## Motion graphics (which one, when)
 
@@ -342,3 +350,7 @@ Find what the narration is doing. Pick the first graphic that fits. "no" = does 
 - 2026-11-12: Refs show the 'N cases, 7 levels' line over a static iceberg-list still: cut in on the number word (+0.1 s), 4.5 s hold, zero motion, hard cut out. Owner wants a headline montage instead: keep the cut-in on the number, add 1-1.5 s headlines with 3-5% linear push-ins and 12-15 f crossfades.
 - 2026-11-12: First case card in refs: black dip 1.1-2.2 s, fade-in 0.5-1.0 s (linear, soft ease-out landing), hold 0.5-1.0 s, ease-out zoom-through 0.6-0.7 s to a title held ~3 s, then footage on the first spoken place (+-0.1 s). Q393 types 'Chapter 1: <name>' on ONE card (3.6 s) = model for 'CASE 01 + name'. B_hr types the date ON the footage. Card text appears <=0.3 s before it is spoken.
 - 2026-11-12: Picture follows narration in refs: every concrete noun (place, person, object, date, document line) gets its own shot or label, cut within -0.4..+0.5 s of the word (median 0.0, worst +2 s). Names = tag on photo, places = tag on location shot, documents = article crop with the spoken line highlighted, dates typed in sync with the words.
+- 2026-11-13: Owner 2026-11-13 (v13 intro): NO stock footage (Pexels or any free stock). Use only real event / place footage from the case sources.
+- 2026-11-13: Owner 2026-11-13 (v13 intro): this video (theme park disasters) is NOT an iceberg video. Do not use iceberg pictures or an iceberg list here.
+- 2026-11-13: Owner 2026-11-13 (v13 intro): no raw footage sound in the intro, and no background music or drone bed under it. Narration plus one SFX per cut only.
+- 2026-11-13: Gap-fill study (case body, audio, grade, fonts) measured on all 14 refs. Where refs and owner notes clash (clips under 3 s, bed in the intro, stock footage, iceberg devices), the owner notes win.

@@ -1,7 +1,7 @@
 {
  "version": 1,
- "rev": 35,
- "saved": "2026-11-13T17:53:26",
+ "rev": 36,
+ "saved": "2026-11-13T20:56:21",
  "categories": [
   {
    "id": "overall-aesthetic",
@@ -189,6 +189,13 @@
      "source": "user",
      "evidence": [],
      "title": "Bright grade, no grain"
+    },
+    {
+     "id": "r-a1c28ded",
+     "text": "Body grade: crushed blacks (p5 about 4), footage luma about 63, p95 about 190, saturation about 29%. Two thirds of footage is untinted; tints are red 15%, sepia 7%, teal 5%, B&W 5%. Red or sepia go mainly on photos.",
+     "source": "refs",
+     "evidence": [],
+     "title": "Body grade numbers"
     }
    ]
   },
@@ -479,6 +486,20 @@
      "source": "refs",
      "evidence": [],
      "title": "Glitch count"
+    },
+    {
+     "id": "r-3aca49b8",
+     "text": "Case body pace: refs cut about every 3 s (median per-ref ASL 3.6 s, pooled 2.6 s). Owner rule wins: every clip at least 3 s, so aim for 3-4 s clips with 6-7 s holds only on slow reveals.",
+     "source": "refs",
+     "evidence": [],
+     "title": "Case body pace"
+    },
+    {
+     "id": "r-4a5075e3",
+     "text": "Case body mix: about 73% footage, 11% designed graphics, 7% photos, the rest host. About 4 graphic events per minute (normal range 2-10). The last shot of a case is footage (11 of 14).",
+     "source": "refs",
+     "evidence": [],
+     "title": "Case body mix"
     }
    ]
   },
@@ -566,6 +587,13 @@
      "source": "refs",
      "evidence": [],
      "title": "Only two wipes"
+    },
+    {
+     "id": "r-d07802c7",
+     "text": "Case body transitions in the refs: dissolve about 50%, glitch tear about 25%, hard cut about 20%, dips almost never. With the owner rules: 0.5 s (15 f) dissolves are the main soft join, glitch tears 2-3 f, hard cuts on raws and reveals.",
+     "source": "refs",
+     "evidence": [],
+     "title": "Body transition mix"
     }
    ]
   },
@@ -669,6 +697,13 @@
      "source": "user",
      "evidence": [],
      "title": "Iceberg: CRT plus vignette"
+    },
+    {
+     "id": "r-43376781",
+     "text": "Fonts (best installed match, by eye): date card Consolas Bold +5% tracking white with 1-2 px dark edge; name tag Lucida Console caps +8% tracking; case title Bahnschrift SemiBold caps +15-35% tracking with a 6-10 px cyan glow #4FD8EE; captions Courier New Bold white with 1-2 px black edge. A pixel face (VT323) is the closer match for dates and the warning but is not installed.",
+     "source": "refs",
+     "evidence": [],
+     "title": "Font matches"
     }
    ]
   },
@@ -751,6 +786,20 @@
      "source": "refs",
      "evidence": [],
      "title": "Narration on top"
+    },
+    {
+     "id": "r-f22d87d3",
+     "text": "Case body bed: a tonal low drone about 14 dB under the voice (range 12-19 dB; -37 to -45 dBFS), heard mainly in the pauses. Never in the intro (owner v13).",
+     "source": "refs",
+     "evidence": [],
+     "title": "Body drone level"
+    },
+    {
+     "id": "r-e5e02ce3",
+     "text": "Hits: the case title card and the date card each get one short low boom about 10-13 dB over the voice level. Raw clip sound 1-2 times per case, about 3-10 dB over the voice, entered and left by a dissolve or glitch.",
+     "source": "refs",
+     "evidence": [],
+     "title": "Card hits and raws"
     }
    ]
   },
@@ -849,6 +898,13 @@
      "source": "refs",
      "evidence": [],
      "title": "Shot mix"
+    },
+    {
+     "id": "r-b188b872",
+     "text": "Case opening order: title card about 3 s, the date types on 3-5 s after the title starts, then footage; the name tag sits on the first photo or interview shot of the person, 0.2-1.5 s in, held 2-3 s.",
+     "source": "refs",
+     "evidence": [],
+     "title": "Case opening order"
     }
    ]
   }
@@ -2651,6 +2707,15 @@
    "target": "",
    "note": "owner chat 2026-11-13",
    "update": ""
+  },
+  {
+   "id": "l-d1c8fbe3",
+   "date": "2026-11-13",
+   "status": "open",
+   "target": "",
+   "update": "",
+   "note": "productions/_abyssal-ref/gapfill/GAPFILL.md (14 refs, 441 body shots, 2026-11-13)",
+   "text": "Gap-fill study (case body, audio, grade, fonts) measured on all 14 refs. Where refs and owner notes clash (clips under 3 s, bed in the intro, stock footage, iceberg devices), the owner notes win."
   }
  ],
  "updates": [
