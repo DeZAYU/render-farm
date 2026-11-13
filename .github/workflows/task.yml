@@ -5,6 +5,7 @@ on:
   workflow_dispatch:
     inputs:
       run_id: {description: 'run id (manifest asset run-<id>.json in release "store")', required: true}
+      ffmpeg: {description: 'machines need ffmpeg', required: false, default: false, type: boolean}
       os: {description: 'machine type', required: false, default: 'ubuntu-latest', type: choice, options: [ubuntu-latest, windows-latest]}
 permissions:
   contents: read
@@ -16,8 +17,14 @@ jobs:
     env: {GH_TOKEN: '${{ github.token }}'}
     steps:
       - uses: actions/checkout@v4
+        with: {sparse-checkout: runner, sparse-checkout-cone-mode: true}   # only the runner, not mirror/
       - id: m
         run: python3 -I -X utf8 runner/fetch.py "${{ inputs.run_id }}" >> "$GITHUB_OUTPUT"
+      - name: ffmpeg once (only if asked)
+        if: inputs.ffmpeg
+        run: |
+          if [ '${{ inputs.os }}' = windows-latest ]; then curl -fsSL --retry 6 --retry-delay 10 -o dl/_ffmpeg.zip https://github.com/BtbN/FFmpeg-Builds/releases/download/latest/ffmpeg-master-latest-win64-gpl.zip
+          else curl -fsSL --retry 6 --retry-delay 10 -o dl/_ffmpeg.tar.xz https://github.com/BtbN/FFmpeg-Builds/releases/download/latest/ffmpeg-master-latest-linux64-gpl.tar.xz; fi
       - uses: actions/upload-artifact@v4
         with: {name: inputs, path: 'dl/', retention-days: 1, compression-level: 0}
   task_a:
@@ -31,17 +38,22 @@ jobs:
     env: {GH_TOKEN: '${{ github.token }}', PYTHONUTF8: '1'}
     steps:
       - uses: actions/checkout@v4
+        with: {sparse-checkout: runner, sparse-checkout-cone-mode: true}   # only the runner, not mirror/
       - uses: actions/setup-python@v5
         with: {python-version: '3.12'}
-      - uses: FedericoCarboni/setup-ffmpeg@v3
-        continue-on-error: true
+      - name: spread the start (0-30 s) so 500 machines do not hit GitHub at the same second
+        shell: bash
+        run: sleep $((RANDOM % 30))
       - uses: actions/download-artifact@v4
         with: {name: inputs, path: dl}
       - name: run tasks
         shell: bash
         run: |
+          if [ -f dl/_ffmpeg.zip ]; then unzip -q dl/_ffmpeg.zip -d ff; fi
+          if [ -f dl/_ffmpeg.tar.xz ]; then mkdir ff && tar -xf dl/_ffmpeg.tar.xz -C ff; fi
+          if [ -d ff ]; then export PATH="$(dirname "$(find "$PWD/ff" -path '*/bin/ffmpeg*' -type f | head -1)"):$PATH"; fi
           python -I -X utf8 runner/task_shard.py "${{ inputs.run_id }}" ${{ matrix.i }} --place-only || true
-          if [ -f work/requirements.txt ]; then pip install -q -r work/requirements.txt; fi
+          if [ -f work/requirements.txt ]; then pip install -q --retries 10 --timeout 60 -r work/requirements.txt; fi
           python -I -X utf8 runner/task_shard.py "${{ inputs.run_id }}" ${{ matrix.i }}
       - uses: actions/upload-artifact@v4
         with: {name: 'out-${{ matrix.i }}', path: 'out/', if-no-files-found: ignore, retention-days: 3, compression-level: 0}
@@ -57,17 +69,22 @@ jobs:
     env: {GH_TOKEN: '${{ github.token }}', PYTHONUTF8: '1'}
     steps:
       - uses: actions/checkout@v4
+        with: {sparse-checkout: runner, sparse-checkout-cone-mode: true}   # only the runner, not mirror/
       - uses: actions/setup-python@v5
         with: {python-version: '3.12'}
-      - uses: FedericoCarboni/setup-ffmpeg@v3
-        continue-on-error: true
+      - name: spread the start (0-30 s) so 500 machines do not hit GitHub at the same second
+        shell: bash
+        run: sleep $((RANDOM % 30))
       - uses: actions/download-artifact@v4
         with: {name: inputs, path: dl}
       - name: run tasks
         shell: bash
         run: |
+          if [ -f dl/_ffmpeg.zip ]; then unzip -q dl/_ffmpeg.zip -d ff; fi
+          if [ -f dl/_ffmpeg.tar.xz ]; then mkdir ff && tar -xf dl/_ffmpeg.tar.xz -C ff; fi
+          if [ -d ff ]; then export PATH="$(dirname "$(find "$PWD/ff" -path '*/bin/ffmpeg*' -type f | head -1)"):$PATH"; fi
           python -I -X utf8 runner/task_shard.py "${{ inputs.run_id }}" ${{ matrix.i }} --place-only || true
-          if [ -f work/requirements.txt ]; then pip install -q -r work/requirements.txt; fi
+          if [ -f work/requirements.txt ]; then pip install -q --retries 10 --timeout 60 -r work/requirements.txt; fi
           python -I -X utf8 runner/task_shard.py "${{ inputs.run_id }}" ${{ matrix.i }}
       - uses: actions/upload-artifact@v4
         with: {name: 'out-${{ matrix.i }}', path: 'out/', if-no-files-found: ignore, retention-days: 3, compression-level: 0}
