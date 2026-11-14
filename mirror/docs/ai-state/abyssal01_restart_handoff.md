@@ -4,8 +4,10 @@ Date: 2026-11-14. Production V = `productions/abyssal-01-theme-park-disasters/`.
 
 ## Status
 - Phase 2 DONE: `productions/_abyssal-ref/REF_BIBLE.md` (bible, rule table, device library D1-D22). Owner approved ("Yes, go on").
-- Phase 3 IN PROGRESS: `V/work/vo/full.json` (every word timed) + `V/work/cases.json` (case VO ranges, raw slots). Script: `V/work/build_vo_map.py`.
-- Phases 4-6 next: per case `research/cNN_SOURCES.md`, licence scan, `footage/cNN/CLIPS.md`; paper storyboard; build INTRO + CASE 1 only, Section 14 gate, Section 15 report, wait.
+- Phase 3 DONE: `V/work/vo/full.json` (86 lines, 7,434 words, all timed; small.en, 5 lines re-timed with large-v3 via `--redo`) + `V/work/cases.json` (intro + 21 cases, VO s, raw slots). Script: `V/work/build_vo_map.py`. VO total 2,486.8 s. No voice words are lost.
+- Phase 4 STARTED: `V/work/LICENCE_SCAN.md` (`work/licence_scan.py`). 136 clips: 1 Storyful hit (EUR_news/nssF43DbBfc, moved to `sources/_AVOID_licensed/EUR_news/`, never used before). 3 Korean news clips have licence wording (SBS, KBS: check). 23 files have no metadata (12 Pexels = stock: do not use; 3 article pages; ICEBERG = banned look).
+- Phase 4 DONE (except scene-cut lines): `research/cNN_SOURCES.md` + `footage/cNN/CLIPS.md` for all 21 cases (`work/phase4.py`, coords in `research/_geo.json`; C18 coords TO FIND). `STATUS.md` = gaps per case (15 fully covered, 6 need designed beats). Every case has >= 2 legal clips. Scene-cut scan `work/scan_cuts.py` -> `footage/_cuts/` runs in background (log `footage/scan_cuts.log`); when done, rerun `python -I -X utf8 work/phase4.py` to put the cuts into CLIPS.md. Eye checks (text, children, swearing, logos) happen at Section 9 Step 1 of each case.
+- Phases 5-6 next: per case `research/cNN_SOURCES.md`, licence scan, `footage/cNN/CLIPS.md`; paper storyboard; build INTRO + CASE 1 only, Section 14 gate, Section 15 report, wait.
 
 ## Decisions (owner approved)
 - Reuse VO, cut sheet, sources, ref measurements. Footage/designed 45/55. Case median shot 4-5 s, intro faster.
