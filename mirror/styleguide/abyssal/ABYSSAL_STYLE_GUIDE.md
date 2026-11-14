@@ -223,7 +223,7 @@ Quiet master, low drone bed, raw clip audio on key moments, true silence at seam
 - **Sound on events**: Put a high-band static tick (+24 to +35 dB above the bed, measured) on every glitch cut. Put a low boom (+17 to +24 dB) on full date cards, red numbers and the Patreon wipe. Put a high riser (+17 to +30 dB) into highlight wipes, arrows and spotlights. Leave captions, credits, safety notes, circles, splits and black boxes silent. — examples: [GLITCH · 2TAT 0:10 (2.5 s)](media/5a7c5491a2a0481a.mp4), [GLITCH · 7UjU 0:22 (2.5 s)](media/24fe06eaece64a84.mp4)
 - **Low LRA**: Keep the loudness range moderate (refs 3.5-9.3 LU). No loud jump scares.
 - **Narration on top**: Keep the narrator clear and steady above the bed at all times.
-- **Body drone level**: Case body bed: a tonal low drone about 14 dB under the voice (range 12-19 dB; -37 to -45 dBFS), heard mainly in the pauses. Never in the intro (owner v13).
+- **Body drone level**: Bed: a dark horror ambient music bed (K Background Music 8/9/10, one track per case, rotating, 0.8 s crossfade at case turns) about 11 LU under the voice, heard mainly in the pauses. It runs under the intro too (owner 2026-11-14, replaces 'never in the intro' from v13). Out under the title music; -6 dB under raw clip sound.
 - **Card hits and raws**: Hits: the case title card and the date card each get one short low boom about 10-13 dB over the voice level. Raw clip sound 1-2 times per case, about 3-10 dB over the voice, entered and left by a dissolve or glitch.
 - **Owner mix levels**: Owner mix 2026-11-13: narration 100%, music 80%, SFX 60%. SFX low but audible. Narration always on top. *(set by you)*
 

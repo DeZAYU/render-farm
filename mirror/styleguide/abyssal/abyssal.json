@@ -1,7 +1,7 @@
 {
  "version": 1,
- "rev": 43,
- "saved": "2026-11-14T04:31:46",
+ "rev": 44,
+ "saved": "2026-11-14",
  "categories": [
   {
    "id": "overall-aesthetic",
@@ -817,7 +817,7 @@
     },
     {
      "id": "r-f22d87d3",
-     "text": "Case body bed: a tonal low drone about 14 dB under the voice (range 12-19 dB; -37 to -45 dBFS), heard mainly in the pauses. Never in the intro (owner v13).",
+     "text": "Bed: a dark horror ambient music bed (K Background Music 8/9/10, one track per case, rotating, 0.8 s crossfade at case turns) about 11 LU under the voice, heard mainly in the pauses. It runs under the intro too (owner 2026-11-14, replaces 'never in the intro' from v13). Out under the title music; -6 dB under raw clip sound.",
      "source": "refs",
      "evidence": [],
      "title": "Body drone level"
@@ -2857,6 +2857,33 @@
    "update": "ring",
    "note": "abyssal-01 v16 fixes (build_v16.py).",
    "text": "Owner 2026-11-14: use a red ring only where it is needed; not on every shot."
+  },
+  {
+   "id": "l-66df188f",
+   "date": "2026-11-14",
+   "status": "learning",
+   "target": "",
+   "update": "sound",
+   "note": "abyssal-01 full video.",
+   "text": "Owner 2026-11-14: horror ambient music bed under the whole video, the intro too (K Music 8/9/10, never the same part twice; outro ends on Music 10's own ending)."
+  },
+  {
+   "id": "l-3a653a5c",
+   "date": "2026-11-14",
+   "status": "learning",
+   "target": "",
+   "update": "sound",
+   "note": "abyssal-01 full video.",
+   "text": "TTS leak fix (vo_deleak.py): run it on the GPU (VO_DEVICE=cuda, ~30 s per take). Later fix rounds can re-cut at the join and leave a fake 'The': if so, make one wider cut to the next quiet dip, then check the cut words against the script text."
+  },
+  {
+   "id": "l-b5e8465f",
+   "date": "2026-11-14",
+   "status": "learning",
+   "target": "",
+   "update": "workflow",
+   "note": "abyssal-01 full video.",
+   "text": "Full renders: owner picks the fast split (default 500-machine split, ~1 h) over one case per machine."
   }
  ],
  "updates": [
