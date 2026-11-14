@@ -1,0 +1,19 @@
+# DEVICE_BANK_part: ad_cctv_iceberg (style only; rebuild in a NEW look, never copy footage)
+
+Gate stills are in `gate/`. Numbers are in STYLE.md.
+
+1. **Black feathered-ellipse censor** - 0:12, 2:36-2:43 (t0239/t0240, t0256 sheet), 7:40, 20:40, 27:40. Soft black ellipse (edge feather ~20% of its width) follows the person/face/gore; a dot of light moves inside. Story: hides the victim, keeps tension, viewer guesses. Twist: replace black with a film-burn / ink-bleed or heat-haze blob in our palette, or a rectangle of corrupted-data tiles that tracks.
+2. **Orange-marker page highlight** - 2:40, 8:36-8:47 (t0836 sheet), 12:20, 14:40, 16:20, 17:40, 22:40, 33:20, 38:40, 41:20, 43:00. News page with all surrounding text blurred, key lines drawn over by an animated marker (#F25705 box, rounded, 0.9 s/line wipe left-to-right), slow push 1.0 -> 1.1x, 6-8 s hold, then dissolves to the footage with a 20% ghost of the page. Story: the proof that the footage is real. Twist: highlight as a torn-tape strip or a red "evidence thread" stroke; page set on a paper texture with only the key sentence unblurred.
+3. **Static/glitch burst entry** - 0:42, 8:36.4 (12 frames). RGB-split noise sheet between host and page/footage; the next layer is faintly visible. Story: signals "tape cut". Twist: bad-signal scanline wipe in our colours, or a quick datamosh only on one frame block.
+4. **Datamosh/bit-smear transition** - 18:20, 24:40 (t1820). Blocky horizontal data tearing, blue/white, 0.4-1 s. Twist: smear along our own accent colour, with a 1-frame black.
+5. **Iceberg level card + push-through** - 0:31-0:34, 4:55, 10:08, 16:46, 26:39, 31:13, 34:53. Black 1.0 s -> "Level N" typewriter slab text on skull berg -> 0.9 s push into the berg with motion-blur slide -> case title builds from cyan particle shards in 8 frames. (iceberg-only; one line.) Twist: our own depth gauge for the case number.
+6. **Cold open "abused footage" (3 enhance looks)** - 11-27 s (t0012, t0017, t0024). Blue solarise + black blob; threshold blow-out; false-colour posterise, 3.5/2.2/6.3/3.8 s, each hard cut, strong chroma noise. Story: teases the worst clips as distorted flashes (warning card says flash image shown). Twist: use 3 distinct look-presets (thermal, night-vision green, inverted) rather than random noise.
+7. **"WARNING: FLASH IMAGE SHOWN" card** - 0:00-0:07 (t0001). Pixel caps, grey 55% opacity, VHS tracking lines at lower edge, 6.9 s. Twist: our own warning type with a REC dot.
+8. **Menu strip recap** - 0:07-0:11 (t0008). The 16 titles in 7 ruled rows, tiny type, over berg photo. Story: promises content list. Twist: evidence-board index or tape labels.
+9. **Red circle look-here** - 6:20, 7:40 (t0620, t0740). Static ring ~14% frame height, 3 px red stroke #C83030-#A83839, no animation, no darken. Twist: hand-drawn wobble ring that draws on in 6 frames, with a short pen sound.
+10. **Black beat between entries** - 32x, 1.0 s, bed-only audio ~(-33 LUFS). Story: breath/reset before level card. Twist: hold on last frame with a single room-tone swell.
+11. **Date stamp on footage** - 15:40 (t1540). Pixel/mono caps, white, ~7% height, centred, ~3 s. Twist: camera-OSD style date plus a timecode that runs.
+12. **Host in dark study** - hard cut in/out; medium shot, lamp upper-right; 25 of 138 samples. Story: human guide between disturbing clips. Twist: different room, same lamp-in-frame logic and cut rhythm (host 3-10 s per beat).
+13. **Page-to-footage ghost dissolve** - 8:44. 0.4 s cross-dissolve where the page text stays at ~20% over footage. Twist: page text burns away with a pixel-dissolve.
+14. **Bookend flash** - 43:40 repeats the cold-open false-colour crowd. Story: callback before outro. Twist: re-use our own cold-open flash.
+15. **Pillarboxed vertical/4:3 clips** - 42:20 (black bars, no blur fill). Twist: use a dim blurred copy only if our SOP allows.

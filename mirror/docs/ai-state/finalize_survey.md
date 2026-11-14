@@ -35,3 +35,9 @@ van 05_render 18.2 | winter 05_render 13.4 | Iceberg 6.4 (5.1 venv) | winter sou
 
 ## Totals
 Definite JUNK after finals: van 9.4 + winter 6.5 + renders 2.2 = ~18.1 GiB (+1.0 case1_n3 conditional). Regenerable: Iceberg venv+node_modules ~5.8. Optional re-downloadable refs ~4.9 (+0.37 farrell-01 audio).
+
+## Text deliverables (2026-11-14, 06_deliver/)
+- Written for both videos: <NAME>.srt (van 1088 cues, winter 807), chapters.txt (van 13 lines, winter 8), credits.txt (van 12 sources, winter 7, no agency found; Owen's 2 winter sources are CC-BY).
+- SRT method: Whisper small.en (openai-whisper, GPU) on the final mp4 audio, segment timestamps (no word-level; machine was CPU-contended, word-level was ~2x realtime), text split into <=2x42-char cues by char-proportional timing, starts snapped forward to voice energy onset. Sync vs word-level whisper at 5 spots: winter +0.02/-0.18/-0.20/-0.80/-2.3 s (srt minus word onset; first/last = tiny cues, suspect match), van -0.18/+0.06/-5.1(match error?)/n/a/n/a. Expect captions ~0.2 s early typically, up to ~0.8 s. No burned-in text removed; SRT duplicates burned captions on raw clips, so upload as optional CC track.
+- Chapters: time = first narration line of each case minus ~3.3 s (card); cues.md section offsets are stale for van case 5/10/11. Van case 5 uses raw-teaser-first start per speech.
+- Winter EXPLORINGW (Exploring with Bear, PSVSIETMyAI) has no info.json: title/channel URL from cut sheet only. Music artists not recorded anywhere (titles only).
