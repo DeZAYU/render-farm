@@ -2820,7 +2820,7 @@
    "target": "",
    "update": "audio leaks",
    "note": "abyssal-01 v16 fixes (build_v16.py).",
-   "text": "Owner 2026-11-14: no audio leaks ever. TTS adds filler bits ('Yeah', 'EO') at phrase starts and raw TV clips cut mid-word. Fix: run build/vo_deleak.py on every TTS take (mutes fillers, keeps length; still_extra must be empty) and snap raw-clip sound edges to quiet gaps with build/raw_edges.py (sound level, not Whisper)."
+   "text": "Owner 2026-11-14: no audio leaks ever. TTS adds filler bits ('Yeah', 'EO') at phrase starts and raw TV clips cut mid-word. Fix: run build/vo_deleak.py on every TTS take (CUTS fillers out, never mutes them into a silent hole -- see the 2026-11-13 narration rule; the lost time is added to the next natural pause so the take keeps its length; still_extra must be empty) and snap raw-clip sound edges to quiet gaps with build/raw_edges.py (sound level, not Whisper)."
   },
   {
    "id": "l-6d1a4645",
