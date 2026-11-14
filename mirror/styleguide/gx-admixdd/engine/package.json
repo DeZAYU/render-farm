@@ -1,0 +1,17 @@
+{
+  "name": "gx-admixdd-engine",
+  "version": "1.0.0",
+  "private": true,
+  "license": "UNLICENSED",
+  "description": "GX-ADmixDD channel-owned Remotion engine (own devices only; no imports from other channels' kits)",
+  "dependencies": {
+    "@remotion/cli": "4.0.532",
+    "@remotion/motion-blur": "4.0.532",
+    "@remotion/google-fonts": "4.0.532",
+    "remotion": "4.0.532",
+    "react": "19.2.3",
+    "react-dom": "19.2.3"
+  },
+  "devDependencies": { "@types/react": "19.2.7", "typescript": "5.9.3" },
+  "scripts": { "studio": "remotion studio", "render": "remotion render" }
+}
