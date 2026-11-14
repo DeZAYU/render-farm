@@ -21,6 +21,10 @@ ap.add_argument('--local-jobs', type=int, default=4); ap.add_argument('--only', 
 A = ap.parse_args()
 BD = os.path.abspath(A.build); TR = json.load(open(A.trace, encoding='utf-8'))
 V = os.path.abspath(TR['V']); SEGD = os.path.abspath(TR['seg_dir'])
+if not os.path.isfile(os.path.join(BD, A.builder + '.py')):          # 2026-11-14 guard: a relative 'build' from the wrong cwd sent a bad path to 46 machines
+    alt = os.path.abspath(os.path.join(V, A.build))
+    if os.path.isfile(os.path.join(alt, A.builder + '.py')): print('build dir fixed to', alt); BD = alt
+    else: sys.exit(f'STOP: {A.builder}.py not found in {BD} or {alt}; nothing was uploaded')
 N = lambda p: os.path.normcase(os.path.abspath(p))
 under = lambda p: N(p).startswith(N(V) + os.sep)
 rel = lambda p: os.path.relpath(p, V).replace('\\', '/')
