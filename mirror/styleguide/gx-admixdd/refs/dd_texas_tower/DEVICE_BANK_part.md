@@ -99,3 +99,26 @@ Each entry: name, timecodes, measured numbers, story job, twist (rebuild in a NE
 - Numbers: tower photo cross-dissolved at about 50% over a talking-head interview, about 1.0 s hold in overlap.
 - Job: links the speaker and the place in one frame.
 - Twist: ghost the next chapter's key image in the overlap.
+
+## Gap fill 2026-11-14 (owner scope: maps, motion graphics, page highlights)
+
+## 20. Vector map dive + callout cascade (Map B, 12:50.87-13:10.43)
+- Numbers: hard cut in with dots/labels already on the map (nothing draws on); camera 2.8 s PULL-OUT scale 1.0 to 0.70, ease-out (-29%/s to 0), 2.4 s breath back to 0.81 (+9%/s peak), then 13 s push +3.1 to +0.7%/s; leader 4 f, label wipe 5 f, portrait wipe 4-5 f (0.2 s after label), map blur+dim 1.6 s, name small caps 0.5 s later than VO name; hold 14 s; hard cut out. Red #bb0b0c, outline 0.65% H, leader 0.3% H, label cap 5.5% H. Sub thud +23 dB on the label wipe.
+- Job: the one geography proof ("where on campus"), turns a name into a place in 20 s.
+- Twist: ours in a different map look (dark charcoal vector map, amber or acid-green accent, dots that DO pulse in place), pull-out then push; label as a typed tag with a clipped corner; portrait box wipes top-down; keep the blur+dim of the map under the portrait and the sub thud.
+## 21. Annotated aerial with stakes caption (Map A, 11:31.9-11:40.4)
+- Numbers: hard cut in (sub +19, tick +21), linear pull-out 1%/s (1.0 to 0.94 over 8.4 s), no draw-on, caption "First 20 Minutes" cap 8.5% H wipes L to R 0.5 s at 3.2 s in, holds 1.1 s, fades 0.7 s.
+- Job: a time-bound claim over a busy aerial; the caption does the counting.
+- Twist: threshold the aerial ourselves into a hard black/white print, drop numbered circles that stamp in with a 2-frame scale-down (1.15 to 1.0) and a tick, caption in our own face and colour.
+## 22. Page highlight sweep (4 pages: 4:31, 6:42, 12:34, 19:33)
+- Numbers: flat full-frame page, multiply red bar one line high (about 4% H), starts at the left of the phrase, sweeps 130-175 px per s at 960 w (0.14-0.19 W/s, about 3 words/s), linear then decelerating over the last 0.7 s; start within -1.4/+0.7 s of the first spoken word; page pushes +1.3-2.5%/s or scrolls 3%H/s; hold 6-20 s; enters by fade 0.4-0.9 s or hard cut; exit fade 0.8-3 s or hard cut. Bars ladder (2 to 5) down one page. Silent (no SFX) except the police report (sub +16).
+- Job: makes the reader read the one damning phrase while the VO paraphrases it.
+- Twist: highlight as an amber or acid-green marker with a slight 1.5 deg wobble and a thin dark underline drawn after the sweep, bar speed locked to faster-whisper word times (start 0.2 s before the first word, end on the last word), page pushed with a gentle rack-focus on the line.
+## 23. TUMOR-style callout on an archive photo (18:00-18:05)
+- Numbers: target dot 1% H (#bb0b0c), leader line 3 px draws dot to label 16 f ease-in-out, red box 15% W x 3.9% H wipes L to R 10 f, white caps 2.9% H; the group rides the photo drift; total 0.9 s from leader start to label done.
+- Job: points at the single thing on a photo/scan.
+- Twist: ring (circle draws 12 f) plus leader, label as a paper tag; sound = tick on the label wipe.
+## 24. Name card on cork-grey (11:52-12:00; repeats 11+)
+- Numbers: card fades from black 0.4 s, portrait in a rounded card, name small caps initial cap 3.6% H / sc 1.9% H, role line 2.3% H, push, hold 5.5 s, fade to black 1.5 s.
+- Job: introduces a victim as a person before the next beat; the repeat builds a memorial rhythm.
+- Twist: card as an index card or evidence tag on our own dark texture, name types on at 30 cps, same hold lengths.

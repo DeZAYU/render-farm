@@ -7,3 +7,5 @@ Still open (do in fresh agent):
 3. 30 fps easing: level-card slide (32.2-33.3), title shard assemble (33.4-34.2), page push (measure text line y vs time), 3 examples each.
 4. Real SFX separation needs a spectrogram view (sound-ear skill) around black beats and level cards; only cut-coincident stats exist.
 Windows gotchas: background ffmpeg jobs must be separate run_in_background tasks; ffmpeg metadata=print file fails (use numpy).
+
+UPDATE: items 1-3 done in STYLE.md 'Gap fill 2' (G1-G3); item 4 (spectrogram SFX separation) still open. Whisper host windows unfinished.

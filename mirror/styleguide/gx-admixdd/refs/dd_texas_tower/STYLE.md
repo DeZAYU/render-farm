@@ -135,3 +135,78 @@ Footage vs designed: about 88-90% archive photos/film/scans, about 10-12% design
 - Text sizes from pixel bbox failed (photo content), so sizes are visual estimates from 480 px sheets (+/-0.5%).
 - Audio SFX are inferred from band envelopes, not heard; whoosh/riser vs hit not separated.
 - Source decoded at 1080p, not 4K as briefed.
+
+## Gap fill 2026-11-14 (maps, pages, 5 graphics, text sizes, SFX)
+Method: 30 fps extraction (960x540 and 1920x1080), ORB similarity tracking (scale/rotation/pan between frames), red-pixel counts and bar-width per frame, connected-component pixel rows for text, faster-whisper small.en word stamps on 12-30 s windows, 50 ms band envelopes. 23 new stills `gate/g2_*.png`. NOTE: the older stills `t1250_map_red_dots`, `t1300_tag_the_drag`, `t1130_map_figures_barker`, `t0500_aerial_bw_map`, `t1930_newspaper_highlight` are mis-timed (they show footage, not the map/page). True timecodes below; use the g2 stills.
+Owner rule applied: only maps, a few motion graphics and page highlights matter for our channel.
+
+### G1. Maps (there are exactly 2 in 20:45; 0:30 of 1245 s = 2.4% of runtime)
+**Map A, annotated archive aerial, 11:31.93-11:40.37 (8.4 s). VO "But what's certain is that most of the people Whitman hit fell within the first 20 minutes" (691.94-699.7).**
+- Source look: not drawn by the editor. A newspaper-style hard-threshold aerial (pure black/white blobs, halftone grain) with printed labels ("ACADEMIC CENTER", "BARKER HISTORY CENTER" white box) and numbered white circles + black figure silhouettes (source annotation). Vignetted, soft edges. Credit "Source: Wikipedia".
+- Enters: HARD CUT at 691.93 from the tower-clock push shot (no dip, no wipe). The audio gets a hit on the cut (sub +19 dB, high band +21 dB over bed).
+- Camera: constant slow PULL-OUT 1.0%/s (scale 1.000 to 0.938 over 8.4 s), no pan (tx 4-5 px, ty 2-3 px at 960 w), rotation 0. No ease (linear), no pins/routes drawn on; the "draw-on" is the text only.
+- Text layer: "First 20 Minutes" (serif small caps, white, soft shadow) wipes in left to right 696.9-697.45 (16 frames, "First 20" first then "Minutes"), holds full 697.5-698.6 (1.1 s), fades out 698.6-699.3 (about 0.7 s). Placed centre at y 43-53% H. Starts 0.45 s after the VO says "20 minutes" begins (696.2); full by "before" (697.6).
+- Exit: hard cut at 700.37 to a tower-clock shot ("Many mistook the shots..." starts 700.4).
+**Map B, designed vector map + callout, 12:50.87-13:10.43 (19.6 s). VO 764-793: "...the news spread over the radio. On the drag, the busy commercial street along the western edge of campus, an 18-year-old named Paul Sontag and his girlfriend were killed. Sontag's grandfather, a local reporter, is said to have been reading the rising casualty list on air when he reached his grandson's name."**
+- Source look: flat vector street map (Encyclopaedia Britannica graphic, credit "Source: (Map) Encyclopedia Britannica, Inc.; (Clip) Texas Archive", later "Source: Murderpedia"). Colours: paper beige #d8d2bf (centre #c3bdaa), buildings taupe #b3ad9d, labels dark grey sans (bold), red victim dots #ab0f16 (solid), hollow/pale dots #e2a7a8. Vignette corner/centre luma 0.54 (0.42 once the callout is up). Not satellite, not 3-D; the map is dressed with the same B&W vignette.
+- Enters: HARD CUT at 770.87 (frame 86 at 30 fps) from the police-megaphone archive shot. Dots and labels are ALREADY on the map in frame 1 (nothing draws on). Cut sits on VO "On the drag" (770.76), +0.1 s.
+- Camera stage 1 (770.87-773.70, 2.8 s): PULL-OUT from scale 1.00 to 0.70 with strong ease-out: -29%/s at start, -20.6, -16.7, -13.5, -11.5, -8.0, -4.4, then 0 at 773.7. Rotation 0, pan about 0 (zoom about centre). This reveals "The Drag" red tag + Guadalupe Street dots at the left edge while the VO says "the busy commercial street".
+- Camera stage 2 (773.7-776.1, 2.4 s): reverses to a gentle PUSH-IN 0.70 to 0.81, up to +9%/s at 774.7 (ease-in-out, a "breath"). Stage 3 (776.1-789.1): push continues, +3.1%/s decaying to +0.7%/s (scale x1.18 over 13 s, ease-out). No rotation (max 0.1 deg).
+- Callout stages (all in 776.0-776.7, VO "an 18" 775.84): (a) red vertical tag "The Drag" (#bb0b0c, white sans rotated 90 deg) is on the street from stage 1 on; (b) leader line (red, 3 px at 1080p = 0.3% H) draws from the tag to the right, 776.07-776.2 (about 4 frames); (c) label "THE DRAG" (red box #bb0b0c, white serif caps, cap height 59 px at 1080p = 5.5% H, box 7.2% H high) wipes L to R 776.17-776.33 (about 5 frames, "THE" then "DRAG"); (d) portrait box (B&W halftone photo, red outline 6-8 px = 0.6-0.7% H, #bb0b0c) wipes L to R 776.27-776.43 (4-5 frames: 30 px strip, half face, full), 0.2 s after the label; (e) the map behind goes soft + dark immediately (depth-of-field blur plus dim, corner/centre luma 0.54 to 0.42) between 776.4 and 778.0, so the portrait pops; (f) name "PAUL SONNTAG / STUDENT, VICTIM" (white small caps, soft shadow, lower-left of the card, initial cap 64 px = 5.9% H, small cap 43-46 px = 4.0-4.3% H) wipes in about 778.0-778.5 (the VO says "Paul Suntag" at 777.34-777.78, so the name lands about 0.7 s AFTER the VO name, not on it).
+- Hold: callout group holds 776.4-790.4 (14 s) on the slow push, nothing else moves. Exit: HARD CUT at 790.43 (frame 673) to the next archive shot, on VO "Local radio" (790.38).
+- Dots/route: no routes. The only "route" is the leader line. No animation on dots (static). Dot size about 1.3% H solid red.
+- Frame-stepped: 3 windows at 30 fps (770.8-776.1 camera, 776.0-776.7 callout, 776-790 hold). Stills `g2_t1251_mapB_entry_zoomed_in`, `g2_t1253_mapB_pullout_end`, `g2_t1256_mapB_drag_label_wipe`, `g2_t1305_mapB_portrait_name_hold`, `g2_t1132_mapA_aerial_figures`, `g2_t1138_mapA_first20min_text`.
+- Other aerials (13:39-14:21, flyover with biplane, campus from tower) are plain archive footage, not maps.
+
+### G2. Pages (4 documents with highlight)
+| page | time | what | in | highlight draw | hold | out |
+|---|---|---|---|---|---|---|
+| P1 | 4:30.6-4:43.9 | typed psychiatrist report, black ID label bottom right | fade from black about 0.8 s (4:30.5-4:31.3) | bar 1 on "thinking about going up on the tower with a deer rifle" 272.2-276.6; bar 2 "shooting people" lower-left from about 276.8 | 11.9 s at full | fade to black 283.2-284.0 (0.8 s), black to 284.5? then photo at 285.0 |
+| P2 | 6:41.4-7:03.5 | typed suicide letter, 4 pages scrolling up | cross-dissolve from typewriter shot 401.0-401.4 (0.4 s) | 5+ bars in a ladder 402.6, 406.2, 410.5, 418.0, 419.3, 421.4... | 19.9 s | slow fade to black 421.3-about 424.5 (3 s, chapter close) |
+| P3 | 12:33.5-12:40.3 | police report "synopsis of offense" | fade from black 753.5-754.4 (0.9 s) | one bar on the call-taker/time phrase 754.0-759.4 | 5.9 s | HARD CUT 760.33 |
+| P4 | 19:32.9-19:41.6 | newspaper column (Heatly interview) | HARD CUT 1172.83 from tower photo | bar 1173.3-1176.0 then wraps to a second line 1178.4+ (3 lines by 1181.4) | 8.8 s | HARD CUT 1181.6 |
+- Entry: all pages enter FLAT and full frame (no tilt, no 3-D, no paper-on-desk). No depth of field on the page (a soft vignette only: page paper #f8f8f8-#ffffff at centre, falls to dark grey at corners; newspaper paper #d7d7d7).
+- Highlight look: flat red bar the height of one text line (43-46 px at 1080p = 4.0-4.3% H when the page is pushed in), drawn as a MULTIPLY on the paper (type stays readable through it): colour on screen #c6090b (P2), #d20607 (P3), #bc0a0b (P4), #fe0000 (P1 before vignette). Opacity effectively 100% over white. Bar starts at the left edge of the target phrase (1-3 px thick start, grows rightwards), no outline, no rounding, no gloss.
+- Highlight speed (at 960 px wide measurement): P1 about 175 px/s (0.18 frame widths/s, 0.2 s per 35 px), runs 3.4 s for 540 px (56% W), linear, decelerating over the last 0.7 s; P2 about 165 px/s (13 px at 402.63, 60 px at 402.93, 331 px at 405.33), P3 about 150-160 px/s (26 px at 754.27, 701 px at 759.37), P4 about 130-150 px/s (2 px at 1173.30, 344 px at 1176.6). So 0.14-0.19 W/s, about 3 words/s over the highlighted phrase (P1: 11 words in 3.4 s).
+- Sync to VO (faster-whisper): P1 bar starts 272.2 = VO "Whitman" 272.2 (the sentence head), 1.4 s BEFORE "thinking" (273.62) and ends 276.6 near "rifle"/"shooting" (276.18/276.84): the bar leads the words at the start and meets them at the end (it is not word-by-word). P2 bar 1 starts 402.6 = 0.2 s after "He" (402.38); the page letters are not the VO words (VO paraphrases). P3 starts 754.0, 0.7 s after "The police call" (753.28), as "came" (754.08) is spoken. P4 starts 1173.3 = 0.15 s after "The doctor" (1173.14), grows through "was never charged" (1174-1174.6) and finishes before "partly" (1175.34). Rule: bar start within -1.4/+0.7 s of the first spoken word of the phrase; draw time 2.7-5 s, slower than speech.
+- Push/pan during hold (ORB): P1 +1.3-1.7%/s for 6 s (1.00 to 1.09) then 0, drift about 0.3 deg/s to 2 deg (tracker noise possible); P2 pull-back -0.4%/s (1.00 to 0.92 over 20 s) with the page scrolling up about 3%H/s; P3 push +1.0-1.4%/s with pan up (about 5%H/s, +-2); P4 push +2.5%/s with drift up about 2%H/s.
+- Stills: `g2_t0435_page1_highlight_mid`, `g2_t0443_page1_two_highlights`, `g2_t0645_page2_letter_hl1`, `g2_t0700_page2_letter_hl_late`, `g2_t1237_page3_police_hl`, `g2_t1936_page4_news_hl`.
+
+### G3. The 5 strongest motion graphics (stages, frames at 30 fps)
+1. **Map B callout cascade** (see G1): hard cut in, 2.8 s pull-out ease-out, leader 4 f, label wipe 5 f, portrait wipe 4-5 f, map blur+dim 1.6 s, name wipe 0.5 s, hold 14 s. The best device in the video.
+2. **TUMOR callout on an archive photo, 18:00-18:05 (1080.0-1085).** (a) target dot (red, 11 px = 1% H, #bb0b0c) already sits on the scan at 1080.0; (b) leader line draws from the dot up-left 1080.4-1080.93 (about 16 f, ease-in-out; line 3 px = 0.3% H); (c) red label box (#bb0b0c, 165 px x 42 px = 15% W x 3.9% H, white serif caps cap height 31 px = 2.9% H) wipes L to R 1080.93-1081.3 (about 10 f); (d) whole group is parented to the photo and rides its drift (about 0.5 px/frame), hold to the cut (about 4 s+). VO sits on the scan; the tag lands after the VO names the tumor.
+3. **Corkboard title, 23.1-31 s**: red "THE SNIPER" tag wipes in 23.9-24.2 (about 9 f); strings add about 900 red px/s linearly 25.1-29.0 (pin to pin, no strong ease); camera push into the portrait, then WHIP into the next photo 29.3-30.5 (red count spikes 14142 at 29.6 from motion blur, gone by 31.1); sub +18 dB under the whip (29.4).
+4. **Name card (Roy Dell Henry Schmidt), 11:52.5-12:00**: 0.4 s fade from black on a dark cork-grey texture (card mean luma 8 to 85 over 712.7-713.3), portrait in a rounded-corner card (bevelled shadow) centred, name small caps (initial cap 39 px = 3.6% H, small cap 20 px = 1.9% H) and role line (about 2.3% H) fade in with it (text px peaks 713.3, then eases down as the slow push soaks it), hold about 5.5 s, fade to black 718.4-720.0 (about 1.5 s). Repeated 11+ times (Karen Griffith 12:24-12:33 same).
+5. **In-photo lower-left name tag with a victim photo (Claire Wilson 11:06-11:12, Tom Eckman 11:21-11:24)**: serif name above grey role line, lower-left at x 36-52%, y 70-76% H, over the photo (no card), fades in 0.3-0.5 s, holds 3-6 s on the photo push; name initial cap 34-49 px (3.1-4.5% H), small cap 33 px (3.0%). Also the red "SNIPER" tag, the "First 20 Minutes" wipe (G1) and the quote lines are the same family.
+- Easing: wipes are linear 5-10 frames; leader lines ease-in-out; camera moves ease-out; no overshoot or bounce anywhere.
+
+### G4. Text sizes by pixel rows (1080p frames; cap = initial capital height, sc = small-cap height)
+| role | measured | %H |
+|---|---|---|
+| name card name (Roy) | cap 39 px, sc 20 px | 3.6 / 1.9 |
+| name card role line | rows 918-941, about 25 px incl. cap | about 2.3 |
+| Paul Sonntag name (map card) | cap 64 px, sc 43-46 px (shown at 1.15x push) | 5.9 / 4.0-4.3 |
+| in-photo tag Claire Wilson | cap 34-49 px, sc 33 px | 3.1-4.5 / 3.0 |
+| "First 20 Minutes" stakes caption | cap 92-93 px, sc 61-64 px | 8.5 / 5.6-5.9 |
+| time caption "6:45 PM" | digits 52-56 px, sc 30-34 px | 5.0 / 2.9 |
+| subtitle "Whitman murdered his wife and his mother" (19:43) | cap 33-34 px, sc 20 px | 3.1 / 1.9 |
+| red label THE DRAG (map) | cap 59 px in a 78 px box | 5.5 / 7.2 |
+| red label TUMOR | cap 31 px in a 42 px box | 2.9 / 3.9 |
+| source credit (bottom-left grey) | cap 10 px, x-height 7 px, rows 1056-1067, x 8-145 | 0.9 / 0.65 |
+| page highlight bar | 43-46 px high | 4.0-4.3 |
+| leader line / red outline | 3 px / 6-8 px | 0.3 / 0.6-0.7 |
+Sizes drift +-15% with the push. The older estimates in section 4 (name 2.9-3.2%, role 1.5%) read the small caps as full caps: use initial cap 3.6%, small cap 1.9%. Stakes captions on a map or aerial are 1.5-2x larger than name tags.
+
+### G5. SFX under maps, pages, graphics (band envelopes, not heard)
+Band levels in 50 ms frames, peak within -0.3/+0.4 s of the event vs the median of the surrounding 6 s. Level is relative; VO band sits at about -18 to -21 dB in these units, so a "+" value near that means the sound is as loud as the VO in that band.
+- Map B cut-in 770.87: weak (sub +6, nothing else): no hit, the cut is soft. Map B label wipe 776.2: sub +23 dB (peak -19, at VO level), low +8, VO band +7, high +13 = a sub THUD under the callout, about 0.1 s after the leader starts. Map B exit cut 790.43: sub +16.
+- Map A cut-in 691.93: sub +19, low +8, high +21 = impact with a bright tick. Text wipe 696.9: high +25, low +5, sub +11 (soft swish/tick; may include VO "minutes").
+- Pages: P1 bar start 272.2: sub -1, low +8, voice +15, high +27 (VO sibilants, "Whitman admitted"; no designed hit). P2 402.6: sub +2, high +16. P3 754.0: sub +16 (a hit about the start of the highlight), high +25. P4 1172.9 hard cut + bar: sub +1, high +12 (no hit). So pages mostly get NO designed SFX; only the police report gets a hit.
+- TUMOR leader 1080.4 and label 1080.93: high +24/+25, sub +7-8 = a bright tick/click at the label wipe and leader start, no low hit.
+- Corkboard tag 23.9: sub +10, high +25, low +9; whip 29.4: sub +18, high +18 = whoosh with thump.
+- Summary: SFX are sparse and soft: sub thud (+16 to +23) on map callout, police report, cuts into map A, corkboard whip; bright tick (+24 high) on text/tag wipes. Page highlights are silent. Nothing is louder than the VO band; whooshes are not at the spectral level of a stock whoosh library (no sustained 0.5 s mid-high sweep seen).
+- Limits: sibilants in the VO confound the high band; no SFX heard; band values are relative (50 ms Hann frames, 22.05 kHz mono mix).
+
+### Remaining gaps (honest)
+- Tom Eckman tag not measured (text not found in box); P2 bar timings beyond the first two are from the red-pixel count only; P1-P4 rotation drift (about 2 deg) may be tracker noise; no pixel-measured DOF on pages (none visible); P2 exit length (3 s) is from luma, not frame-checked; map B stage 2 push values are tracker-derived (about 900-1300 inliers).
+- Time spent about 45 min, over the 35 min box.

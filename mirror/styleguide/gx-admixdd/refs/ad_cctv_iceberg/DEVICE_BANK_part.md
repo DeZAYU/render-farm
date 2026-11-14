@@ -17,3 +17,12 @@ Gate stills are in `gate/`. Numbers are in STYLE.md.
 13. **Page-to-footage ghost dissolve** - 8:44. 0.4 s cross-dissolve where the page text stays at ~20% over footage. Twist: page text burns away with a pixel-dissolve.
 14. **Bookend flash** - 43:40 repeats the cold-open false-colour crowd. Story: callback before outro. Twist: re-use our own cold-open flash.
 15. **Pillarboxed vertical/4:3 clips** - 42:20 (black bars, no blur fill). Twist: use a dim blurred copy only if our SOP allows.
+
+# Gap fill 2 additions (see STYLE.md G1-G3)
+16. **Datamosh burst, 8-12 f** - 1334.67 (footage->footage, 11 f RGB-split tearing with old shot ghosted), 998.57 (page->host, 8 f: 3 green block-smear, 3 black strips, 2 solarised), 1002.17 (host->footage, 10 f static, threshold silhouette of next clip), 8:36 (12 f). Story: reads as a tape cut / bad signal, always inside a 0.6-1.1 s VO gap. Twist: scanline wipe in our accent colour, 8-10 f, with one frame of inverted-colour flash.
+17. **Hard-cut black beat + title build** - 1207.73-1208.93 (E1): hard cut to 1.0 s black (bed swell), berg hard in at 1208.73, title shards 1208.93 -> full 1209.13 (6 f), ease-in-out 7-10 f build, cyan last word. Twist: our own ink/ember particles resolving in 7-10 f.
+18. **Level card entry/exit, 30 fps** - appears in 1 f at full opacity, drifts up 1.5% of frame height over 21 f (ease-out), drops 3 f then motion-blur exit; 0.73 s hold. Twist: counter number card with a slow rise and a fast fall.
+19. **Dark-mode page with dim marker** - 1342-1348, 2376-2380. Blurred dark page, marker 0.4-0.6% of frame, static; enters by 14-18 f dissolve, exits by 15 f ease-in dissolve. Twist: grey-green paper-on-black dossier page, same blurred surround.
+20. **Marker line wipe, ease-out** - 1195 (3 lines, 1.6 s apart), 1189 (2 lines, 2.95 s apart), 983-991 (4 lines, VO-timed). 90% of a line in 0.4-0.8 s, finish 1.0-2.0 s. Twist: hand-drawn highlighter stroke with a pen-scratch sound, timed to the spoken word.
+21. **Linear page push** - +0.27 to +0.4%/s (1.6-2.4% in 6 s), linear, none on dark pages. Twist: use +0.4%/s drift only; keep it invisible.
+22. **Mix rule (measured)** - VO -23.4 LUFS-M, clip raws -27/-29 (4-5 LU below VO), bed -33 in black beats and -36 under footage; bed not pumped under VO (static 3 LU lower under clips). Twist: same static-duck, no sidechain pump.
