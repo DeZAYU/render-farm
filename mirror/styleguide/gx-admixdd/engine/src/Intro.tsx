@@ -9,7 +9,7 @@ import { PlacePlate } from './devices/PlacePlate';
 import { VideoTitle } from './devices/VideoTitle';
 import './fonts';
 
-const CUTS = [0, 63, 131, 197, 282, 344, 446, 511, 584, 682, 747, 815, 906, 1024, 1089, 1165, 1212, 1344];
+const CUTS = [0, 63, 131, 197, 282, 344, 446, 511, 584, 682, 747, 815, 906, 1030, 1165, 1212, 1344];
 export const INTRO_FRAMES = CUTS[CUTS.length - 1];
 
 type Shot = { kind: 'clip'; src: string; rate: number; origin?: string } | { kind: 'sol' } | { kind: 'place'; text: string; y0: number; y1: number; typeAt: number; cps?: number; seed: string } | { kind: 'title' };
@@ -27,9 +27,8 @@ const SHOTS: Shot[] = [
   { kind: 'clip', src: 'intro/s10.mp4', rate: PUSH.footage }, // GC road overtaking — "a man who calls himself Jesus"
   { kind: 'clip', src: 'intro/s11.mp4', rate: PUSH.footage, origin: '40% 45%' }, // GC cabin lean-in — "own rampage in a stolen car"
   { kind: 'place', text: 'SINGAPORE', y0: 72, y1: 80, typeAt: 4, seed: 'sg' }, // "a Singapore road… swallows a car"
-  { kind: 'clip', src: 'intro/s13.mp4', rate: PUSH.footage, origin: '50% 35%' }, // SPX blast on "blowing apart" — Wisconsin
-  { kind: 'clip', src: 'intro/s13b.mp4', rate: PUSH.footage, origin: '50% 35%' }, // SPX aftermath plume (jump forward) — "two American bird photographers…"
-  { kind: 'place', text: 'TABASCO, MEXICO', y0: 80, y1: 92, typeAt: 22, cps: 2, seed: 'mx' }, // types from 37.03 s, 0.22 s before "Mexican" 37.25; cursor idles from f6 // "bird photographers… Mexican back road"
+  { kind: 'clip', src: 'intro/s13.mp4', rate: PUSH.footage, origin: '50% 35%' }, // SPX blast on "blowing apart" — Wisconsin, runs to "two" 34.33
+  { kind: 'place', text: 'TABASCO, MEXICO', y0: 80, y1: 92, typeAt: 81, cps: 2, seed: 'mx' }, // plate from "two" 34.33 s; cursor idles from f6; types from 37.03 s, 0.22 s before "Mexican" 37.25 // "bird photographers… Mexican back road"
   { kind: 'clip', src: 'intro/s15_thr.mp4', rate: PUSH.replay }, // D8a threshold replay of the fireball — "Let's begin"
   { kind: 'title' }, // D2 video title + dive
 ];
