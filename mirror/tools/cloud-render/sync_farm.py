@@ -13,7 +13,7 @@ REPO, ACCOUNT = 'DeZAYU/render-farm', 'kumai007'
 TOP = ['CLAUDE.md', 'docs', 'styleguide', 'tools']
 EXT = {'.md', '.json', '.py', '.yml', '.yaml', '.txt', '.cmd', '.bat', '.ps1', '.js', '.mjs', '.ts', '.tsx', '.css', '.html', '.toml', '.cfg', '.ini', '.example'}
 SKIPD = {'.git', 'node_modules', '__pycache__', '.cache', '.venv', 'venv', 'farm', 'repo', 'pages', 'out', 'renders', 'farm_out'}
-SECRET = re.compile(rb'(gh[pousr]_[A-Za-z0-9]{30,}|github_pat_[A-Za-z0-9_]{40,}|sk-[A-Za-z0-9_-]{20,}|sk-ant-[A-Za-z0-9_-]{20,}|AKIA[0-9A-Z]{16}'
+SECRET = re.compile(rb'(gh[pousr]_[A-Za-z0-9]{30,}|github_pat_[A-Za-z0-9_]{40,}|(?<![A-Za-z0-9])sk-[A-Za-z0-9_-]{20,}|AKIA[0-9A-Z]{16}'
                     rb'|AIza[0-9A-Za-z_-]{35}|xox[abpr]-[A-Za-z0-9-]{10,}|-----BEGIN [A-Z ]*PRIVATE KEY-----)')
 
 

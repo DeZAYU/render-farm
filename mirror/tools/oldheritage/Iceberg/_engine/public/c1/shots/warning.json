@@ -1,0 +1,96 @@
+{
+ "url": "https://mesonet.agron.iastate.edu/wx/afos/p.php?pil=TORLOT&e=201504092335",
+ "title": "IEM :: TOR from NWS LOT",
+ "focus": [
+  312.85,
+  1356.0
+ ],
+ "highlights": [
+  {
+   "phrase": "TORNADO WARNING",
+   "box": [
+    186,
+    1338.0,
+    439.7,
+    1374.0
+   ],
+   "lines": [
+    [
+     186,
+     1338.0,
+     439.7,
+     1374.0
+    ]
+   ],
+   "chars": 15,
+   "style": "select",
+   "t": 0.8
+  },
+  {
+   "phrase": "635 PM CDT THU APR 9 2015",
+   "box": [
+    186,
+    1419.5,
+    603.4,
+    1455.5
+   ],
+   "lines": [
+    [
+     186,
+     1419.5,
+     603.4,
+     1455.5
+    ]
+   ],
+   "chars": 25,
+   "style": "select",
+   "t": 2.2
+  },
+  {
+   "phrase": "ROCHELLE AROUND 655 PM CDT",
+   "box": [
+    218.8,
+    2479.8,
+    652.5,
+    2515.8
+   ],
+   "lines": [
+    [
+     218.8,
+     2479.8,
+     652.5,
+     2515.8
+    ]
+   ],
+   "chars": 26,
+   "style": "select",
+   "t": 3.5999999999999996
+  },
+  {
+   "phrase": "THIS TORNADO WARNING REPLACES THE SEVERE THUNDERSTORM WARNING",
+   "box": [
+    186,
+    2928.4,
+    1192.9,
+    2964.4
+   ],
+   "lines": [
+    [
+     186,
+     2928.4,
+     1192.9,
+     2964.4
+    ]
+   ],
+   "chars": 61,
+   "style": "select",
+   "t": 4.999999999999999
+  }
+ ],
+ "yaw": 18,
+ "pitch": 10,
+ "roll": -3,
+ "zoom": 1.35,
+ "w": 2560,
+ "h": 3600
+}

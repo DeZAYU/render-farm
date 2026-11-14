@@ -1,4 +1,4 @@
-Applies to every style. A style's own rule book wins only where it says so explicitly.
+Applies to every style. A style's own rule book wins only where it says so explicitly. The owner SOP (`docs/workflow/SOP.md`) also applies to every style and wins over this file and every style rule book (see section H).
 
 # Generic editing rules (all styles)
 
@@ -37,7 +37,7 @@ Look, fonts, colours, cards, structure and transition mix stay in each style's o
 24. **No repeats.** Every SFX clip is a different file, baked to its own level; no SFX file repeats inside a series. source: farrell r-e8017c25, r-979ce18e
 25. **Score the hand-off.** A riser ends on the evidence entry and an impact starts on it; read the audio starts, not the video cuts. source: farrell r-47ecb239, r-746ccf49
 26. **Music per video.** Different tracks each video; never the same (track, start) twice; adjacent cases never open on the same track; cues crossfade about 6 s. source: farrell b-762b7dc0, r-eb4fa3d3, r-a603c795
-27. **Loudness.** Master to the style's own integrated LUFS target. True peak <= -1.05 dBTP: retry the limiter with the ceiling 1 dB lower until it passes (AAC overshoot failed at -0.97). source: farrell b-762b7dc0
+27. **Loudness.** Master to -16 LUFS integrated (master SOP). True peak <= -1.5 dBTP: retry the limiter with the ceiling 1 dB lower until it passes (AAC overshoot failed at -0.97). source: farrell b-762b7dc0
 
 ## D. Transition hygiene
 28. **Never cut during a crossfade.** During a crossfade or dip both clips play continuous footage; no source cut inside the transition or its handles. Never cut to a new shot while a crossfade is still fading the previous clip. source: farrell b-39e69ef2
@@ -60,3 +60,16 @@ Look, fonts, colours, cards, structure and transition mix stay in each style's o
 ## G. Feedback loop (learning curve)
 40. **Owner notes become rules the same day.** Every owner note on a render goes into that style's json the same day as a rule-book entry or rule plus a Learnings entry (`model.apply_ops` + `model.save`); generic craft notes also go here. source: farrell b-be4e62b7
 41. **The next build reads them.** Before each build read the style's rule book, its open Learnings, this file and `docs/workflow/case-video-ref/user-lessons.md`; after each render check it against every line, fix what fails, then deliver. A lesson broken again gets `(repeat N)` and is checked first next time. source: farrell b-be4e62b7
+
+## H0. Master SOP v2.0 (2026-11-14, wins over everything below)
+`docs/workflow/CAUGHT_ON_CAMERA_MASTER_SOP.md` = general rules for every style (all styles are caught-on-camera). It wins over section H, this file and every style rule book. The style guide still sets the look, except that the SOP section 2.4 ban list wins over any style look (owner 2026-11-14; see each rule book's top rule). Known clashes it settles:
+- Loudness: -16 LUFS integrated, <= -1.5 dBTP.
+- Music: bed >= 12 LU under the voice; FAIL within 3 LU for 0.4 s or within 8 LU for 3 s. Keep H's 15-25 dB target (it passes this gate). The bed never dies.
+
+## H. Owner SOP overrides (2026-11-14)
+Owner SOP: `docs/workflow/SOP.md` (newest owner rules, general, applies to every style and kit). Where it clashes with a line above, the SOP wins:
+- #20 music: 15-25 dB under the voice (not 12-15), gentle ducking, track change at story turns, no swell right before words.
+- #14 / WORKFLOW gap cut: the owner's voiceover runs at natural speed, never processed (no EQ, compressor, limiter); level only. Two-part VO joins with about 0.45 s silence. Add silence only for the subject's own voice or 2-3 big story turns.
+- #21 / #30: glitch SFX, glitch, flash frames, VHS/CRT, stamps, rolling clocks are banned. No highlight sounds.
+- #34: no captions that repeat the voiceover. Text only for places, dates, numbers, names, keywords; at least 3.5 s.
+- #10: never sleepy. Intro changes every 1.5-4 s; body shots about 3-7 s; nothing under about 2.5 s.

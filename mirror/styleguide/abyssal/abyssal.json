@@ -1,16 +1,16 @@
 {
  "version": 1,
- "rev": 44,
- "saved": "2026-11-14",
+ "rev": 47,
+ "saved": "2026-11-14T18:45:42",
  "categories": [
   {
    "id": "overall-aesthetic",
    "name": "Overall aesthetic",
-   "summary": "Dark found-footage iceberg documentary. Seven levels, calm narrator, VHS/CRT texture, tiny mono type, cyan ice titles.",
+   "summary": "Dark found-footage iceberg documentary. Seven levels, calm narrator, VHS/CRT texture, tiny mono type. Level cards, entry titles and the case list are a new design (no berg graphic, no typewriter level cards, no cyan: SOP 2.4 ban).",
    "rules": [
     {
      "id": "r-4f95459a",
-     "text": "Build every video as an iceberg with exactly 7 levels. Put about 3-4 entries in each level (19-32 in total). Make later levels longer and darker. 14 of 14 refs.",
+     "text": "Build every video as an iceberg with exactly 7 levels (format only; the berg look is banned, SOP 2.4). Put about 3-4 entries in each level (19-32 in total). Make later levels longer and darker. 14 of 14 refs.",
      "source": "refs",
      "evidence": [],
      "title": "Iceberg format, 7 levels"
@@ -45,7 +45,7 @@
     },
     {
      "id": "r-9603e4f9",
-     "text": "Use the same card set in every video: warning card, animated iceberg list, ONE case title card (slow gentle shake + eased zoom + textured reveal), typed date, name tag, source credit, animated maps. No Presents sting, no headline/web graphics. (owner 2026-11-12, v5)",
+     "text": "Use the same card set in every video: warning card, animated case list, ONE case title card (slow gentle shake + eased zoom + textured reveal), typed date, name tag, source credit, animated maps. No Presents sting, no headline/web graphics.",
      "source": "refs",
      "evidence": [],
      "title": "Same kit every video"
@@ -125,7 +125,7 @@
   {
    "id": "color-palette",
    "name": "Color palette",
-   "summary": "Near-monochrome dark footage. Accents: cyan ice, red alerts, yellow highlight, orange tags.",
+   "summary": "Near-monochrome dark footage. Accents: red alerts, yellow highlight, orange tags. No cyan.",
    "rules": [
     {
      "id": "r-111ccbfe",
@@ -164,10 +164,10 @@
     },
     {
      "id": "r-4f0141be",
-     "text": "Use glowing cyan/white only for iceberg level and entry titles.",
+     "text": "No cyan anywhere (SOP 2.4 ban). Title colour comes from the redesign.",
      "source": "refs",
      "evidence": [],
-     "title": "Cyan for ice titles"
+     "title": "No cyan"
     },
     {
      "id": "r-fb7a5dfd",
@@ -240,13 +240,6 @@
      "title": "Red host room"
     },
     {
-     "id": "r-8deeea1e",
-     "text": "Give ice titles and Level cards a soft glow and bloom out of the dark background.",
-     "source": "refs",
-     "evidence": [],
-     "title": "Glow on titles"
-    },
-    {
      "id": "r-1843a7e5",
      "text": "Use a strong vignette on every shot to pull the eye to the centre.",
      "source": "refs",
@@ -297,10 +290,10 @@
    "rules": [
     {
      "id": "r-a83fb09d",
-     "text": "Hold photos still (no Ken Burns). Make them move with typed text, a highlight wipe, a red circle, a colour change or a 3-5 degree tilt. Only the iceberg list (slow eased zoom-in), the case title card (very slow gentle shake + small zoom) and maps move the camera. (owner 2026-11-12, v5)",
+     "text": "Photos always drift slowly (master SOP 7.4). Add typed text, a highlight wipe, a red circle or a colour change on them. The case list, the case title card and maps carry the bigger camera moves.",
      "source": "refs",
      "evidence": [],
-     "title": "Still stills",
+     "title": "Photos drift",
      "media": [
       {
        "file": "f990578520ee4605.mp4",
@@ -316,7 +309,7 @@
     },
     {
      "id": "r-6a5367e9",
-     "text": "Do not scroll the iceberg list; hold it 3.4-3.6 s with the text frozen in place (only the iceberg backdrop may drift slightly) and glitch out. A long page may scroll only if the inset photo must grow with it.",
+     "text": "Do not scroll the case list; hold it 3.4-3.6 s with the text frozen in place (only the backdrop may drift slightly) and glitch out. A long page may scroll only if the inset photo must grow with it.",
      "source": "refs",
      "evidence": [],
      "title": "No list scroll",
@@ -377,7 +370,7 @@
     },
     {
      "id": "r-4317ca48",
-     "text": "Centre Level cards and ice entry titles.",
+     "text": "Centre level cards and entry titles.",
      "source": "refs",
      "evidence": [],
      "title": "Centred titles"
@@ -545,10 +538,10 @@
     },
     {
      "id": "r-7d3eb623",
-     "text": "Scramble the ice entry title in over 3-4 frames after 0.1-2.0 s of black, hold 1.5-3.5 s, then glitch it out in 2 frames. Set it as white wide caps with a few cyan-tinted letters and a soft glow, centred at about 43-50% height, one or two lines, 25-50% of frame width, over a slowly pushing-in iceberg.",
+     "text": "Entry title motion (new design from the refs, pending pilot). Not a cyan glitch-scramble ice title (SOP 2.4 ban). Keep: after a short black, centred at about 43-50% height, one or two lines, 25-50% of frame width, hold 1.5-3.5 s, eased in and out.",
      "source": "refs",
      "evidence": [],
-     "title": "Ice title motion",
+     "title": "Entry title motion",
      "media": [
       {
        "file": "b70335c08de74e6d.mp4",
@@ -571,7 +564,7 @@
     },
     {
      "id": "r-8689f30a",
-     "text": "Start with 0.7-3.0 s of black, then fade the Level card in over 3 frames from 20-40% brightness. Set the text at ~42% of frame width, centred at y 50%, over the iceberg picture. Push it to ~80% width over 1.2-2.5 s, then zoom through in 3 frames into the iceberg close-up and the first ice title.",
+     "text": "Start with 0.7-3.0 s of black, then fade the level card (new design from the refs, pending pilot) in over 3 frames from 20-40% brightness. Centre it at y 50% over the level backdrop (no berg graphic). Push it in over 1.2-2.5 s, then zoom through in 3 frames into the first entry title.",
      "source": "refs",
      "evidence": [],
      "title": "Level card motion",
@@ -604,7 +597,7 @@
     },
     {
      "id": "r-65208203",
-     "text": "Use no spins or light leaks. Allowed exceptions: the 3-frame zoom-through from the Level card into the first ice title, and the raven/silhouette wipe onto the Patreon card.",
+     "text": "Use no spins or light leaks. Allowed exceptions: the 3-frame zoom-through from the level card into the first entry title, and the raven/silhouette wipe onto the Patreon card.",
      "source": "refs",
      "evidence": [],
      "title": "Only two wipes"
@@ -628,11 +621,11 @@
   {
    "id": "typography",
    "name": "Typography",
-   "summary": "Tiny monospace typewriter type everywhere; big white slab for 'Level N'; glowing caps for ice titles.",
+   "summary": "Tiny monospace type for small text. Level cards and entry titles use new fonts from the refs (no typewriter, no glowing cyan).",
    "rules": [
     {
      "id": "r-f3e0cecf",
-     "text": "Set dates, tags, credits, captions and list rows in a monospace typewriter font, caps.",
+     "text": "Set dates, tags, credits, captions and list rows in a monospace font, caps.",
      "source": "refs",
      "evidence": [],
      "title": "Mono base"
@@ -646,17 +639,17 @@
     },
     {
      "id": "r-af467b04",
-     "text": "Set 'Level N' in big white bold mono/slab.",
+     "text": "Level card type: a new font chosen from the refs. Not typewriter (SOP 2.4 ban).",
      "source": "refs",
      "evidence": [],
      "title": "Level card type"
     },
     {
      "id": "r-8de89184",
-     "text": "Set entry titles in wide-tracked glowing cyan/white caps, 1-2 lines, centred.",
+     "text": "Entry title type: a new font and colour chosen from the refs, 1-2 lines, centred. Not wide-tracked glowing cyan caps (SOP 2.4 ban).",
      "source": "refs",
      "evidence": [],
-     "title": "Ice title type"
+     "title": "Entry title type"
     },
     {
      "id": "r-98b44b32",
@@ -714,21 +707,21 @@
     },
     {
      "id": "r-46eb1f97",
-     "text": "Iceberg (case list) card: no highlight on any case name (all the same white). Static CRT look on it: fixed scanlines, soft glow, small red/blue edge, curved screen with dark rounded corners. No noise, rolling bar or flicker. Slow eased zoom, no shake.",
+     "text": "Case list card: no highlight on any case name (all the same white). Static CRT look on it: fixed scanlines, soft glow, small red/blue edge, curved screen with dark rounded corners. No noise, rolling bar or flicker. Slow eased zoom, no shake.",
      "source": "user",
      "evidence": [],
-     "title": "Iceberg: no highlight, CRT"
+     "title": "Case list: no highlight, CRT"
     },
     {
      "id": "r-05aaf690",
-     "text": "The iceberg card gets a strong smooth vignette on top of the CRT look. The centre stays clean. The edges go about 55 % darker.",
+     "text": "The case list card gets a strong smooth vignette on top of the CRT look. The centre stays clean. The edges go about 55 % darker.",
      "source": "user",
      "evidence": [],
-     "title": "Iceberg: CRT plus vignette"
+     "title": "Case list: CRT plus vignette"
     },
     {
      "id": "r-43376781",
-     "text": "Fonts (best installed match, by eye): date card Consolas Bold +5% tracking white with 1-2 px dark edge; name tag Lucida Console caps +8% tracking; case title Bahnschrift SemiBold caps +15-35% tracking with a 6-10 px cyan glow #4FD8EE; captions Courier New Bold white with 1-2 px black edge. A pixel face (VT323) is the closer match for dates and the warning but is not installed.",
+     "text": "Fonts (best installed match, by eye): date card Consolas Bold +5% tracking white with 1-2 px dark edge; name tag Lucida Console caps +8% tracking; captions Courier New Bold white with 1-2 px black edge. Case title and level card fonts come from the redesign: no cyan glow (SOP 2.4 ban).",
      "source": "refs",
      "evidence": [],
      "title": "Font matches"
@@ -845,7 +838,7 @@
    "rules": [
     {
      "id": "r-0226980b",
-     "text": "Open with: warning card (2-3 s), raw-audio hook with captions over raw footage, animated iceberg/list graphic for the N-cases line (4-5 s), teaser of raw clips (>= 3 s each), then the first case title card. No Presents sting. (owner 2026-11-12, v4)",
+     "text": "Open with: warning card (2-3 s), VO hook over real raw footage (no raw audio in the intro, master SOP 7.1), animated case list for the N-cases line, teaser of raw clips (>= 3 s each), then the first case title card. No Presents sting.",
      "source": "refs",
      "evidence": [],
      "title": "Open"
@@ -866,7 +859,7 @@
     },
     {
      "id": "r-2970e671",
-     "text": "Each entry: 'Level N' + spoken title, ice title card, typed date, name tag, then the story.",
+     "text": "Each entry: level card when a level starts, spoken title, entry title card, typed date, name tag, then the story.",
      "source": "refs",
      "evidence": [],
      "title": "Entry order"
@@ -922,7 +915,7 @@
     },
     {
      "id": "r-d7e55c56",
-     "text": "Open each entry on its ice title card (210 of 335 entries). Otherwise open on stock, archive footage or a photo, with the title said in voice-over.",
+     "text": "Open each entry on its entry title card (210 of 335 entries in the refs). Otherwise open on stock, archive footage or a photo, with the title said in voice-over.",
      "source": "refs",
      "evidence": [],
      "title": "Entry opener"
@@ -946,36 +939,43 @@
  ],
  "rulebook": [
   {
+   "id": "b-612b623c",
+   "text": "SOP ban wins (owner 2026-11-14). Master SOP v2.0 (docs/workflow/CAUGHT_ON_CAMERA_MASTER_SOP.md) section 2.4 bans the algrow-2 iceberg look. Do NOT use: the berg level graphic, typewriter level cards, the cyan palette, ice-cyan glitch titles. The iceberg format may stay; its look must be redesigned from the refs. Every rule in this book that asks for them is overridden.",
+   "since": "2026-11-14",
+   "from": "owner",
+   "title": "SOP 2.4 look ban"
+  },
+  {
    "id": "b-ff75f6eb",
-   "text": "Every video is an iceberg with exactly 7 levels. Each level opens with a black dip, about 1 s silence and the 'Level N' card.",
+   "text": "Every video is an iceberg with exactly 7 levels (format only). Each level opens with a black dip, about 1 s silence and a level card (new design from the refs, pending pilot): no berg graphic, no typewriter level card, no cyan (SOP 2.4 ban).",
    "since": "2026-11-12",
    "from": "refs",
    "title": "Seven levels"
   },
   {
    "id": "b-9103046e",
-   "text": "Open in this order: warning card (2-3 s), raw-audio hook with mono captions over real raw footage, the 'N cases' animated iceberg list (7 s), teaser of intense-movement raw clips (each >= 3 s), first case by about 45 s. The intro is mostly real raw clips, not graphics. No Presents sting. (owner 2026-11-12, v5)",
+   "text": "Open in this order: warning card (2-3 s), VO hook over real raw footage (no raw audio in the intro, master SOP 7.1), the 'N cases' animated case list (new design from the refs, pending pilot) (7 s), teaser of intense-movement raw clips (each >= 3 s), first case by about 45 s. The intro is mostly real raw clips, not graphics. No Presents sting.",
    "since": "2026-11-12",
    "from": "refs",
    "title": "Fixed opening"
   },
   {
    "id": "b-10a097c2",
-   "text": "Every entry gets: glowing ice title, typed date with red cursor, name tag, source credit. No entry without a date.",
+   "text": "Every entry gets: entry title (new design from the refs, pending pilot), typed date with red cursor, name tag, source credit. No entry without a date. No cyan ice title (SOP 2.4 ban).",
    "since": "2026-11-12",
    "from": "refs",
    "title": "Entry card set"
   },
   {
    "id": "b-2c927f23",
-   "text": "All small text is monospace typewriter caps. 'Level N' is big white bold mono. Ice titles are glowing wide caps. No other fonts.",
+   "text": "All small text is monospace caps. Level cards and entry titles use new fonts chosen from the refs: not typewriter, not glowing cyan caps (SOP 2.4 ban). No other fonts.",
    "since": "2026-11-12",
    "from": "refs",
    "title": "Mono type only"
   },
   {
    "id": "b-e1326886",
-   "text": "Keep the dark, low-saturation look (vignette, grain, light tape texture) but never too dark: details inside the image must stay clearly visible; lift shadows rather than crush them. Colour only in tints, red alerts and circles, yellow highlights and cyan ice. (owner 2026-11-12, v5)",
+   "text": "Keep the dark, low-saturation look (vignette, grain, light tape texture) but never too dark: details inside the image must stay clearly visible; lift shadows rather than crush them. Colour only in tints, red alerts and circles and yellow highlights. No cyan (SOP 2.4 ban).",
    "since": "2026-11-12",
    "from": "refs",
    "title": "Dark but readable"
@@ -1017,7 +1017,7 @@
   },
   {
    "id": "b-efe13d68",
-   "text": "Graphics move only by typing, left-to-right highlight wipes, red circles drawing on, rare 2-3 frame glitch cuts, dips through black, animated maps (MAP_SPEC) and two ref camera moves: the iceberg list (slow eased zoom-in, no shake) and the case title card (very slow gentle shake + small eased zoom-in). Never camera shake on footage clips. Sound sits on those events. (owner 2026-11-12, v5)",
+   "text": "Graphics move only by typing, left-to-right highlight wipes, red circles drawing on, rare 2-3 frame glitch cuts, dips through black, animated maps (MAP_SPEC) and two camera moves: the case list (slow eased zoom-in, no shake) and the case title card (very slow gentle shake + small eased zoom-in). Never camera shake on footage clips. Sound sits on those events.",
    "since": "2026-11-12",
    "from": "refs",
    "title": "Few kinds of motion"
@@ -1115,14 +1115,14 @@
   },
   {
    "id": "b-f0b46bae",
-   "text": "The 'N cases/disasters' line gets the animated iceberg list held 7 s: every case name sharp and readable (no blur or pixelation on deeper entries), a clear slow eased zoom-in running the whole time the names show (no shake), light grain texture. No headline or website screenshots. Spec: productions/_abyssal-ref/INTRO_SPEC3.md. (owner 2026-11-12 v5, zoom stressed 2026-11-13)",
+   "text": "The 'N cases/disasters' line gets the animated case list (new design from the refs, pending pilot), held 7 s: every case name sharp and readable, a clear slow eased zoom-in running the whole time the names show (no shake), light grain texture. No berg graphic (SOP 2.4 ban). No headline or website screenshots.",
    "since": "2026-11-12",
    "from": "update",
    "title": "Iceberg graphic for the N-cases line"
   },
   {
    "id": "b-0fb0b4b4",
-   "text": "Each case gets ONE title card: iceberg plate with a very slow gentle camera shake and a small eased zoom-in, textured text 'CASE 01' with the case name below it. No second card, no ice close-up swap. Music plays under the title card. Then the case footage starts (hard cut or dip to black, no crossfade); the date is small text on the first footage shot. (owner 2026-11-12, v5)",
+   "text": "Each case gets ONE title card: a title plate (new design from the refs, pending pilot) with a very slow gentle camera shake and a small eased zoom-in, textured text 'CASE 01' with the case name below it. No berg graphic, no cyan. No second card. Music plays under the title card. Then the case footage starts (hard cut or dip to black, no crossfade); the date is small text on the first footage shot.",
    "since": "2026-11-12",
    "from": "update",
    "title": "Case title card like the refs"
@@ -1150,7 +1150,7 @@
   },
   {
    "id": "b-0c2444ba",
-   "text": "Fill the intro with real raw footage with intense movement (news, phone, CCTV, archive of the actual cases), not graphics. Graphics in the intro are only the warning card and the iceberg list. No inverted, mirrored or posterised colour looks on clips at all, intro included; clips keep only the normal Abyssal grade. (owner 2026-11-12, storyboard v6)",
+   "text": "Fill the intro with real raw footage with intense movement (news, phone, CCTV, archive of the actual cases) under the VO, not graphics. Graphics in the intro are only the warning card and the case list. No inverted, mirrored or posterised colour looks on clips at all, intro included; clips keep only the normal Abyssal grade.",
    "since": "2026-11-12",
    "from": "owner",
    "title": "Raw clips in the intro"
@@ -1216,7 +1216,7 @@
   },
   {
    "id": "b-11d83cab",
-   "text": "Intro: on the case count line ('twenty-five of them') zoom-in transition to the iceberg, zoomed in so every case name reads, list slides up 3-4 s, then dip to black.",
+   "text": "Intro: on the case count line ('twenty-five of them') zoom-in transition to the case list, zoomed in so every case name reads, list slides up 3-4 s, then dip to black.",
    "since": "2026-11-13",
    "from": "user"
   },
@@ -1240,7 +1240,7 @@
   },
   {
    "id": "b-45d37b08",
-   "text": "Intro end: iceberg again, scroll to the top with a dip to black, highlight case 01 on its name, dip to black into the title card.",
+   "text": "Intro end: case list again, scroll to the top with a dip to black, highlight case 01 on its name, dip to black into the title card.",
    "since": "2026-11-13",
    "from": "user"
   },
@@ -1270,7 +1270,7 @@
   },
   {
    "id": "b-e280ac83",
-   "text": "Card montage exit: the last red-border card morphs out: its border spreads to the frame edges while the clip zooms to full screen, then it crossfades into the next shot (iceberg zoomed onto case 01 with the highlight).",
+   "text": "Card montage exit: the last red-border card morphs out: its border spreads to the frame edges while the clip zooms to full screen, then it crossfades into the next shot (case list zoomed onto case 01 with the highlight).",
    "since": "2026-11-13",
    "from": "user"
   },
@@ -1330,7 +1330,7 @@
   },
   {
    "id": "b-cf19e4b4",
-   "text": "Every highlight graphic (red ring, document band or underline, iceberg highlight) gets a smooth eased push-in zoom on the highlighted part, so the viewer can read it.",
+   "text": "Every highlight graphic (red ring, document band or underline, case-list highlight) gets a smooth eased push-in zoom on the highlighted part, so the viewer can read it.",
    "since": "2026-11-13",
    "from": "owner 2026-11-13 v9 review"
   },
@@ -1398,88 +1398,6 @@
    ]
   },
   {
-   "id": "g-e937596a",
-   "title": "Discretion logo",
-   "text": "Pixel iceberg logo with 'VIEWERS DISCRETION IS ADVISED', 0-2 s.",
-   "source": "refs",
-   "evidence": [],
-   "use": "Very first frames (newer videos).",
-   "avoid": "Do not hold it longer than 2 s.",
-   "kind": "title-card",
-   "situation": "Credit, warn or disclose"
-  },
-  {
-   "id": "g-399454ee",
-   "title": "Iceberg entry list",
-   "text": "Full-frame iceberg (sky above, dark water below), light teal fog, white waterline at about 28% down. Small white Courier rows about 3-4% of frame tall and 12-25% wide, in two loose columns (left column centred near x 40%, right near x 65%), stepping down the iceberg in about 12 rows. Owner v5: every row sharp white and readable (no blur/pixelation on deeper rows); slow eased zoom-in, no shake, hold 7 s. One variant adds thick white bars (about 1% tall) between 6 bands of rows while the iceberg is still dark. In: hard cut. Hold 3.4-3.6 s, static (no scroll seen in 6 strips), slight text shimmer. Out: 2-3 frame RGB/scanline tear, then hard cut. Sound: no fixed rule (hit 2, drop 1, none 3 of 6).",
-   "source": "refs",
-   "evidence": [],
-   "use": "Before Level 1, to show what is coming.",
-   "avoid": "Do not blur or pixelate deep rows; do not shake it.",
-   "kind": "layout",
-   "situation": "Compare or show many things",
-   "media": [
-    {
-     "file": "0d0846e8daca49f2.mp4",
-     "kind": "video",
-     "name": "ICEBERG_LIST · 2TAT 0:18 (4.4 s)"
-    },
-    {
-     "file": "d170d81df9e64a29.mp4",
-     "kind": "video",
-     "name": "ICEBERG_LIST · C8Tv 0:23 (4.3 s)"
-    }
-   ],
-   "fit": "yes"
-  },
-  {
-   "id": "g-016f137b",
-   "title": "Level card",
-   "text": "Iceberg picture (cloudy sky, waterline at ~32% height, dark teal submerged ice, black sea), bold off-white slab-serif typewriter 'Level N' centred at y 50-55%, about 41% of frame width at the start of the hold, no box, no glow. In: 0.7-3.0 s of quiet black, then a 3-frame fade-in (text starts at 20-40% brightness). Hold 1.2-2.5 s with a slow push-in: the text grows from ~42% to ~80% width. Out: fast 3-frame blur zoom-through into the iceberg peak close-up. The first ice title then types on over it: white sans caps with a cyan glow, ~37% wide at y 45%, with a glitchy letter scramble while typing (5 of 6; 1 glitch smear). Sound: riser ~+10 dB over 0.3 s into the out (3 of 6), then silence.",
-   "source": "refs",
-   "evidence": [],
-   "use": "Start of each of the 7 levels.",
-   "avoid": "Do not skip the black dip and silence. Do not add a box behind the text.",
-   "kind": "title-card",
-   "situation": "Open a section or chapter",
-   "media": [
-    {
-     "file": "ab97eca10e7449f9.mp4",
-     "kind": "video",
-     "name": "LEVEL_CARD · 2TAT 0:33 (4.8 s)"
-    },
-    {
-     "file": "1f79eb880f214b8b.mp4",
-     "kind": "video",
-     "name": "LEVEL_CARD · 7UjU 0:33 (5.9 s)"
-    }
-   ]
-  },
-  {
-   "id": "g-7daa450f",
-   "title": "Ice entry title",
-   "text": "Iceberg close-up (pale blue-white ice, dark teal sky and shadows). Small white letter-spaced sans caps (Montserrat/Gotham-like), 1-2 lines, 37-45% width, centred at y 42-52%, no box. The colour runs white to cyan/teal across the line (last words cyan) with a soft cyan glow. In: 0.1-1.4 s black, then a 3-4 frame character scramble/blur-in while the ice crossfades up. Hold 1.5-3.5 s, text still, ice drifts or zooms slowly. Out: 2-frame RGB glitch smear, hard cut, or back to black. Sound: no fixed rule; a riser or a glitch tick both occur.",
-   "source": "refs",
-   "evidence": [],
-   "use": "Start of each entry.",
-   "avoid": "Do not use other colours or fonts. Owner v4: no crossfades or dissolves; enter by hard cut or dip to black.",
-   "kind": "title-card",
-   "situation": "Open a section or chapter",
-   "media": [
-    {
-     "file": "b70335c08de74e6d.mp4",
-     "kind": "video",
-     "name": "ICE_TITLE · 2TAT 2:37 (5.7 s)"
-    },
-    {
-     "file": "370c2222f5aa4d8e.mp4",
-     "kind": "video",
-     "name": "ICE_TITLE · 7UjU 2:04 (4.1 s)"
-    }
-   ],
-   "fit": "yes"
-  },
-  {
    "id": "g-54255fa8",
    "title": "State/place card",
    "text": "'STATE - TOPIC' in condensed caps over ice texture, soft dissolve, about 3 s (KTKZ).",
@@ -1500,7 +1418,8 @@
      "kind": "video",
      "name": "MAP · C8Tv 19:01 (8.0 s)"
     }
-   ]
+   ],
+   "fit": "adapt: no ice texture (SOP 2.4 ban); plain dark backdrop"
   },
   {
    "id": "g-ffc008c8",
@@ -1571,7 +1490,7 @@
      "name": "NAMETAG_PLAIN · 7WeC 29:33 (8.0 s)"
     }
    ],
-   "fit": "yes"
+   "fit": "adapt: monospace, not typewriter (SOP 2.4 ban)"
   },
   {
    "id": "g-2bd23af5",
@@ -1769,7 +1688,7 @@
      "name": "RED_NUMBER · C8Tv 1:24 (8.0 s)"
     }
    ],
-   "fit": "yes"
+   "fit": "adapt: bold red mono numbers, not typewriter (SOP 2.4 ban)"
   },
   {
    "id": "g-aeb8da9c",
@@ -1927,7 +1846,8 @@
      "kind": "video",
      "name": "POSTERISE · 7WeC 35:44 (5.3 s)"
     }
-   ]
+   ],
+   "fit": "no: posterised looks banned (rule b-0c2444ba) and cyan banned (SOP 2.4)"
   },
   {
    "id": "g-13006070",
@@ -2884,6 +2804,15 @@
    "update": "workflow",
    "note": "abyssal-01 full video.",
    "text": "Full renders: owner picks the fast split (default 500-machine split, ~1 h) over one case per machine."
+  },
+  {
+   "id": "l-7e51f297",
+   "date": "2026-11-14",
+   "text": "SOP ban wins (owner 2026-11-14). Master SOP v2.0 (docs/workflow/CAUGHT_ON_CAMERA_MASTER_SOP.md) section 2.4 bans the algrow-2 iceberg look. Do NOT use: the berg level graphic, typewriter level cards, the cyan palette, ice-cyan glitch titles. The iceberg format may stay; its look must be redesigned from the refs. Every rule in this book that asks for them is overridden.",
+   "status": "rulebook",
+   "target": "b-612b623c",
+   "note": "owner chat 2026-11-14: master SOP v2.0 section 2.4 ban wins over this style's look",
+   "update": ""
   }
  ],
  "updates": [

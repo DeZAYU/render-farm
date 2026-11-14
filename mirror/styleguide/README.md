@@ -6,7 +6,6 @@
 Each channel has its own folder with everything it owns: `farrell/` and `nocturn/` (`<slug>.json` source, `<SLUG>_STYLE_GUIDE.md` generated, `history/`, `media/`, `update_prompt.md`; Farrell also has `measure/` and `seed.json`). The app code here is shared.
 - Farrell: `Open Style Guide.cmd` or `python styleguide/server.py --guide farrell` → http://localhost:8767
 - Nocturn: `Open Nocturn Style Guide.cmd` or `python styleguide/server.py --guide nocturn` → http://localhost:8768
-- Backup of the code before the split (2026-11-12): `_backup_pre_split_2026-11-12/`.
 
 - **Guide**: the 12 categories. Click any rule or summary to edit its text: Enter saves, Esc cancels. `×` deletes. A thumbnail plays its reference clip; playback stops at the clip's last frame.
 - **+ rule / ✎**: opens the in-page form. It has a title, a "what it is" box, and examples: drop or browse screenshots and videos (png/jpg/webp/gif/mp4/mov/webm, up to 1 GB), paste one with Ctrl+V, or pick clips from the Farrell board. `Save` stores the rule. `Save & learn` stores it, then runs Claude on the examples.

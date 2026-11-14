@@ -1,0 +1,116 @@
+{
+ "url": "https://www.weather.gov/lot/2015_04_09_tornadoes",
+ "title": "April 9, 2015, Tornadoes",
+ "focus": [
+  589.35,
+  7687.0
+ ],
+ "highlights": [
+  {
+   "phrase": "RATING: EF-4",
+   "box": [
+    360.6,
+    7670,
+    818.1,
+    7704
+   ],
+   "lines": [
+    [
+     360.6,
+     7670,
+     818.1,
+     7704
+    ]
+   ],
+   "chars": 12,
+   "style": "select",
+   "t": 0.8
+  },
+  {
+   "phrase": "ESTIMATED PEAK WIND: 200 MPH",
+   "box": [
+    360.6,
+    7700,
+    866.2,
+    7734
+   ],
+   "lines": [
+    [
+     360.6,
+     7700,
+     866.2,
+     7734
+    ]
+   ],
+   "chars": 28,
+   "style": "select",
+   "t": 2.2
+  },
+  {
+   "phrase": "START TIME: 6:39 PM CDT",
+   "box": [
+    360.6,
+    7910,
+    930.4,
+    7944
+   ],
+   "lines": [
+    [
+     360.6,
+     7910,
+     930.4,
+     7944
+    ]
+   ],
+   "chars": 23,
+   "style": "select",
+   "t": 3.5999999999999996
+  },
+  {
+   "phrase": "END TIME: 7:20 PM CDT",
+   "box": [
+    360.6,
+    8060,
+    930.4,
+    8094
+   ],
+   "lines": [
+    [
+     360.6,
+     8060,
+     930.4,
+     8094
+    ]
+   ],
+   "chars": 21,
+   "style": "select",
+   "t": 4.999999999999999
+  },
+  {
+   "phrase": "PATH WIDTH /MAXIMUM/: 700 YARDS",
+   "box": [
+    360.6,
+    7760,
+    898.3,
+    7794
+   ],
+   "lines": [
+    [
+     360.6,
+     7760,
+     898.3,
+     7794
+    ]
+   ],
+   "chars": 31,
+   "style": "select",
+   "t": 6.3999999999999995
+  }
+ ],
+ "yaw": 18,
+ "pitch": 10,
+ "roll": -3,
+ "zoom": 1.35,
+ "w": 2560,
+ "h": 8800
+}

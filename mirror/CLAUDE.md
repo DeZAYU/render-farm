@@ -8,6 +8,24 @@ Purpose: build the editing style guides (**Farrell**, **Nocturn**, **Abyssal**) 
 - K paths from the old PC (`D:\404 Rendrer`, `C:\Users\avent\...`) = K. Never read K recursively (3.4 GB); skip `.cache`, `node_modules`, `pages`, media.
 - Reading and using K is allowed.
 
+## Owner SOP (added 2026-11-14; newest owner rules; general, applies everywhere)
+- The SOP applies to every video: every style (Farrell, Nocturn, Abyssal, combined) and the Old Heritage / Iceberg kit. Always load it with the chosen style.
+- The chosen style's guide sets the look (palette, fonts, devices); it replaces SOP section 4 only. Every other SOP rule (briefing, licence, privacy, pacing, text, audio, feedback decoder, checklist) always applies.
+- `docs/workflow/SOP.md`: briefing, licence/privacy rules, editing/audio rules, feedback decoder, send checklist. Read it before every video.
+- SOP wins over K and this folder on look, rules and checks. K stays the source for tools and pipelines. The SOP bans the 404 Thread look (case cards, stamps, tape/VHS, red seams, caps cinematic lines).
+- Clashes with older rules: `styleguide/_shared/GENERIC_RULES.md` section H.
+
+## Master SOP v2.0 = general rules for EVERY style (owner rule 2026-11-14)
+- All styles (Farrell, Nocturn, Abyssal, combined) are caught-on-camera styles. So `docs/workflow/CAUGHT_ON_CAMERA_MASTER_SOP.md` applies to every video in every style. Read it A–Z before every video, with `docs/workflow/SOP.md`.
+- Order: master SOP v2.0 > `docs/workflow/SOP.md` > K > `GENERIC_RULES.md` > style rule book. Exception: the chosen style's guide sets the look (palette, fonts, devices, title, grade) = the master SOP's channel profile (§3, §8).
+- Pipelines (K, OHF kit) give workflow and tools only, never looks (master SOP §2.4).
+- **SOP §2.4 ban wins over the style look (owner 2026-11-14).** Farrell: no sentence-case Farrell type, tilted 3-D pages, tier cards, phone motif. Abyssal: no berg level graphic, typewriter level cards, cyan palette, ice-cyan glitch titles (iceberg format may stay). Replace them with new devices from the refs. Top rule in both rule books.
+- Its paths are Mac paths (`~/Documents/ALL PIPELINES/…`). On this PC, resolve them once (K = 404 Rendrer above) and note them here.
+- Brief with no channel named → ask one question: "Which channel is this for, and is it a new one?"
+
+## Old Heritage / Iceberg kit (added 2026-11-14)
+- `tools/oldheritage/` = the Old Heritage Files channel kit (own rules + own Remotion engine). Not a style. Read `tools/oldheritage/ANALYSIS.md` first, then its `CLAUDE.md`. Load only for Old Heritage / Iceberg videos.
+
 ## Pick the style first (owner rule 2026-11-12)
 - Each style lives in its own folder: `styleguide/<style>/` (`farrell`, `nocturn`, `abyssal`). Source: `<style>.json`; readable copy: `<STYLE>_STYLE_GUIDE.md`.
 - "Video in <style>" → load only `styleguide/<style>/`. Never read the other style's folder or files. Never read the whole repo.

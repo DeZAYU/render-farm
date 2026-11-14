@@ -2,6 +2,8 @@
 
 > **Main knowledge base (owner rule 2026-11-13):** `C:\Users\ayush\Downloads\404_Rendrer_KNOWLEDGE\404 Rendrer`. Read its docs first (list in `CLAUDE.md`). If it clashes with this file, it wins.
 
+> **Owner SOP (2026-11-14):** `docs/workflow/SOP.md` = how the owner briefs, licence rules, editing/audio rules, feedback decoder, send checklist. Read it before every video. Its clashes with older rules: `styleguide/_shared/GENERIC_RULES.md` section H.
+
 Copied from PROJECT on 2026-11-10. No Premiere Pro, no After Effects. Render = ffmpeg (`tools/farrell-build/`).
 `V` = the video's work folder: `productions/<video>/`.
 
