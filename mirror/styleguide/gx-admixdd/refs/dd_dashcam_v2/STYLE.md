@@ -101,3 +101,87 @@ Hard cut or dip to black into the next number card. No end-of-case card, no reca
 
 ## 13. Handoff
 All numbers above are final. Files: STYLE.md, DEVICE_BANK_part.md, gate/ (49 PNG named tMMSS_what.png, mm:ss of src), work/ (sheets, scene12.txt, scene30.txt, ebur.npy, cuts.json; can be deleted). Next step for the channel setup: pick which of the 22 devices in DEVICE_BANK_part.md go in our SOP-compliant look (SOP bans caps cinematic lines, tape/VHS; this ref uses scanlines+red, so only borrow layouts/timings, not the look).
+
+---
+# ADDENDUM (gap fill, owner "no gaps")
+Tools: faster-whisper small.en (int8) on 0-467 s (of 1297; VO_transcript_0-467s.txt, word times in work/tr_all.json), librosa onset analysis on the full file, ebur128 momentary values, 30 fps pixel stepping. Device times from 2 s sheets are +-0.5 s unless marked "frame-stepped".
+
+## 14. Narration (VO) facts
+- A narrator tells the story over the clip in past tense: "On June 20th, 2023, a trucker was traveling eastward along Highway 401 ..." Each case = 1 hook sentence (who/where/when) + 4-8 sentences of escalation + outcome ("Fortunately no one was hurt") + a bridge line into the next case ("But these were only two of the 20 most disturbing dashcam moments ... they only get more messed up from here" 87.7-98.2 s; "However, this wouldn't be the last time Mother Nature caused some disturbing dash cam footage" 211.5-216.3; "just like in our next clip" 33.4-34.7).
+- Rate: 1250 words in 467 s = 160 wpm. Sentences 2-6 s; pauses between words >= 0.4 s: 68 in 467 s (8.7/min), median 0.56 s, p90 1.9 s.
+- The VO stops for raws: longest VO-free stretches 16.6 s (308.7-325.4, roundabout chase), 9.3 s (235.8-245.1, crash + comment card), 3.1-3.3 s (59.8, 194.1, 326.0), 2.8 s (98.2-101.0, the grid->case 3 dip). Raw speech stretches (clip dialogue, captioned): 56.7-67.6 (11 s), 117-122.7 (5.7 s), 283.8-294.8 (11 s), 228-231 (3 s). So raws = 3-17 s, median ~ 6 s, then VO resumes with "Realizing she ...", "Fortunately, ..." etc.
+- Raws are loud: momentary median -16.7 to -20.6 LUFS, i.e. 0-3 LU below the VO (see section 16). There is no ducked raw under VO; VO simply pauses.
+- First VO word vs case-number landing (number landing frame-stepped on #3 = 101.2): #3 VO "This" 100.98 (VO leads by 0.2 s); #5 VO "But" 217.00 vs number ~217.5 (leads 0.5 s, during the black); #7 VO "On" 359.44 vs number ~360.0 (leads 0.56 s); #4 "On September 1, 2021" 144.6 vs number 144.4 (follows by ~0.2 s). Rule: VO starts -0.6..+0.2 s (median -0.4 s) around the number, i.e. the narrator is already speaking into the black dip and the number appears on his first 1-2 words. Date text words land with the narrator's date words (see section 15).
+- The VO of the previous case ends 0.5-3 s before the next number (e.g. ends 214.5-216.3, black 216.0-217.3, number 217.5).
+
+## 15. Device -> VO word match (delay = device time minus VO word start; negative = device first)
+| device | device t (s) | VO word @ t | delay |
+|---|---|---|---|
+| date "June" fade-in | 0.17 | "June"@0.22 | -0.05 |
+| date "20th," | 0.58 | "20th,"@0.40 | +0.18 |
+| red "2023" | 0.83 | "2023"@1.12 | -0.29 |
+| place text "Highway 401, Canada" | 3.7 | "Highway"@4.24 | -0.5 |
+| red arrow on tanker | 8.0 | "suddenly"@8.22 / "veered"@8.56 | -0.2 |
+| fireball (nothing drawn) | 10.8 | "slammed"@10.26 | n/a |
+| red arrow on escaping car | 20.0 | "car"@20.02 | 0.0 |
+| hard cut to news clip | 24.87 | "While"@25.12 (sentence start) | -0.25 |
+| red text "For 24 hou(rs)" | 27.0 | "24"@26.82 | +0.2 |
+| red-frame "?" transition start | 33.0 | "like"@33.42 / "in our next clip" 33.74-34.7 | -0.4 (the "?" card is on screen exactly during "next clip") |
+| place "Beaumont, California" | 38.0 | "Beaumont,"@38.40 | -0.4 |
+| red ellipse on sky | 40.0 | "rocket"@40.06 | -0.06 |
+| web page enters | 74.0 | "injuries."@74.02 / "As"@74.78 | 0 (on the last word of the previous sentence) |
+| red marker on "SpaceX Falcon 9" | 78.0 | "SpaceX"@78.22 | -0.2 |
+| red circle on rocket trail | 86.0 | "lit up"@86.20 | -0.2 |
+| title grid in | 88.0 | "But"@87.70 | +0.3 |
+| grid zoom start | 95.0 | "including a trucker"@94.62-95.14 | +0.3 |
+| case 3 number | 101.2 | "This"@100.98 | +0.22 |
+Pattern: overlay text/arrows/circles land 0 to 0.5 s BEFORE the word they illustrate (median -0.2 s); case-level graphics land on or just after the first VO word; the title grid and grid zoom sit on the narrator's "20 most disturbing" sentence.
+Case 7 date "April 3rd, 2024" is read by the VO at 359.66-360.42 while the text builds at ~360.5 (text trails the VO by ~0.2 s).
+
+## 16. Levels (full-mix momentary LUFS; bed estimated from VO-free gaps, no stem separation)
+- VO windows (127 segments 0-467 s): median -18.3 LUFS, p10 -20.6, p90 -16.3.
+- Clean bed gaps (no speech, no clip crash): -24.1, -24.3, -24.8, -25.1, -27.1, -32.5 (98.2-101.0, the dip before case 3), -33.6 (357.9-359.4, dip before case 7). Median of clean gaps ~ -25 LUFS; case-boundary dips -32.5..-33.6; one hard floor -37 LUFS at 359.0.
+- => VO sits ~ +7 LU (range +6..+10) over the music bed inside a case, and the bed drops a further ~8 LU (about 15 LU under VO) in the black dip between cases. Bed itself is a low drone/pad (energy mostly 60-250 Hz, see work/aud.py output earlier).
+- Raws: 117-122.7 -16.7; 283.8-294.8 -19.4; 308.7-325 -20.6; 56.7-67.6 -20.6; 228-231 -17.4 LUFS = 0 to -3 LU relative to VO. Duck depth: VO does not duck under raws, it is removed; the music bed is not audible in raw stretches (raw level >> bed). Quiet raws exist (235.8-245 at -25.1 LUFS = bed level, the comment-card insert, i.e. music only with no VO for 9 s).
+- Integrated -17.5 LUFS, true peak +0.5 dBFS: this mix is hot; do not copy the clipping.
+
+## 17. SFX (librosa/scipy onset analysis, whole file)
+- Detector: energy 30-8000 Hz, jump >= 9 dB (mean of next 80 ms minus mean of previous 500 ms), 0.5 s min distance -> 448 onsets = 20.7 per minute, of which 353 (79%) whoosh/riser-type (high band dominant), 64 broadband, 31 low "hits". This includes clip impacts (crashes, explosions), so it is an upper bound; per case 10.5-36.6/min (calmest: #4 10.7 incl. storm, #11 10.5, #5 12.9; busiest: #7 34.9, #8 36.6, #14 27.8, #15 27.5, #13 25.7, #6 25.9 = the cases with collisions/rock fall).
+- Device-linked SFX: 13 of 16 case-number opens have an onset within -2..+1 s of the number: 11 of them 0.25-1.9 s BEFORE it (median -0.69 s), 2 just after (+0.5, +0.7 s) = rising swell into the black dip, ending on the number (exceptions #4 144.4, #14 860, #19 1184: no onset). Title grid 87.83 and zoom 94.82 each have a whoosh (-0.2 s). Red-frame "?" transition: whoosh at 34.17. Arrows: 3 of 8 matched within 0.4 s.
+- 20 example timecodes (s : onset dB jump : kind : what it marks):
+  1. 2.58 : 16.9 : riser : end of date text / text swap to place (+1.1 s before place text)
+  2. 19.90 : 14.6 : whoosh : second red arrow (car escaping fire)
+  3. 34.17 : 11.2 : whoosh : red-frame "?" card shrinks to frame
+  4. 61.13 : 18.8 : broadband : clip impact (raw)
+  5. 87.83 : 15.0 : whoosh : title grid enters
+  6. 94.82 : 12.5 : whoosh : grid zoom starts
+  7. 101.10 : 19.5 : riser : swell into case 3 number (number 101.2)
+  8. 198.03 : 11.7 : broadband : article screenshot enters
+  9. 216.9 : 15.0 : riser : swell into case 5 number (217.5)
+  10. 223.97 : 9.0 : whoosh : red arrow in PiP (#5)
+  11. 343.73 : 16.9 : broadband : cork board label drops in
+  12. 359.65 : 14.7 : riser : swell into case 7 number
+  13. 373.61 / 375.76 : 9.7 / 11.5 : broadband : arrows on the reversing car (#7)
+  14. 411.97 : 14.2 : whoosh : map/PiP on #8
+  15. 439.43 : 23.9 : hit : impact inside the rescue story (clip)
+  16. 503.33 : 17.2 : riser : swell into case 10 number (504.0)
+  17. 942.04 : 9.6 : hit : case 15 number lands (0.0 s)
+  18. 1113.97 : 16.6 : whoosh : website screenshot enters (#18)
+  19. 1223.75 : 12.9 : riser : swell into case 20 number
+  20. 1228.21 : 12.3 : whoosh : red arrow on the Tesla (#20)
+- Silent beats: none; the only dropout is 0.4 s at 359.0 and the dips between cases (-33 LUFS).
+
+## 18. Case-number open frame-step (30 fps, pixel count of saturated red, 320x180)
+| case | red enters (t) | fade-in 10->90% | hold >=90% | fade-out 90->10% | number size | notes |
+|---|---|---|---|---|---|---|
+| #3 | 101.20 | 4 frames (0.13 s) | 40-82 = 1.43 s | 4 frames (0.13 s) | bbox 19.4% H flat (no scale animation) incl. glow; at 47-55% x, 37-57% y | clip luma 0 at 100.0 -> 28 at entry -> 99 at end of hold (clip brightens in during the number); linear/ease-out opacity only |
+| #17 | 1056.37 | 5 frames (0.17 s) | 0.70 s | 9 frames (0.30 s) | bbox 19.4% H flat, x 42-59%, y 37-57% | no black dip here (min luma 73, number lands directly over a bright photo) |
+| #19 | 1183.77 | 8 frames (0.27 s) | 0.50 s | 16 frames (0.53 s) | 19.4% H flat, same slot as #17 | black minimum luma 11 at 1183.40 (0.37 s before number); stacked-cam clip |
+| #5 (earlier, 6 fps) | 217.5 | ~2 frames of glow then ~0.3 s | ~1.5 s | ~0.4 s fade | 12-14% H glyph | 1.3 s black first |
+| #10, #13 | pixel count contaminated by red year text/footage; visual: #10 number top-right at 504.0, #13 centre 776.4 (frame-step 776.40, glow, bbox 19% H), hold 2 s | | | | | not used for stats |
+Summary: number = saturated red (#F0141E) heavy sans, bbox ~19% of frame height including glow (glyph ~12-14%), no scale push, opacity fades only: in 4-8 frames, hold 0.5-1.4 s (visible with glow ~2 s), out 4-16 frames. Black dip min 0.37 s before the number when there is a dip; the clip fades in under the number over ~0.5 s (luma 28 -> 99 over the hold). Position slots: centre (#3, #13, #14), centre-left (#5, #17, #18, #19, #20: x 42-59%, y 37-57%), top-right (#4, #7, #10, #15, #16).
+
+## 19. Remaining limits
+- No stem separation (demucs not run, time): bed level is from VO-free gaps, so bed-under-VO could be lower than estimated.
+- VO transcribed to 467 s only (cases 1-9 plus start of 9); remaining 830 s not transcribed.
+- Onset counts include clip sounds (impacts); SFX identity (whoosh vs riser) is by band balance, not by listening.

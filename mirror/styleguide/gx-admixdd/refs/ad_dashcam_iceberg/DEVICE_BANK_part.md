@@ -24,3 +24,9 @@ Each entry: what / where / numbers / story job / twist for our new look (our own
 20. **Slow push on all footage** - 3-4 %/s on cards, many clips, no punch zooms. Twist: keep; add occasional 1-frame stop.
 21. **Level/chapter marker** (iceberg-only, one line) - 33, 327, 681, 1117, 1506, 2073, 2666 s typewriter "Level N" on berg with dive-down zoom. Skip.
 22. **Audio** - -25.2 LUFS, LRA 6.1, TP -0.5; VO wall-to-wall (4 silent runs under -55 dB in 55 min, 0.4-0.6 s); bed about 10-12 dB under VO (estimate); no bleeps. Twist: ours should master at -14 (platform), keep the bed-to-VO ratio.
+
+## Round 2 additions (partial; see STYLE.md appendix)
+23. **Case-card cadence** - 15 verified cards in 33-1930 s: A Mountain of Pain 38, Hangman 129.4, Out of Nowhere 227.4, Airborne 329.1, Distracted 456.5, Caved In 684.2, Weather Warning 832.8, The Sinkhole 965.2, Cascading Cars 1120.4, Running Out of Road 1190/1251, Runaway Monster 1380.1, Highway Fireball 1508.6, The Pileup 1660.8, No Support 1790.6, Chain Reaction 1926.1. About one card per 126 s (98-193 s). Title 1.5-2.8 s clean, short and 2-3 words, caps. Job: names each entry and resets attention. Twist: for a countdown, number + 2-word title plate every ~2 min; our own plate look.
+24. **Level-start sting** - side-channel hits at 33.2, 324.3, 679.0, 1118.1, 1506.5 s (within 0.1 s of chapter starts). The only SFX tied to edits. Twist: one deep hit + short riser at each countdown tier start, wide stereo, nothing on ordinary cuts.
+25. **VO wall-to-wall** - gaps median 0.30 s, 13 pauses >= 2 s in 55 min. Twist: keep breaths 0.2-0.9 s; use 1.8 s VO pause at the case card (453.7-455.5 s) as the one planned silence.
+26. **Card bed change** - hard cut of bed colour at the card (bright-hiss bed to dark mid bed), faint 1.5 kHz tone under the card, ~0.1 s mono tick at the burst. Twist: low drone swell + 1 kHz tone under our plate, tick on the cut.

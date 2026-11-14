@@ -9,5 +9,5 @@ Running:
 - Phone parts (360p, 10-min parts, target <30 MB each) -> `productions/<v>-camping-encounters/06_deliver/phone/`. Check sizes when done.
 - Subagent: `.srt`, `chapters.txt`, `credits.txt` -> `productions/<v>-camping-encounters/06_deliver/`.
 
-Next: verify phone part sizes + playback, review agent's srt sync offsets / CHECK flags, mark both videos FINAL in this file, report to owner.
+RESULT (2026-11-14): van + winter FINAL. `06_deliver/` holds .srt (Whisper, approx: usually ~0.2 s early, up to ~0.8 s), chapters.txt, credits.txt, phone/ (van 8 parts, winter 6 parts, all <30 MB; winter part01/02 seam repeats ~2 s). No agency flags. Winter "Exploring with Bear" credit unverified (no info.json); Exploring With Owen = CC-BY, credit required.
 Not finalizable: Old Heritage 01-05/07/09 (delivered earlier, finals in OldHeritage_Finals, location unknown), OHF 06/08/10 never built, no Abyssal video.

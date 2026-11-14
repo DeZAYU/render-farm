@@ -25,3 +25,12 @@ Each entry: name | where (gate still) | measured | story job | twist (rebuild in
 22. **End photo-frame fade** | 21:28 (t2128_end_photo_frame) | clip shrinks into a white-border photo on black, dims over 4 s, returns to clip with chyron at 21:34 | quiet close with no outro | Twist: frame shrinks to a slide and fades; keep no-outro.
 23. **Glitch/pixel-slice flash** | 6:18, 17:06 | 4-6 frames slice/shift, then evidence card | punctuates an event | Twist: our own datamosh slice with accent colour.
 24. **Replay/loop with red-glow brake lights** | #11, #13 | same 5-8 s repeated 2-3 times, brake lights glow red | emphasis of the hit | Twist: replay in slow-mo with a small "REPLAY" tag.
+
+---
+## ADDENDUM: timing recipes (from VO word match, SFX and number frame-step; see STYLE.md sections 14-18)
+- **VO sync rule for all overlay devices:** arrows, circles, markers, name/place text land 0 to 0.5 s BEFORE the VO word they illustrate (median -0.2 s); date words land on the narrator's date words (-0.3..+0.2 s); case-level graphics land on the narrator's first 1-2 words after a 1.3 s black dip. Twist: keep this lead (cut the overlay 5-12 frames before the word) but in our own look.
+- **Case number card (device 7) frame recipe:** black dip (min luma 0-11, 0.4 s before) -> number opacity 0->90% in 4-8 frames -> hold 0.5-1.4 s (visible ~2 s with glow) -> out in 4-16 frames; no scale animation; bbox ~19% H with glow; clip fades in under it (luma 28 -> 99 over ~1.4 s); preceded by a riser/whoosh swell 0.25-1.9 s earlier (11 of 16 cases), narrator's first word -0.6..+0.2 s from the number. Twist: add a slow 3% scale drift to our number so it is not a copy.
+- **Red-frame "?" transition (5):** on screen exactly while the VO says "in our next clip" (33.74-34.7 s); whoosh at 34.17.
+- **Title grid (6):** whoosh at 87.83 on "But these were only two of the 20 most disturbing", zoom whoosh 94.82 on "including a trucker hanging off a bridge"; fade to black 99.5-101.0 under VO silence of 2.8 s; bed at -32.5 LUFS there.
+- **Raw stretches (device 20 captions):** VO is removed (not ducked) for 3-17 s (median ~6 s); raw level 0-3 LU under the narration; captions in white, speaker tags "[Man 1]". Twist: add a 6-frame audio crossfade at both ends so the VO return is smoother than the reference's hard return.
+- **SFX palette to rebuild (own sounds):** low riser into each case number (0.5-1.5 s), whoosh on devices 5/6/10/15/18, soft impact on arrows (3 of 8 audible), none on text; ~20 onsets/min including clip impacts, quiet cases 10/min.

@@ -95,3 +95,52 @@ Analysis done with: ffmpeg scene detect (0.3, 320 px), 20 s samples (t = 20k-10 
 - Level/case list timecodes of berg cards beyond the 7 above not logged (20 s sampling misses 2.7 s cards).
 - A first attempt got cut off by an app restart; scene log re-run with -v info (first run used -v error and wrote nothing, noted so nobody repeats it).
 - Intermediate files in `work/` (contact sheets, scene.log, ebur.log, cuts.npy, 20 s sA samples, scripts). The 16 kHz raw and the tiny4 raw were deleted.
+
+---
+# APPENDIX (round 2, partial): case cards, SFX, VO gaps. HANDOFF for the next agent at the bottom.
+
+## A. Case-card timecodes (berg title, cyan type; verified by eye on `work/cc_sheet0.jpg`, `cc_sheet1.jpg`)
+Method: 4 fps 160x90 features (`work/feat4.csv`: t, luma, sat, cyan-pixel share, teal share, host-diff) -> runs with teal>0.1 and cyan>0.002 -> candidates with a cut within 1.2 s after (`work/cardruns.npy`) -> contact sheet check.
+Card (mid-time of clean title, then burst/cut after it): 
+38 A MOUNTAIN OF PAIN (L1, 35.0-42.2 incl. Level 1 type) | 129.4 HANGMAN (burst 130.3) | 227.4 OUT OF NOWHERE (228.5) | 329.1 AIRBORNE (330.1) | 456.5 DISTRACTED (457.4) | 684.2 CAVED IN (685.0, L3 starts 681) | 832.8 WEATHER WARNING (834.0) | 965.2 THE SINKHOLE (966.2) | 1120.4 CASCADING CARS (1121.8, L4 starts 1117) | 1188-1192 RUNNING OUT OF ROAD (glitch shuffle, 6 bursts in 9 s) and again 1251.0 (1252.2) | 1380.1 RUNAWAY MONSTER (1381.5) | 1508.6 HIGHWAY FIREBALL (1510.3, L5 starts 1506) | 1660.8 THE PILEUP (1661.6) | 1790.6 NO SUPPORT (1791.8) | 1926.1 CHAIN REACTION (1927.2).
+Spacing: 15 verified cards in 33-1930 s = one card every ~126 s on average (range 98-193 s); card hold 1.5-2.8 s clean, cut/burst 0.1-1.2 s after the title ends. Index at 12-14.5 s promises ~16 named stops (A Mountain of Pain, Two-Ply Water, Selfish Choice, Highway Fireball, Concrete Rain, Fried Chicken, Chain Reaction, Overdrive, Final Rescue ...; the index text is not the real card list).
+NOT FOUND (gap): cards from 1930 s to 3330 s (L6 2073, L7 2666 starts and cases between). The cyan-text detector found only footage there; no berg card seen in 20 s samples after 1930 s either. Either cards change look (not cyan/teal) or are rarer. 21 non-cut candidates 2069-3287 s were all footage (see cc_sheet1).
+Chapter-start stings: side-channel (stereo-wide) hits at 33.2, 324.3, 679.0, 1118.1, 1506.5 s = Level 1-5 starts, +-0.1 s of chapter times 33/327/681/1117/1506.
+
+## B. SFX and raws (measured, with limits)
+- Stereo: music/ambience/SFX are wide, VO is centre (mid -27.1 dB, side -40.1 dB, L/R correlation 0.90 on 400-520 s). Side channel therefore approximates "everything but VO".
+- Side-channel onsets (rise >= 12 dB over median of previous 1 s, floor -48 dB, 0.5 s refractory): 126 total = 2.3/min; per section/min: INTRO 10.9, L1 1.4, L2 1.9, L3 1.8, L4 1.7, L5 3.9, L6 1.2, L7 2.6. Median side level -47.5 dB (p5 -58, p95 -37.9).
+- Low-frequency (30-110 Hz) hits (rise >= 12 dB): 309 = 5.6/min (L1 19, L2 13, L3 75, L4 52, L5 26, L6 84, L7 36); only 20% of single cuts, 13% of glitch bursts and 3% of random times are near one (so most are inside footage: crash thumps / raws, not edit SFX).
+- Glitch bursts (76) have NO low-frequency or stereo SFX hit (0%). Their audio is a short (~0.1 s) mono broadband tick (seen on spectrogram at 457.4 s) that band-onset detection cannot separate from VO fricatives (11-15.5 kHz clicks near cuts 75% vs 73% random = not separable). Level-start stings are the only reliable edit SFX.
+- Example timecodes, side-channel hits: 3.1, 11.5, 23.8, 26.7, 33.2, 47.0, 70.4, 153.5, 324.3, 381.0, 464.4, 563.6, 679.0, 734.9, 972.0, 1118.1, 1506.5, 1514.4, 1799.9, 1875.2 (20 examples). Low-freq hits: 11.1, 19.9, 26.7, 32.8, 37.8, 43.7, 59.2, 124.5, 191.8, 464.4, 505.9, 606.0, 693.1, 704.7, 721.9, 753.6, 829.8, 870.9, 878.9, 882.8.
+- Card audio (spectrogram 450-464 s): hard bed change at the cut into the card (bed with HF hiss <=3 kHz before, quiet mid-band bed after), VO pauses ~1.8 s (453.7-455.5), a faint tonal line ~1.5 kHz under the card 455.2-457.4 s, VO resumes 455.6 s, burst tick at 457.4 s.
+- Raw clip-sound length under VO: NOT MEASURED (no stem separation available: demucs not installed). Level of clip audio is low: whole-track p99 is -17 to -20 dBFS and there are no crash peaks above that.
+
+## C. VO gaps (faster-whisper VAD, threshold 0.5, min silence 250 ms)
+- 369 speech segments, speech share 93.9% of runtime (music-tinted VAD may over-count). Gaps between segments: n=368, median 0.30 s, p10 0.17 s, p90 0.94 s, max 13.5 s (at 3284 s, the outro). Gaps >= 2 s: 13; >= 5 s: 1; >= 10 s: 1. So VO is practically continuous: breaths of 0.2-0.9 s, only 13 pauses >= 2 s in 55 min.
+
+## HANDOFF (what is still open; round 2 was cut short by context size)
+Done: card timecodes 1-1930 s; SFX per minute (side + sub-band) and examples; VO gaps.
+Open (not done): (1) frame-step of 2 early + 2 later cases (card entry/hold/exit, first footage, replay/freeze/spotlight easing) - only case 1 (454.6-457.6 s at 10 fps) was stepped; (2) card timecodes after 1930 s; (3) raw clip-sound lengths and fades under VO (needs stems or per-window ASR/energy study); (4) faster-whisper word timing for device entries on 3 cases. faster-whisper 1.0.3 is installed and small.en is cached (`~/.cache/huggingface/hub/models--Systran--faster-whisper-small.en`); transformers/torchaudio/demucs are not installed.
+Helpers in `work/`: feat.py (4 fps features), feat4.csv, cardruns.npy, cuts.npy (scene hits), speech.npy (VAD segments), sidehits.npy, subhits.npy, side20ms.npy, vad.py, sfx.py, sfx2.py, side.py. Big raw audio files were deleted.
+Suggested next step: whisper only on 3 windows (e.g. 120-140, 320-340, 1500-1520 s) with word_timestamps=True and the entry times of: place label, date, name tag, card title; then 10 fps sheets (ffmpeg -ss T -t 3 -vf fps=10,tile) for cases at 129.4, 227.4, 1508.6, 1790.6.
+
+---
+# Gap fill 2 (round 3): frame-steps at 30 fps, cards after 1930 s, clip-sound study, VO word timing
+Tools: ffmpeg 30 fps 320x180 extracts per window (`work/g2/fs.py`, `w.py`, `reg.py`, `summ.py`, `sheet.py`), feat4.csv teal run detector with looser thresholds, faster-whisper small.en int8 (`work/g2/asr.py`, `words.json`). New stills in `gate/` (16 added: t0126, t0128, t0130, t0144, t0145, t0149, t0211, t0283, t2076-t3134 cards).
+
+## G1. Case cards after 1930 s: FOUND (8 more, all the same title-card look)
+Why the first search missed them: it required cyan text share and a cut within 1.2 s. Cards have a berg still with 85-97% teal pixels, saturation 35-41, luma 37-48 (dark). Detector that works: teal share > 0.5 and sat > 20 for >= 0.75 s, then eye check of one frame per run (`work/g2/cardsheet.jpg`).
+| t start-end (s) | title | note |
+|---|---|---|
+| 2074.5-2077.0 | VOLATILE | first card of L6, comes right after the typewriter "Level 6" (2070-2073) |
+| 2242.8-2245.5 | CONCRETE RAIN | |
+| 2376.8-2378.8 (+burst 2379.0) | FRIED CHICKEN | |
+| 2514.0-2516.8 | SUPER TYPHOON | |
+| 2667.8-2670.5 | OVERDRIVE | right after "Level 7" (2665) |
+| 2824.3-2826.5 | DOUBLE WAVES | |
+| 2977.0-2979.3 | HIGH GEAR | |
+| 3133.5-3135.5 | FINAL RESCUE | last case card |
+- All 23 cards now known (15 earlier + 8): 38 ... 3134 s. Gaps after 1930 s: 148, 168, 134, 137, 154, 156, 153, 157 s, mean 151 s (L6/L7 cases are longer than L1-5, which were 126 s). 3290 s = closing berg (shark + piranhas + rock, rain) with the Patreon notice, not a case card.
+- Card look: a different berg still per level family: L1/L2 cards = pale snowy peak (Hangman, Out of Nowhere); L6/L7 cards = a dark skull-shaped berg with teeth, same still in every L6/L7 card but re-framed (zoom/offset differs per card). Title: cyan #39E5F0-ish, wide extended sans caps with glow, centred a little below mid-height, 28-35% frame width, 2-3 words max. (Verified: gate/t2076..t3134.)
+- Also seen in L6/L7 sampling: red-block month text "MAR/MARCH" (2230 s) and "JUNE" (2835 s) typed with red cursor block, "SEPTEMBER 5, 2013" (2985 s) VHS date, place label "TANJUNG MALIM (MALAYSIA)", "PINETOWN (SOUTH AFRICA)", name tags (Amirul Zulkifle, Gregory Govender, Jung Baodong, Mike Moye) = same system as L1-5; no new device kinds found after 1930 s except the closing berg and the L8 Patreon end card ("Level 8 of every episode is now on patreon.com/AbyssalDetective", 3290-3320 s) and "THANKS FOR WATCHING" (3330 s, white mono caps on black).
