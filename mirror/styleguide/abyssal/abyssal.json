@@ -1,6 +1,6 @@
 {
  "version": 1,
- "rev": 42,
+ "rev": 43,
  "saved": "2026-11-14T04:31:46",
  "categories": [
   {
@@ -2812,6 +2812,51 @@
    "update": "marker shape + 2-line cap",
    "note": "Fix = build/look3d.py _band/_marker/_key_boxes/_hl_progress (abyssal-01).",
    "text": "Owner 2026-11-14: yellow/amber colour is good, but round pill ends do not look smooth or Abyssal; highlights must be smooth and not cluttered. Ref marker: flat band, tiny corners, black ink shadow edge, one phrase."
+  },
+  {
+   "id": "l-3b155a80",
+   "date": "2026-11-14",
+   "status": "learning",
+   "target": "",
+   "update": "audio leaks",
+   "note": "abyssal-01 v16 fixes (build_v16.py).",
+   "text": "Owner 2026-11-14: no audio leaks ever. TTS adds filler bits ('Yeah', 'EO') at phrase starts and raw TV clips cut mid-word. Fix: run build/vo_deleak.py on every TTS take (mutes fillers, keeps length; still_extra must be empty) and snap raw-clip sound edges to quiet gaps with build/raw_edges.py (sound level, not Whisper)."
+  },
+  {
+   "id": "l-6d1a4645",
+   "date": "2026-11-14",
+   "status": "learning",
+   "target": "",
+   "update": "doc page",
+   "note": "abyssal-01 v16 fixes (build_v16.py).",
+   "text": "Owner 2026-11-14: a document shown on screen must be readable. Never put a solid red band over text. Build a clean page plate (build/doc_plate.py: frame average, 2.4x upscale, paper flatten, ink curve) and show it as an article card with the smooth marker wipe."
+  },
+  {
+   "id": "l-e0589b2b",
+   "date": "2026-11-14",
+   "status": "learning",
+   "target": "",
+   "update": "arrow",
+   "note": "abyssal-01 v16 fixes (build_v16.py).",
+   "text": "Owner 2026-11-14: arrows must follow the moving subject (per-frame track, drawn after the push) and look real: thin, anti-aliased, soft shadow, no outline, no gloss. Start it only when the subject is small enough to point at."
+  },
+  {
+   "id": "l-ab422dd7",
+   "date": "2026-11-14",
+   "status": "learning",
+   "target": "",
+   "update": "map zoom",
+   "note": "abyssal-01 v16 fixes (build_v16.py).",
+   "text": "Owner 2026-11-14: map shots never stand still; keep a slow linear zoom (about 8%) over the whole shot."
+  },
+  {
+   "id": "l-868d5015",
+   "date": "2026-11-14",
+   "status": "learning",
+   "target": "",
+   "update": "ring",
+   "note": "abyssal-01 v16 fixes (build_v16.py).",
+   "text": "Owner 2026-11-14: use a red ring only where it is needed; not on every shot."
   }
  ],
  "updates": [
