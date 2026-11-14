@@ -17,6 +17,7 @@ ap.add_argument('--steal', action='store_true')          # laptop also takes clo
 ap.add_argument('--cloud-overhead', type=float, default=240); ap.add_argument('--laptop-speedup', type=float, default=2.5)   # s to start+download a cloud run; 4 laptop jobs ~2.5x one
 ap.add_argument('--repo', default='DeZAYU/render-farm'); ap.add_argument('--account', default='kumai007')   # old private repo: AYUAH-KUMAI/video-render
 ap.add_argument('--no-join', action='store_true'); ap.add_argument('--dry', action='store_true')
+ap.add_argument('--groups', default=None)   # owner 2026-11-14: json {segment: group}; one machine per group (e.g. one case per machine)
 ap.add_argument('--local-jobs', type=int, default=4); ap.add_argument('--only', nargs='*', default=None); ap.add_argument('--skip-done', action='store_true')
 A = ap.parse_args()
 BD = os.path.abspath(A.build); TR = json.load(open(A.trace, encoding='utf-8'))
@@ -72,7 +73,11 @@ def split(budget):
         local.append(n); lsec += seg[n]['sec']
     cloud = [n for n in names if n not in local]
     k = max(1, min(A.shards, 500, len(cloud))); shards = [[] for _ in range(k)]; load = [0.0] * k
-    for n in sorted(cloud, key=lambda n: -seg[n]['sec']):
+    if A.groups:                                                          # one shard per group, in timeline order
+        G = json.load(open(A.groups, encoding='utf-8')); keys = list(dict.fromkeys(G[n] for n in cloud))
+        k = len(keys); shards = [[n for n in cloud if G[n] == g] for g in keys]; load = [sum(seg[n]['sec'] for n in sh) for sh in shards]
+    else:
+      for n in sorted(cloud, key=lambda n: -seg[n]['sec']):
         i = load.index(min(load)); shards[i].append(n); load[i] += seg[n]['sec']
     return local, lsec, cloud, k, shards, load
 if A.local_frac >= 0: best = split(0 if A.local_frac == 0 or A.local_jobs == 0 else max(tot * A.local_frac, max(seg[n]['sec'] for n in names) * 0.5))
@@ -148,7 +153,14 @@ log('laptop share exit', lrc, '| cloud', st.get('conclusion'), '| laptop also di
 dl = tempfile.mkdtemp(prefix='.cloud_dl_', dir=V)
 os.makedirs(SEGD, exist_ok=True)
 try:
-    subprocess.run(['gh', 'run', 'download', str(run), '-R', A.repo, '-D', dl, '-p', 'seg-*'], env=env, check=False)
+    # one gh per artifact, 12 at a time (one stream is ~0.8 MB/s; a full video is many GB)
+    from concurrent.futures import ThreadPoolExecutor
+    arts = subprocess.run(['gh', 'api', '--paginate', f'repos/{A.repo}/actions/runs/{run}/artifacts', '--jq', '.artifacts[].name'],
+                          env=env, capture_output=True, text=True).stdout.split()
+    arts = [a for a in arts if a.startswith('seg-')]; log('downloading', len(arts), 'artifacts')
+    def get(a): subprocess.run(['gh', 'run', 'download', str(run), '-R', A.repo, '-D', os.path.join(dl, a), '-n', a], env=env, capture_output=True)
+    with ThreadPoolExecutor(12) as ex: list(ex.map(get, arts))
+    if not arts: subprocess.run(['gh', 'run', 'download', str(run), '-R', A.repo, '-D', dl, '-p', 'seg-*'], env=env, check=False)
     got = {os.path.basename(p)[:-4]: p for p in glob.glob(os.path.join(dl, 'seg-*', '*.mp4'))}
     for n, p in got.items():
         if n not in ldone: shutil.copyfile(p, os.path.join(SEGD, n + '.mp4'))
