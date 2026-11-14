@@ -142,6 +142,7 @@ log('laptop share exit', lrc, '| cloud', st.get('conclusion'), '| laptop also di
 
 # ---------- 5. download + check + join ----------
 dl = tempfile.mkdtemp(prefix='.cloud_dl_', dir=V)
+os.makedirs(SEGD, exist_ok=True)
 try:
     subprocess.run(['gh', 'run', 'download', str(run), '-R', A.repo, '-D', dl, '-p', 'seg-*'], env=env, check=False)
     got = {os.path.basename(p)[:-4]: p for p in glob.glob(os.path.join(dl, 'seg-*', '*.mp4'))}
